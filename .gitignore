@@ -4,3 +4,6 @@ obj/
 *.user
 *.suo
 appsettings.Development.json
+fireside.db
+fireside.db-shm
+fireside.db-wal
