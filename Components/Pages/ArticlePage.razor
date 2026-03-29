@@ -23,6 +23,18 @@ else
         <meta property="og:type" content="article" />
         <meta property="og:image" content="@_card.ImageUrl" />
         <meta name="twitter:card" content="summary_large_image" />
+        <script type="application/ld+json">
+        {
+            "@@context": "https://schema.org",
+            "@@type": "Article",
+            "headline": "@_card.Title",
+            "description": "@_card.Description",
+            "image": "@_card.ImageUrl",
+            "author": { "@@type": "Organization", "name": "The Fireside Editorial" },
+            "publisher": { "@@type": "Organization", "name": "The Fireside Editorial" },
+            "mainEntityOfPage": { "@@type": "WebPage", "@@id": "https://thefiresideeditorial.com/journal/@_card.Slug" }
+        }
+        </script>
     </HeadContent>
 
     <!-- Article Hero -->
@@ -36,7 +48,7 @@ else
                 <span class="material-symbols-outlined text-sm">arrow_back</span>
                 Back to Journal
             </a>
-            <span class="block text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 font-semibold">@_card.Category</span>
+            <span class="block text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 font-semibold">@_card.Category · @_readingTime min read</span>
             <h1 class="font-headline text-4xl md:text-6xl text-white leading-tight">@_card.Title</h1>
         </div>
     </section>
@@ -94,12 +106,19 @@ else
 
     private EditorialCardModel? _card;
     private List<EditorialCardModel> _relatedCards = [];
+    private int _readingTime;
 
     protected override async Task OnInitializedAsync()
     {
         _card = await ContentService.GetCardBySlugAsync(Slug);
         if (_card is not null)
         {
+            // ~200 words per minute, strip HTML tags for word count
+            var plainText = System.Text.RegularExpressions.Regex.Replace(
+                _card.ArticleBody + " " + _card.Description, "<[^>]+>", " ");
+            var wordCount = plainText.Split(' ', StringSplitOptions.RemoveEmptyEntries).Length;
+            _readingTime = Math.Max(1, (int)Math.Ceiling(wordCount / 200.0));
+
             var allCards = await ContentService.GetCardsAsync();
             _relatedCards = allCards
                 .Where(c => c.Slug != _card.Slug)
