@@ -1,3 +1,4 @@
+@implements IDisposable
 @inject NavigationManager Nav
 
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 md:px-12 bg-background/95 backdrop-blur-md shadow-[0_2px_15px_rgba(30,27,19,0.05)]">
@@ -36,6 +37,17 @@
 @code {
     private bool _mobileOpen;
 
+    protected override void OnInitialized()
+    {
+        Nav.LocationChanged += OnLocationChanged;
+    }
+
+    private async void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)
+    {
+        _mobileOpen = false;
+        await InvokeAsync(StateHasChanged);
+    }
+
     private void ToggleMobile() => _mobileOpen = !_mobileOpen;
     private void CloseMobile() => _mobileOpen = false;
 
@@ -71,5 +83,10 @@
 
         // Everything else: exact prefix match
         return currentPath.StartsWith(href, StringComparison.OrdinalIgnoreCase);
+    }
+
+    public void Dispose()
+    {
+        Nav.LocationChanged -= OnLocationChanged;
     }
 }
