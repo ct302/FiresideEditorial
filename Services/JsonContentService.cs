@@ -1,11 +1,13 @@
 using System.Text.Json;
 using FiresideEditorial.Models;
+using Markdig;
 
 namespace FiresideEditorial.Services;
 
 public class JsonContentService : IContentService
 {
     private readonly IWebHostEnvironment _env;
+    private readonly MarkdownPipeline _mdPipeline;
     private readonly JsonSerializerOptions _jsonOptions = new()
     {
         PropertyNameCaseInsensitive = true
@@ -14,6 +16,9 @@ public class JsonContentService : IContentService
     public JsonContentService(IWebHostEnvironment env)
     {
         _env = env;
+        _mdPipeline = new MarkdownPipelineBuilder()
+            .UseAdvancedExtensions()
+            .Build();
     }
 
     public async Task<List<EditorialCardModel>> GetCardsAsync()
@@ -27,7 +32,14 @@ public class JsonContentService : IContentService
     public async Task<EditorialCardModel?> GetCardBySlugAsync(string slug)
     {
         var cards = await GetCardsAsync();
-        return cards.FirstOrDefault(c => c.Slug.Equals(slug, StringComparison.OrdinalIgnoreCase));
+        var card = cards.FirstOrDefault(c => c.Slug.Equals(slug, StringComparison.OrdinalIgnoreCase));
+
+        if (card is not null)
+        {
+            card.ArticleBody = await LoadArticleBodyAsync(card.Slug);
+        }
+
+        return card;
     }
 
     public async Task<QuoteModel> GetQuoteAsync()
@@ -40,9 +52,19 @@ public class JsonContentService : IContentService
 
     public Task SubmitTraditionAsync(TraditionSubmission submission)
     {
-        // TODO: Persist to database or file
         Console.WriteLine($"New tradition from {submission.Name}: {submission.Story}");
         return Task.CompletedTask;
+    }
+
+    private async Task<string> LoadArticleBodyAsync(string slug)
+    {
+        var mdPath = Path.Combine(_env.WebRootPath, "data", "articles", $"{slug}.md");
+
+        if (!File.Exists(mdPath))
+            return "<p>Article content coming soon.</p>";
+
+        var markdown = await File.ReadAllTextAsync(mdPath);
+        return Markdown.ToHtml(markdown, _mdPipeline);
     }
 
     private class ContentFile
