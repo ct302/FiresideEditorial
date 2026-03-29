@@ -98,6 +98,17 @@
       "ctaText": "Explore Trails",
       "affiliateUrl": "https://www.amazon.com/s?k=vintage+christmas+decor+sleigh&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Vintage Decor"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Sugar-Dusted Table: Hosting a Cookie Decorating Gathering",
+      "slug": "the-sugar-dusted-table-hosting-a-cookie-decorating-gathering",
+      "description": "Transform your kitchen into a winter wonderland where frosting becomes art and laughter sweetens every moment.",
+      "imageUrl": "https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=800&q=80",
+      "imageAlt": "Hands decorating sugar cookies with royal icing, surrounded by bowls of colored frosting and sprinkles on a flour-dusted wooden table",
+      "ctaText": "Read the Recipe",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies+royal+icing&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Tools"
     }
   ],
   "quote": {
