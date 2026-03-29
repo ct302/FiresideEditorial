@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Fireside Editorial | Curating Winter Traditions</title>
+    <base href="/" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary-container": "#05472a",
+                        "on-secondary": "#ffffff",
+                        "inverse-on-surface": "#f8f0e1",
+                        "background": "#fff8ef",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-fixed-dim": "#ffb4ab",
+                        "secondary-fixed": "#ffdad6",
+                        "primary": "#002f19",
+                        "on-primary": "#ffffff",
+                        "primary-fixed-dim": "#97d4ad",
+                        "surface-bright": "#fff8ef",
+                        "surface-container-low": "#fbf3e4",
+                        "secondary": "#b51a1b",
+                        "primary-fixed": "#b3f0c7",
+                        "on-surface": "#1e1b13",
+                        "surface-dim": "#e1d9cb",
+                        "on-primary-fixed": "#002110",
+                        "outline": "#707972",
+                        "on-primary-container": "#7ab590",
+                        "on-background": "#1e1b13",
+                        "surface-container-highest": "#e9e2d3",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#efe7d9",
+                        "surface-container": "#f5edde",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed-dim": "#e9c349",
+                        "on-tertiary-fixed-variant": "#574500",
+                        "on-primary-fixed-variant": "#145133",
+                        "outline-variant": "#c0c9c0",
+                        "on-secondary-fixed": "#410002",
+                        "surface-tint": "#306949",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary-container": "#fffbff",
+                        "inverse-surface": "#343026",
+                        "secondary-container": "#d93630",
+                        "on-tertiary-container": "#4f3d00",
+                        "tertiary": "#735c00",
+                        "inverse-primary": "#97d4ad",
+                        "surface": "#fff8ef",
+                        "tertiary-container": "#cca730",
+                        "on-surface-variant": "#404942",
+                        "on-error": "#ffffff",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#241a00"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Plus Jakarta Sans"],
+                        "label": ["Plus Jakarta Sans"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px" }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="app.css" />
+    <HeadOutlet @rendermode="InteractiveServer" />
+</head>
+<body class="bg-background text-on-background font-body">
+    <Routes @rendermode="InteractiveServer" />
+    <script src="_framework/blazor.web.js"></script>
+</body>
+</html>

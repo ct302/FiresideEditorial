@@ -1,0 +1,35 @@
+@using FiresideEditorial.Models
+
+<div class="group flex flex-col bg-surface-container rounded-lg overflow-hidden shadow-sm transition-all hover:shadow-xl h-full border border-outline-variant/30">
+    <div class="relative aspect-[4/5] overflow-hidden">
+        <img alt="@Card.ImageAlt"
+             class="editorial-img absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+             src="@Card.ImageUrl" />
+    </div>
+    <div class="p-8 flex flex-col flex-grow">
+        <span class="text-primary font-label text-xs uppercase tracking-widest mb-2 block font-semibold">@Card.Category</span>
+        <h3 class="font-headline text-2xl text-primary mb-3">@Card.Title</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed mb-6">@Card.Description</p>
+        <div class="mt-auto space-y-3">
+            <button class="text-secondary font-bold flex items-center gap-2 group/btn text-xs uppercase tracking-widest">
+                @Card.CtaText
+                <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
+            </button>
+            @if (!string.IsNullOrEmpty(Card.AffiliateUrl))
+            {
+                <a href="@Card.AffiliateUrl"
+                   target="_blank"
+                   rel="noopener noreferrer sponsored"
+                   class="flex items-center gap-2 text-on-surface-variant hover:text-primary text-xs font-label tracking-wide transition-colors duration-300">
+                    <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                    @Card.AffiliateLabel
+                </a>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter, EditorRequired]
+    public EditorialCardModel Card { get; set; } = default!;
+}

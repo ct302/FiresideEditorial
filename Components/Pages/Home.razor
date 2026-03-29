@@ -1,0 +1,25 @@
+@page "/"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IContentService ContentService
+
+<PageTitle>The Fireside Editorial | Curating Winter Traditions</PageTitle>
+
+<FiresideEditorial.Components.Sections.HeroSection />
+
+<FiresideEditorial.Components.Sections.InspirationsGrid Cards="@_cards" />
+
+<FiresideEditorial.Components.Sections.QuoteSection Quote="@_quote" />
+
+<FiresideEditorial.Components.Sections.ShareTraditionForm />
+
+@code {
+    private List<EditorialCardModel> _cards = [];
+    private QuoteModel _quote = new();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cards = await ContentService.GetCardsAsync();
+        _quote = await ContentService.GetQuoteAsync();
+    }
+}

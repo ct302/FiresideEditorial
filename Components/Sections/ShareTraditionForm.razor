@@ -1,0 +1,71 @@
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IContentService ContentService
+
+<section class="py-24 pb-32 px-6 md:px-12" id="share">
+    <div class="max-w-5xl mx-auto bg-white rounded-xl overflow-hidden shadow-[0_40px_80px_rgba(30,27,19,0.05)] flex flex-col md:flex-row border border-outline-variant/20">
+        <div class="md:w-1/2 p-10 md:p-16 flex flex-col justify-center">
+            <h2 class="font-headline text-4xl text-primary mb-6">Share Your Tradition</h2>
+            <p class="text-on-surface-variant mb-8 leading-relaxed">Every family has a unique spark that lights up the winter. Share your cherished holiday rituals with our community of curators.</p>
+            <EditForm Model="@Submission" OnValidSubmit="HandleSubmit" FormName="tradition-form">
+                <DataAnnotationsValidator />
+                <div class="space-y-6">
+                    <div class="grid grid-cols-1 gap-6">
+                        <div>
+                            <label class="block font-label text-xs uppercase tracking-widest text-primary mb-2 font-bold">Name</label>
+                            <InputText @bind-Value="Submission.Name"
+                                       class="w-full bg-surface-container border-none rounded-lg focus:ring-2 focus:ring-secondary py-4 px-5 transition-all"
+                                       placeholder="Your Name" />
+                            <ValidationMessage For="@(() => Submission.Name)" />
+                        </div>
+                        <div>
+                            <label class="block font-label text-xs uppercase tracking-widest text-primary mb-2 font-bold">Your Tradition</label>
+                            <InputTextArea @bind-Value="Submission.Story"
+                                           class="w-full bg-surface-container border-none rounded-lg focus:ring-2 focus:ring-secondary py-4 px-5 transition-all"
+                                           placeholder="Describe your favorite holiday memory or ritual..."
+                                           rows="4" />
+                            <ValidationMessage For="@(() => Submission.Story)" />
+                        </div>
+                    </div>
+                    @if (_submitted)
+                    {
+                        <div class="w-full bg-primary-fixed/20 text-primary py-4 rounded-lg text-center font-semibold">
+                            Thank you for sharing your tradition!
+                        </div>
+                    }
+                    else
+                    {
+                        <button type="submit"
+                                class="w-full bg-secondary text-white py-5 rounded-lg font-bold uppercase tracking-widest hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-secondary/20">
+                            Submit My Story
+                        </button>
+                    }
+                </div>
+            </EditForm>
+        </div>
+        <div class="md:w-1/2 relative min-h-[500px]">
+            <img alt="Hands writing in a journal by candlelight with pine branches"
+                 class="absolute inset-0 w-full h-full object-cover editorial-img"
+                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuALlSF7SFuWZKS2YBh1233ifxfk8G0p4wxwNL5m4OMWyzhxL8iStnkq95eeHkK1_YL9p_htkk41VitHXsP1jVyHqF3W4WndgDTG-lOouD593l9dbPlgEKRM-_sRUF38gTsh7VcGP613JPiMyVlz0NqoQnNJ2fHKLnUgPF2vOlMW7h4d6vqAqX9eUPZXZRuMUfBK9MKaN59nclSkoW1R8d-WYPcYIQpkmBEKCBgZeqxpqwYGcLase74d_deARVnlSYgY9A9HQ6nH5V0" />
+            <div class="absolute inset-0 bg-primary/20"></div>
+        </div>
+    </div>
+</section>
+
+@code {
+    [SupplyParameterFromForm]
+    private TraditionSubmission Submission { get; set; } = null!;
+
+    private bool _submitted;
+
+    protected override void OnInitialized()
+    {
+        Submission ??= new();
+    }
+
+    private async Task HandleSubmit()
+    {
+        await ContentService.SubmitTraditionAsync(Submission);
+        _submitted = true;
+    }
+}

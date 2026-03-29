@@ -1,0 +1,31 @@
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.glass-morphism {
+    background: rgba(255, 248, 239, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.hero-gradient {
+    background: linear-gradient(rgba(0, 47, 25, 0.5), rgba(0, 47, 25, 0.8)),
+                url('https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+.editorial-img {
+    filter: sepia(10%) contrast(95%) brightness(105%);
+}
+
+/* Blazor validation styles */
+.validation-message {
+    color: #b51a1b;
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.invalid {
+    border-color: #b51a1b !important;
+}

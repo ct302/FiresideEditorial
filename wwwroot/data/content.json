@@ -1,0 +1,98 @@
+{
+  "cards": [
+    {
+      "category": "The Bakery",
+      "title": "Baking Gingerbread",
+      "description": "Rediscover the aromatic alchemy of ginger, cinnamon, and molasses that defines the home.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnFZ65aILg4MZcCgQ6KbsBRMPBG84zzA0ZFSN4CAHE-P02PoeET2ou-UVWjFes8uWMuNFOv3ZnpVQnnpVgSW1xF0BAK9i0tKKcEcBKQzX7mS3jeGodpVsoiQxjzW0agIOimS-nDsO5UZISOv5vaee-LyvA0lYXfsAFxRaCOv0mRUTx_vmoz55NGkpZsHXPFi9rG_YRRD6Gc8LsKCJqs5KwXWoGxJGnje3iBoNj3H4dl2FZWj8mSBZGhB23oC10IR-Hlottjeqm-DM",
+      "imageAlt": "Traditional gingerbread house baking scene with flour",
+      "ctaText": "Read Secret Recipe",
+      "affiliateUrl": "https://www.amazon.com/s?k=gingerbread+house+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Gingerbread Kits"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Midnight Cocoa",
+      "description": "A quiet ritual of warmth and starlight before the house slumbers, perfected with small-batch marshmallows.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDWPC1ax-u18G0cSxGRngu_mDf2TFsHsRPHYNWbBmjZ45ZiwfXxmJmNhjiZjEi1NQciUxyi4d-rRUlbIh-C1XiULtFsj5aFQCw1dLOg55cER0Jjl4h98SuRQhvUATCbtLtgQTYdvv9ZT-YD4LET0ueajx8nD6cN56wHMKgojwQE53c_eBprsO0-agCa11gUHSPeN-Vi854ZJk7KvbYndFQEMv6R7Ig3L45DFqIGM7WzDXhTUDo7Kt43VomJbvCheAL2vcO4nKhJUZc",
+      "imageAlt": "Close up of a steaming mug of cocoa with marshmallows by a window",
+      "ctaText": "Discover the Blend",
+      "affiliateUrl": "https://www.amazon.com/s?k=artisan+hot+chocolate+gift+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hot Cocoa Sets"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Hand-knitted Stockings",
+      "description": "Explore the intricate patterns and heirloom quality of traditional wool-work passed through generations.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuAHRJeCFl6H9PWPxY28846roNLogfV_X5UU6uFH_1N3YhM4p_mKzqB1VC4rsvj8KUJybwB-0ByA51rRFQN1HaYinpQmy6nuY1HQ7X68i5HK614QRZv2gZ_y59AuJ4COKd3ceyANXO-6-ScPgMw2wgIzRkyZFQpIquKC4joRxPIJLC7nC_I4vN1M1StyfOtEgJ2uZNmfUYTsdjKzIJEI6_Xc1vCbDW26AipQ6DhdB45JA5yF_qJzWDxuI74rxhxU7PA-iTiaBa_6eDc",
+      "imageAlt": "Close up of hand-knitted red stockings",
+      "ctaText": "View Patterns",
+      "affiliateUrl": "https://www.amazon.com/s?k=christmas+knitting+kit+stocking&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Knitting Kits"
+    },
+    {
+      "category": "The Forest",
+      "title": "Evergreen Wreaths",
+      "description": "Wreath making with fresh pine and berries brings the scent of the wild forest directly to your front door.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuCw8Rg4BEWCyHvI_p_b-mkF8FIU8XIJiJOGJHN96EC3_V2n-kaXazGga-UmLKBe7-AEXzg03HfwNisyD_0J30wuE61fnjTGmIfXWVyzoVpABd02u8bohQK1N9k7wBk4QMaKmjdDV0wbOeFG87x__94ST-TSGbskk4fLDjS8eVIJ1_qHB0bBAQ3p7az3vJAF8qjICkTnlWAEp52xzOE8HcUIW7upQXU8t8nxcW1MM2YajuQdVRVwWYPuVSVrxOpFCFUF2MA1hw9C0tA",
+      "imageAlt": "Wreath making with fresh pine and berries",
+      "ctaText": "Workshop Guide",
+      "affiliateUrl": "https://www.amazon.com/s?k=christmas+wreath+making+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wreath Kits"
+    },
+    {
+      "category": "Harmony",
+      "title": "Classic Caroling",
+      "description": "The timeless joy of community song. Revisit the carols that have defined winter nights for centuries.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC9rM-WjAZ2LkPTMY85RjIu6JxiUz83yyFcOBGZHzz5SvCi1TwHbWEz0hhdtCKhuMaQBqL6e2T1X3CABGRR7PSQjH1X4mfCf9TVHpD7Jg3YmV2d9EGNhdfPZv6ohhJJIZEL3kRvgEm1059lkmXC-9X8qAwZsI1ZGjercUj9W6r8M-Oz4zhM2-hnfo35fd16OXfnzy_AoPWpeG9IerG-uGeM4xB7SjeUdqBiIwNtFVmCoXQTiGZWWu0_Tj1jHhfg_H2khnnQj-dXSC8",
+      "imageAlt": "Classic caroling group in festive winter attire",
+      "ctaText": "Songbook Selection",
+      "affiliateUrl": "https://www.amazon.com/s?k=christmas+carol+songbook&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Songbooks"
+    },
+    {
+      "category": "Artisanal",
+      "title": "Handmade Ornaments",
+      "description": "Every ornament tells a story. Discover the beauty of hand-blown glass and hand-carved wood accents.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuByaQPI31Tj2wZ4z-u_-YoXVj3CL51II_ZWOX5baSc_hwJE8rJQUmDqSZIwiILaBGkdrpjeFd_KHN2JR73ckgUBsHSlFDTsqq-s-ci04Yr0QPh3mAJgFX3RjapI14j1vGYfrGAghTsQyyClpVAGWwRQXMzzLOuT5gD8AASZRxLTO9Rcgo0OS-MDzJ2GQCddnlaKJ1ItJCocOT2GI60gt_VMBdJy9EHVRUagdlyKiRrWfF1bcTBcUaQQwkj22xYqXr5jsluUJH-gbw4",
+      "imageAlt": "Beautifully crafted handmade glass ornaments",
+      "ctaText": "Collector's Gallery",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+glass+christmas+ornaments&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Handmade Ornaments"
+    },
+    {
+      "category": "Nature",
+      "title": "Winter Solstice",
+      "description": "Honoring the longest night with candlelight and quiet contemplation of the season's turning point.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDwEzrf-YNXD3G_J3Bn3CIT5CTRU8MxuXNeXO0dJIJ0u3szAi7VDcikx73UPmgZWYuKeRlpbyyMV-mFBcd2bEai7um1-T3jNLy92yrCljM3pkzyKvJs16EnoforlcMsopZyrJlOWuQXDBX-Q-HK2qNNOGQK6RIrJddAh4RN2AgQQ0SW64qEb-x5EVmUq3Pu79Q9aR9gWLDwutEVSJm93semPbr5SItCGoQIUMm2UV2AVlZxGnxbukAAUavfG1jH4sQ6THl5BYMxEH4",
+      "imageAlt": "Cozy winter scene with warm glowing candles and pine cones",
+      "ctaText": "Solstice Rituals",
+      "affiliateUrl": "https://www.amazon.com/s?k=beeswax+candle+gift+set+winter&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Solstice Candles"
+    },
+    {
+      "category": "Leisure",
+      "title": "Cozy Reading",
+      "description": "Create the perfect sanctuary for winter stories with thick blankets and a selection of curated classics.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuDyyCj3J2KbcZ8He2urn2wfGM1UjVKBVyerXOLG8tiM50J7HX703PPkPfKk8Qt9kdu8fGeI7hI0wYCPD8Gv9bd3PkzSWnVoGpO8Ga9D5-8OcD-DFl4yo0OADIol-1RXBuBxjF340xLQMDnLyJggPWD72nnFCyQkltTLdvk6JbFD5BT68eI210AF3lLNE0oMjCW7O-3PZopJHzdQ0Rp_-ws2VyDR-fDgK8J_Ab2DWttkYHjgjvogBt8fhP1WrgVQUa47nJmFusKzsSg",
+      "imageAlt": "A cozy reading nook with a book, a warm blanket, and a steaming mug by the window",
+      "ctaText": "Winter Reading List",
+      "affiliateUrl": "https://www.amazon.com/s?k=christmas+classic+books+gift+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Reads"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "Vintage Sleigh ride",
+      "description": "A timeless journey through the winter woods. Experience the quiet magic of a horse-drawn sleigh.",
+      "imageUrl": "https://lh3.googleusercontent.com/aida-public/AB6AXuC3UCuGBt_rxnijpPFAy2gQ0G2hBh5s9IfKuD-AZAPtQelfBRFV_kXpoJxzyqRSrOFc-Q-4Yof0U-16hP1xcrugriqFN6G3LzXYU1DVGleGtMZH9S11t42dMAHqhrL0MjrsPW4h86Q1nwEfrCmtC9l5JGE_GjNlDR_0AA-eNGPiB1L18-t94Eks3v4hdOnutFnwKRzErrSvX2tC-2UXsgRucOHb1qs9_IgGc-lfvarv2WfZ1SsjoNM76smNpk44zehXhCU7PIatDbU",
+      "imageAlt": "A high-quality, nostalgic holiday photograph of a vintage wooden sleigh resting in fresh snow at dusk",
+      "ctaText": "Explore Trails",
+      "affiliateUrl": "https://www.amazon.com/s?k=vintage+christmas+decor+sleigh&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Vintage Decor"
+    }
+  ],
+  "quote": {
+    "text": "Christmas waves a magic wand over this world, and behold, everything is softer and more beautiful.",
+    "attribution": "Norman Vincent Peale"
+  }
+}

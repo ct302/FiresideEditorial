@@ -1,0 +1,22 @@
+@using FiresideEditorial.Models
+
+<section class="py-24 px-6 md:px-12 max-w-7xl mx-auto" id="ideas">
+    <div class="text-center mb-16 max-w-2xl mx-auto">
+        <h2 class="font-headline text-4xl md:text-5xl text-primary mb-4">Winter Inspirations</h2>
+        <p class="text-on-surface-variant leading-relaxed">Small gestures, grand memories. Our curated guide to the quintessential holiday experience.</p>
+        <div class="flex justify-center mt-6">
+            <span class="w-16 h-[2px] bg-secondary/30 rounded-full"></span>
+        </div>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        @foreach (var card in Cards)
+        {
+            <EditorialCard Card="@card" />
+        }
+    </div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public List<EditorialCardModel> Cards { get; set; } = [];
+}

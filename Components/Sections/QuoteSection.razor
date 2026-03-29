@@ -1,0 +1,21 @@
+@using FiresideEditorial.Models
+
+<section class="py-24 relative overflow-hidden bg-surface-container-low border-y border-outline-variant/20">
+    <div class="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent"></div>
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <span class="material-symbols-outlined text-tertiary text-6xl opacity-30 leading-none">format_quote</span>
+        <div class="relative py-8">
+            <p class="font-headline text-3xl md:text-4xl text-primary leading-tight italic px-4">
+                "@Quote.Text"
+            </p>
+            <div class="w-12 h-px bg-secondary/40 mx-auto mt-12"></div>
+            <cite class="block mt-6 font-label text-sm uppercase tracking-[0.2em] text-on-surface-variant not-italic font-bold">— @Quote.Attribution</cite>
+        </div>
+    </div>
+    <div class="absolute inset-x-0 bottom-0 h-px bg-gradient-to-r from-transparent via-primary/10 to-transparent"></div>
+</section>
+
+@code {
+    [Parameter, EditorRequired]
+    public QuoteModel Quote { get; set; } = default!;
+}
