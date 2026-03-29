@@ -57,12 +57,12 @@
     {
         var currentPath = new Uri(Nav.Uri).AbsolutePath;
 
+        // Hash links are section anchors, never highlight them
+        if (href.Contains('#'))
+            return false;
+
         // Exact match for home
         if (href == "/")
-            return currentPath == "/";
-
-        // Hash links (/#newsletter, /#share) are active when on homepage
-        if (href.StartsWith("/#"))
             return currentPath == "/";
 
         // /journal matches /journal and /journal/{slug}
