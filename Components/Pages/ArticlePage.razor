@@ -81,6 +81,17 @@ else
                 </a>
             </div>
         }
+
+        <!-- Newsletter CTA -->
+        <div class="mt-16 border-t border-outline-variant/30 pt-12 text-center">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">mail</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Enjoying the Journal?</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-md mx-auto mb-6">Get stories like this delivered weekly — recipes, traditions, and the occasional story that pairs well with cocoa.</p>
+            <a href="/#newsletter" class="bg-secondary text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg shadow-secondary/20 inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-lg">mark_email_read</span>
+                Subscribe Free
+            </a>
+        </div>
     </article>
 
     <!-- Related Articles -->
@@ -108,7 +119,7 @@ else
     private List<EditorialCardModel> _relatedCards = [];
     private int _readingTime;
 
-    protected override async Task OnInitializedAsync()
+    protected override async Task OnParametersSetAsync()
     {
         _card = await ContentService.GetCardBySlugAsync(Slug);
         if (_card is not null)
