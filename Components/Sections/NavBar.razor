@@ -1,14 +1,16 @@
+@inject NavigationManager Nav
+
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 md:px-12 bg-background/95 backdrop-blur-md shadow-[0_2px_15px_rgba(30,27,19,0.05)]">
     <div class="flex items-center gap-2">
         <span class="material-symbols-outlined text-2xl" style="color: #05472A;">park</span>
         <a href="/" class="font-headline font-bold text-2xl tracking-tight italic" style="color: #05472A;">The Fireside Editorial</a>
     </div>
     <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
-        <a class="text-secondary font-semibold font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
-        <a class="text-on-surface font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
-        <a class="text-on-surface font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
-        <a class="text-on-surface font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#share">Traditions</a>
-        <a class="text-on-surface font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
+        <a class="@NavClass("/") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
+        <a class="@NavClass("/journal") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
+        <a class="@NavClass("/#newsletter") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
+        <a class="@NavClass("/#share") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#share">Traditions</a>
+        <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
     </div>
     <div class="flex items-center gap-4">
         <button class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden md:block" style="color: #05472A;">search</button>
@@ -21,11 +23,11 @@
 @if (_mobileOpen)
 {
     <div class="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
-        <a class="text-secondary font-semibold font-headline text-2xl tracking-wide" href="/" @onclick="CloseMobile">Home</a>
-        <a class="text-on-surface font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/journal" @onclick="CloseMobile">Journal</a>
-        <a class="text-on-surface font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#newsletter" @onclick="CloseMobile">Newsletter</a>
-        <a class="text-on-surface font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#share" @onclick="CloseMobile">Traditions</a>
-        <a class="text-on-surface font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/about" @onclick="CloseMobile">Our Story</a>
+        <a class="@MobileNavClass("/") font-headline text-2xl tracking-wide" href="/" @onclick="CloseMobile">Home</a>
+        <a class="@MobileNavClass("/journal") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/journal" @onclick="CloseMobile">Journal</a>
+        <a class="@MobileNavClass("/#newsletter") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#newsletter" @onclick="CloseMobile">Newsletter</a>
+        <a class="@MobileNavClass("/#share") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#share" @onclick="CloseMobile">Traditions</a>
+        <a class="@MobileNavClass("/about") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/about" @onclick="CloseMobile">Our Story</a>
         <div class="w-12 h-px bg-secondary/30 rounded-full mt-4"></div>
         <span class="text-on-surface-variant/50 font-label text-xs uppercase tracking-[0.3em]">The Fireside Editorial</span>
     </div>
@@ -36,4 +38,38 @@
 
     private void ToggleMobile() => _mobileOpen = !_mobileOpen;
     private void CloseMobile() => _mobileOpen = false;
+
+    private string NavClass(string href)
+    {
+        return IsActive(href)
+            ? "text-secondary font-semibold"
+            : "text-on-surface";
+    }
+
+    private string MobileNavClass(string href)
+    {
+        return IsActive(href)
+            ? "text-secondary font-semibold"
+            : "text-on-surface";
+    }
+
+    private bool IsActive(string href)
+    {
+        var currentPath = new Uri(Nav.Uri).AbsolutePath;
+
+        // Exact match for home
+        if (href == "/")
+            return currentPath == "/";
+
+        // Hash links (/#newsletter, /#share) are active when on homepage
+        if (href.StartsWith("/#"))
+            return currentPath == "/";
+
+        // /journal matches /journal and /journal/{slug}
+        if (href == "/journal")
+            return currentPath.StartsWith("/journal", StringComparison.OrdinalIgnoreCase);
+
+        // Everything else: exact prefix match
+        return currentPath.StartsWith(href, StringComparison.OrdinalIgnoreCase);
+    }
 }
