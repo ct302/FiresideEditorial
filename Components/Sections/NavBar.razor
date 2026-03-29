@@ -6,7 +6,7 @@
         <span class="material-symbols-outlined text-2xl" style="color: #05472A;">park</span>
         <a href="/" class="font-headline font-bold text-2xl tracking-tight italic" style="color: #05472A;">The Fireside Editorial</a>
     </div>
-    <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
+    <div class="hidden lg:flex absolute left-1/2 -translate-x-1/2 items-center gap-8">
         <a class="@NavClass("/") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
         <a class="@NavClass("/journal") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
         <a class="@NavClass("/#newsletter") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
@@ -14,8 +14,8 @@
         <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
     </div>
     <div class="flex items-center gap-4">
-        <button class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden md:block" style="color: #05472A;">search</button>
-        <button class="material-symbols-outlined md:hidden text-2xl active:scale-90 transition-transform" style="color: #05472A;" @onclick="ToggleMobile">
+        <button class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden lg:block" style="color: #05472A;">search</button>
+        <button class="material-symbols-outlined lg:hidden text-2xl active:scale-90 transition-transform" style="color: #05472A;" @onclick="ToggleMobile">
             @(_mobileOpen ? "close" : "menu")
         </button>
     </div>
@@ -23,7 +23,7 @@
 
 @if (_mobileOpen)
 {
-    <div class="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8 md:hidden animate-fade-in">
+    <div class="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8 lg:hidden animate-fade-in">
         <a class="@MobileNavClass("/") font-headline text-2xl tracking-wide" href="/" @onclick="CloseMobile">Home</a>
         <a class="@MobileNavClass("/journal") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/journal" @onclick="CloseMobile">Journal</a>
         <a class="@MobileNavClass("/#newsletter") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#newsletter" @onclick="CloseMobile">Newsletter</a>
