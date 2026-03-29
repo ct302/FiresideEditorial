@@ -1,0 +1,48 @@
+<section class="py-24 px-6 md:px-12" id="newsletter">
+    <div class="max-w-3xl mx-auto text-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4">mail</span>
+        <h2 class="font-headline text-4xl md:text-5xl text-primary mb-4">Letters from the Hearth</h2>
+        <p class="text-on-surface-variant leading-relaxed max-w-xl mx-auto mb-10">
+            A quiet dispatch each week — recipes worth keeping, traditions worth starting, and the occasional story that pairs well with cocoa.
+        </p>
+
+        @if (_subscribed)
+        {
+            <div class="bg-primary-fixed/20 text-primary py-5 px-8 rounded-xl font-semibold inline-flex items-center gap-3">
+                <span class="material-symbols-outlined">check_circle</span>
+                Welcome to the hearthside. Check your inbox.
+            </div>
+        }
+        else
+        {
+            <div class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+                <input @bind="_email"
+                       @bind:event="oninput"
+                       type="email"
+                       placeholder="your@email.com"
+                       class="flex-grow bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent py-4 px-5 font-body text-on-surface placeholder:text-on-surface-variant/50 transition-all" />
+                <button @onclick="HandleSubscribe"
+                        disabled="@(string.IsNullOrWhiteSpace(_email) || !_email.Contains('@'))"
+                        class="bg-secondary text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-secondary/20 disabled:opacity-50 disabled:cursor-not-allowed whitespace-nowrap">
+                    Subscribe
+                </button>
+            </div>
+            <p class="text-on-surface-variant/60 text-xs mt-4 tracking-wide">Free forever. Unsubscribe anytime. No spam — only warmth.</p>
+        }
+    </div>
+</section>
+
+@code {
+    private string _email = string.Empty;
+    private bool _subscribed;
+
+    private async Task HandleSubscribe()
+    {
+        if (string.IsNullOrWhiteSpace(_email) || !_email.Contains('@')) return;
+
+        // TODO: Wire to Buttondown API or similar
+        Console.WriteLine($"Newsletter signup: {_email}");
+        _subscribed = true;
+        await Task.CompletedTask;
+    }
+}

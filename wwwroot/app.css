@@ -19,6 +19,21 @@
     filter: sepia(10%) contrast(95%) brightness(105%);
 }
 
+/* Mobile nav animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-8px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+    animation: fadeIn 0.25s ease-out;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
 /* Blazor validation styles */
 .validation-message {
     color: #b51a1b;
@@ -79,5 +94,11 @@
 }
 
 .prose-fireside a:hover {
+    color: #002f19;
+}
+
+/* Selection color */
+::selection {
+    background: rgba(181, 26, 27, 0.15);
     color: #002f19;
 }

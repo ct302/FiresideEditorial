@@ -1,5 +1,15 @@
-﻿@page "/not-found"
-@layout MainLayout
+@page "/not-found"
 
-<h3>Not Found</h3>
-<p>Sorry, the content you are looking for does not exist.</p>
+<PageTitle>Page Not Found | The Fireside Editorial</PageTitle>
+
+<section class="pt-32 pb-24 px-6 text-center min-h-[60vh] flex flex-col items-center justify-center">
+    <span class="material-symbols-outlined text-primary/20 text-8xl mb-6">fireplace</span>
+    <h1 class="font-headline text-5xl text-primary mb-4">The Fire's Gone Out</h1>
+    <p class="text-on-surface-variant leading-relaxed max-w-md mx-auto mb-10">
+        We couldn't find what you were looking for. Perhaps the page has been moved, or the hearth needs relighting.
+    </p>
+    <a href="/" class="bg-secondary text-white px-10 py-4 rounded-full font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg shadow-secondary/20 inline-flex items-center gap-2">
+        <span class="material-symbols-outlined text-lg">home</span>
+        Back to the Hearth
+    </a>
+</section>

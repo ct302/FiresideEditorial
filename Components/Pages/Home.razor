@@ -5,13 +5,24 @@
 
 <PageTitle>The Fireside Editorial | Curating Winter Traditions</PageTitle>
 
-<FiresideEditorial.Components.Sections.HeroSection />
+<HeadContent>
+    <meta name="description" content="Escape into a world of timeless winter wonder. The Fireside Editorial curates holiday traditions, recipes, and stories told by the hearth." />
+    <meta property="og:title" content="The Fireside Editorial | Curating Winter Traditions" />
+    <meta property="og:description" content="Holiday traditions, heirloom recipes, and stories worth keeping — curated by the hearth since 2026." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1543589077-47d81606c1bf?auto=format&fit=crop&q=80&w=1200" />
+    <meta name="twitter:card" content="summary_large_image" />
+</HeadContent>
 
-<FiresideEditorial.Components.Sections.InspirationsGrid Cards="@_cards" />
+<HeroSection />
 
-<FiresideEditorial.Components.Sections.QuoteSection Quote="@_quote" />
+<InspirationsGrid Cards="@_cards" />
 
-<FiresideEditorial.Components.Sections.ShareTraditionForm />
+<QuoteSection Quote="@_quote" />
+
+<NewsletterSection />
+
+<ShareTraditionForm />
 
 @code {
     private List<EditorialCardModel> _cards = [];

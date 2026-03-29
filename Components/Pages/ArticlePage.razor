@@ -16,6 +16,15 @@ else
 {
     <PageTitle>@_card.Title | The Fireside Editorial</PageTitle>
 
+    <HeadContent>
+        <meta name="description" content="@_card.Description" />
+        <meta property="og:title" content="@_card.Title | The Fireside Editorial" />
+        <meta property="og:description" content="@_card.Description" />
+        <meta property="og:type" content="article" />
+        <meta property="og:image" content="@_card.ImageUrl" />
+        <meta name="twitter:card" content="summary_large_image" />
+    </HeadContent>
+
     <!-- Article Hero -->
     <section class="relative h-[500px] flex items-end overflow-hidden pt-20">
         <div class="absolute inset-0">
