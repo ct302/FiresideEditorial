@@ -1,0 +1,102 @@
+@page "/journal/{Slug}"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@using Microsoft.AspNetCore.Components
+@inject IContentService ContentService
+
+@if (_card is null)
+{
+    <section class="pt-32 pb-24 px-6 text-center">
+        <h1 class="font-headline text-4xl text-primary mb-4">Article Not Found</h1>
+        <p class="text-on-surface-variant mb-8">We couldn't find this journal entry.</p>
+        <a href="/#ideas" class="text-secondary font-bold uppercase tracking-widest text-sm">Back to Journal</a>
+    </section>
+}
+else
+{
+    <PageTitle>@_card.Title | The Fireside Editorial</PageTitle>
+
+    <!-- Article Hero -->
+    <section class="relative h-[500px] flex items-end overflow-hidden pt-20">
+        <div class="absolute inset-0">
+            <img alt="@_card.ImageAlt" class="editorial-img w-full h-full object-cover" src="@_card.ImageUrl" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-12 pb-12 w-full">
+            <a href="/#ideas" class="inline-flex items-center gap-1 text-white/70 hover:text-white text-xs font-label uppercase tracking-widest mb-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                Back to Journal
+            </a>
+            <span class="block text-primary-fixed font-label text-xs uppercase tracking-widest mb-3 font-semibold">@_card.Category</span>
+            <h1 class="font-headline text-4xl md:text-6xl text-white leading-tight">@_card.Title</h1>
+        </div>
+    </section>
+
+    <!-- Article Body -->
+    <article class="max-w-3xl mx-auto px-6 md:px-12 py-16">
+        <p class="text-on-surface-variant text-lg leading-relaxed font-body mb-8 first-letter:text-5xl first-letter:font-headline first-letter:text-primary first-letter:float-left first-letter:mr-3 first-letter:mt-1">
+            @_card.Description
+        </p>
+
+        <div class="prose-fireside font-body text-on-surface leading-relaxed space-y-6">
+            @((MarkupString)_card.ArticleBody)
+        </div>
+
+        <!-- Affiliate CTA -->
+        @if (!string.IsNullOrEmpty(_card.AffiliateUrl))
+        {
+            <div class="mt-12 p-8 bg-surface-container rounded-xl border border-outline-variant/30 flex flex-col sm:flex-row items-center gap-6">
+                <div class="flex-grow">
+                    <span class="text-primary font-label text-xs uppercase tracking-widest font-semibold block mb-1">Curated Pick</span>
+                    <p class="text-on-surface font-headline text-xl">Everything you need for @_card.Title.ToLower()</p>
+                    <p class="text-on-surface-variant text-sm mt-1">Hand-selected by the editors of The Fireside Editorial.</p>
+                </div>
+                <a href="@_card.AffiliateUrl"
+                   target="_blank"
+                   rel="noopener noreferrer sponsored"
+                   class="shrink-0 bg-secondary text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg shadow-secondary/20 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">shopping_bag</span>
+                    @_card.AffiliateLabel
+                </a>
+            </div>
+        }
+    </article>
+
+    <!-- Related Articles -->
+    @if (_relatedCards.Any())
+    {
+        <section class="max-w-7xl mx-auto px-6 md:px-12 pb-24">
+            <div class="border-t border-outline-variant/30 pt-16">
+                <h2 class="font-headline text-3xl text-primary mb-8 text-center">More from the Journal</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    @foreach (var related in _relatedCards)
+                    {
+                        <EditorialCard Card="@related" />
+                    }
+                </div>
+            </div>
+        </section>
+    }
+}
+
+@code {
+    [Parameter]
+    public string Slug { get; set; } = string.Empty;
+
+    private EditorialCardModel? _card;
+    private List<EditorialCardModel> _relatedCards = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _card = await ContentService.GetCardBySlugAsync(Slug);
+        if (_card is not null)
+        {
+            var allCards = await ContentService.GetCardsAsync();
+            _relatedCards = allCards
+                .Where(c => c.Slug != _card.Slug)
+                .OrderBy(_ => Random.Shared.Next())
+                .Take(3)
+                .ToList();
+        }
+    }
+}

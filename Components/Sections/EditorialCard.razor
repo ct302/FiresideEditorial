@@ -11,10 +11,10 @@
         <h3 class="font-headline text-2xl text-primary mb-3">@Card.Title</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed mb-6">@Card.Description</p>
         <div class="mt-auto space-y-3">
-            <button class="text-secondary font-bold flex items-center gap-2 group/btn text-xs uppercase tracking-widest">
+            <a href="/journal/@Card.Slug" class="text-secondary font-bold flex items-center gap-2 group/btn text-xs uppercase tracking-widest">
                 @Card.CtaText
                 <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">chevron_right</span>
-            </button>
+            </a>
             @if (!string.IsNullOrEmpty(Card.AffiliateUrl))
             {
                 <a href="@Card.AffiliateUrl"

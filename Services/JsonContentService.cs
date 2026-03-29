@@ -24,6 +24,12 @@ public class JsonContentService : IContentService
         return content?.Cards ?? [];
     }
 
+    public async Task<EditorialCardModel?> GetCardBySlugAsync(string slug)
+    {
+        var cards = await GetCardsAsync();
+        return cards.FirstOrDefault(c => c.Slug.Equals(slug, StringComparison.OrdinalIgnoreCase));
+    }
+
     public async Task<QuoteModel> GetQuoteAsync()
     {
         var path = Path.Combine(_env.WebRootPath, "data", "content.json");

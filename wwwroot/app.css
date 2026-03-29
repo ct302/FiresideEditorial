@@ -29,3 +29,55 @@
 .invalid {
     border-color: #b51a1b !important;
 }
+
+/* Article prose styling */
+.prose-fireside p {
+    font-size: 1.0625rem;
+    line-height: 1.8;
+    color: #404942;
+}
+
+.prose-fireside h2 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.75rem;
+    color: #002f19;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.prose-fireside h3 {
+    font-family: 'Noto Serif', serif;
+    font-size: 1.25rem;
+    color: #002f19;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.prose-fireside ul, .prose-fireside ol {
+    padding-left: 1.5rem;
+    color: #404942;
+}
+
+.prose-fireside li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}
+
+.prose-fireside blockquote {
+    border-left: 3px solid #b51a1b;
+    padding-left: 1.25rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #1e1b13;
+    font-family: 'Noto Serif', serif;
+}
+
+.prose-fireside a {
+    color: #b51a1b;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.prose-fireside a:hover {
+    color: #002f19;
+}
