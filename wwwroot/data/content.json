@@ -109,6 +109,17 @@
       "ctaText": "Read the Recipe",
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies+royal+icing&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Decorating Tools"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Cream & The Crackle: Building a Cheese Board with Intention",
+      "slug": "the-cream-the-crackle-building-a-cheese-board-with-intention",
+      "description": "Turn a simple platter into a story of texture, temperature, and quiet company this holiday season.",
+      "imageUrl": "https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=800&q=80",
+      "imageAlt": "A rustic wooden board piled with aged cheddar, a soft-ripened bloomy rind cheese, honeycomb, dried figs, and crusty bread, all softly lit by candlelight.",
+      "ctaText": "Savor the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=cheese+knives+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cheese Tools"
     }
   ],
   "quote": {

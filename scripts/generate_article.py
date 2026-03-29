@@ -12,7 +12,7 @@ CONTENT_JSON = REPO_ROOT / "wwwroot" / "data" / "content.json"
 ARTICLES_DIR = REPO_ROOT / "wwwroot" / "data" / "articles"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-MODEL = os.environ.get("OPENROUTER_MODEL", "anthropic/claude-sonnet-4")
+MODEL = os.environ.get("OPENROUTER_MODEL", "stepfun/step-3.5-flash:free")
 
 # Seasonal topic pools — the AI picks from these or riffs on them
 TOPIC_POOLS = {
@@ -105,7 +105,7 @@ def call_openrouter(topic: str) -> dict:
 
     payload = json.dumps({
         "model": MODEL,
-        "max_tokens": 2000,
+        "max_tokens": 8000,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
@@ -124,14 +124,54 @@ def call_openrouter(topic: str) -> dict:
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=60) as resp:
+        with urllib.request.urlopen(req, timeout=120) as resp:
             data = json.loads(resp.read())
     except urllib.error.HTTPError as e:
         body = e.read().decode() if e.fp else ""
-        print(f"API error {e.code}: {body}", file=sys.stderr)
+        if e.code == 429:
+            print(f"  Rate limited. Retrying in 30 seconds...", file=sys.stderr)
+            import time
+            time.sleep(30)
+            try:
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    data = json.loads(resp.read())
+            except urllib.error.HTTPError as e2:
+                body2 = e2.read().decode() if e2.fp else ""
+                print(f"API error {e2.code} on retry: {body2}", file=sys.stderr)
+                sys.exit(1)
+        else:
+            print(f"API error {e.code}: {body}", file=sys.stderr)
+            sys.exit(1)
+
+    # Handle different response formats across models
+    choice = data.get("choices", [{}])[0]
+    raw = choice.get("message", {}).get("content")
+
+    # Some models use 'text' instead of 'content'
+    if raw is None:
+        raw = choice.get("text")
+
+    # Last resort: check for content in the delta field (streaming leftovers)
+    if raw is None:
+        raw = choice.get("delta", {}).get("content")
+
+    # Reasoning models may put everything in 'reasoning' if they run out of output tokens
+    if raw is None:
+        reasoning = choice.get("message", {}).get("reasoning", "")
+        if reasoning:
+            # Try to extract JSON from the reasoning field
+            json_match = re.search(r'\{[^{}]*"title"[^{}]*"markdown".*?\}', reasoning, re.DOTALL)
+            if json_match:
+                raw = json_match.group(0)
+            else:
+                print(f"Model used all tokens for reasoning, no article produced. Try a non-reasoning model.", file=sys.stderr)
+                print(f"Reasoning excerpt: {reasoning[:500]}", file=sys.stderr)
+                sys.exit(1)
+
+    if raw is None:
+        print(f"No content in API response. Full response:\n{json.dumps(data, indent=2)[:1000]}", file=sys.stderr)
         sys.exit(1)
 
-    raw = data["choices"][0]["message"]["content"]
     # Strip markdown fences if the model added them
     raw = re.sub(r"^```json\s*", "", raw.strip())
     raw = re.sub(r"\s*```$", "", raw.strip())
