@@ -1,0 +1,113 @@
+@implements IDisposable
+@inject SearchState Search
+@inject IContentService Content
+@inject NavigationManager Nav
+
+@if (Search.IsOpen)
+{
+    <div class="fixed inset-0 z-[60] bg-background/98 backdrop-blur-lg flex flex-col animate-fade-in">
+        <div class="max-w-2xl w-full mx-auto px-6 pt-24">
+            <div class="flex items-center gap-4 mb-8">
+                <span class="material-symbols-outlined text-secondary text-3xl">search</span>
+                <input @ref="_inputRef"
+                       @bind="_query"
+                       @bind:event="oninput"
+                       @bind:after="OnSearchAsync"
+                       @onkeydown="HandleKeydown"
+                       type="text"
+                       placeholder="Search articles, traditions, recipes..."
+                       class="flex-grow bg-transparent border-b-2 border-outline-variant/30 focus:border-secondary text-on-surface font-headline text-2xl md:text-3xl py-3 outline-none placeholder:text-on-surface-variant/40 transition-colors" />
+                <button @onclick="Close" class="material-symbols-outlined text-on-surface-variant hover:text-secondary text-3xl transition-colors">close</button>
+            </div>
+
+            @if (_results.Count > 0)
+            {
+                <div class="space-y-4 overflow-y-auto max-h-[60vh] pr-2">
+                    @foreach (var result in _results)
+                    {
+                        <a href="/journal/@result.Slug" @onclick="Close"
+                           class="flex gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
+                            <img src="@result.ImageUrl" alt="" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" />
+                            <div class="min-w-0">
+                                <span class="text-xs font-label uppercase tracking-widest text-secondary">@result.Category</span>
+                                <h3 class="font-headline text-lg text-on-surface group-hover:text-secondary transition-colors truncate">@result.Title</h3>
+                                <p class="text-sm text-on-surface-variant line-clamp-2 mt-1">@result.Snippet</p>
+                            </div>
+                        </a>
+                    }
+                </div>
+            }
+            else if (!string.IsNullOrWhiteSpace(_query) && _query.Length >= 2)
+            {
+                <div class="text-center py-16">
+                    <span class="material-symbols-outlined text-on-surface-variant/30 text-6xl mb-4">search_off</span>
+                    <p class="text-on-surface-variant font-body">No articles found for "<span class="text-secondary font-semibold">@_query</span>"</p>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-16">
+                    <p class="text-on-surface-variant/50 font-body text-sm tracking-wide">Start typing to search the editorial...</p>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+@code {
+    private string _query = string.Empty;
+    private List<SearchResult> _results = [];
+    private ElementReference _inputRef;
+    private CancellationTokenSource? _debounce;
+
+    protected override void OnInitialized()
+    {
+        Search.OnChange += OnSearchStateChanged;
+    }
+
+    private async void OnSearchStateChanged()
+    {
+        await InvokeAsync(StateHasChanged);
+        if (Search.IsOpen)
+        {
+            // Small delay to let the DOM render, then focus input
+            await Task.Delay(100);
+            try { await _inputRef.FocusAsync(); } catch { }
+        }
+    }
+
+    private async Task OnSearchAsync()
+    {
+        _debounce?.Cancel();
+        _debounce = new CancellationTokenSource();
+        var token = _debounce.Token;
+
+        try
+        {
+            await Task.Delay(250, token);
+            if (!token.IsCancellationRequested)
+            {
+                _results = await Content.SearchAsync(_query);
+            }
+        }
+        catch (TaskCanceledException) { }
+    }
+
+    private void HandleKeydown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Escape") Close();
+    }
+
+    private void Close()
+    {
+        _query = string.Empty;
+        _results = [];
+        Search.Close();
+    }
+
+    public void Dispose()
+    {
+        Search.OnChange -= OnSearchStateChanged;
+        _debounce?.Dispose();
+    }
+}

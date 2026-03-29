@@ -1,5 +1,6 @@
 @implements IDisposable
 @inject NavigationManager Nav
+@inject SearchState Search
 
 <nav class="fixed top-0 w-full z-50 flex justify-between items-center px-6 py-4 md:px-12 bg-background/95 backdrop-blur-md shadow-[0_2px_15px_rgba(30,27,19,0.05)]">
     <div class="flex items-center gap-2 shrink-0">
@@ -14,7 +15,7 @@
         <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
     </div>
     <div class="flex items-center gap-4 shrink-0">
-        <button class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden lg:block" style="color: #05472A;">search</button>
+        <button @onclick="Search.Open" class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden lg:block" style="color: #05472A;">search</button>
         <button class="material-symbols-outlined lg:hidden text-2xl active:scale-90 transition-transform" style="color: #05472A;" @onclick="ToggleMobile">
             @(_mobileOpen ? "close" : "menu")
         </button>
@@ -29,6 +30,9 @@
         <a class="@MobileNavClass("/#newsletter") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#newsletter" @onclick="CloseMobile">Newsletter</a>
         <a class="@MobileNavClass("/#share") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#share" @onclick="CloseMobile">Traditions</a>
         <a class="@MobileNavClass("/about") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/about" @onclick="CloseMobile">Our Story</a>
+        <button @onclick="OpenSearchFromMobile" class="font-headline text-2xl tracking-wide text-on-surface hover:text-secondary transition-colors flex items-center gap-3">
+            <span class="material-symbols-outlined">search</span> Search
+        </button>
         <div class="w-12 h-px bg-secondary/30 rounded-full mt-4"></div>
         <span class="text-on-surface-variant/50 font-label text-xs uppercase tracking-[0.3em]">The Fireside Editorial</span>
     </div>
@@ -50,6 +54,11 @@
 
     private void ToggleMobile() => _mobileOpen = !_mobileOpen;
     private void CloseMobile() => _mobileOpen = false;
+    private void OpenSearchFromMobile()
+    {
+        _mobileOpen = false;
+        Search.Open();
+    }
 
     private string NavClass(string href)
     {

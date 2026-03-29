@@ -7,6 +7,9 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 
 builder.Services.AddScoped<IContentService, JsonContentService>();
+builder.Services.AddScoped<SearchState>();
+builder.Services.AddScoped<INewsletterService, ButtondownNewsletterService>();
+builder.Services.AddHttpClient();
 
 var app = builder.Build();
 
