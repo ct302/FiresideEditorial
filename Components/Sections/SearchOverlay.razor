@@ -5,9 +5,9 @@
 
 @if (Search.IsOpen)
 {
-    <div class="fixed inset-0 z-[60] bg-background backdrop-blur-lg flex flex-col animate-fade-in">
+    <div class="fixed inset-0 z-[60] bg-background/85 backdrop-blur-xl flex flex-col animate-fade-in">
         <div class="max-w-2xl w-full mx-auto px-6 pt-24">
-            <div class="flex items-center gap-4 mb-8">
+            <div class="flex items-center gap-4 mb-8 bg-background rounded-2xl px-6 py-4 shadow-lg border border-outline-variant/20">
                 <span class="material-symbols-outlined text-secondary text-3xl">search</span>
                 <input @ref="_inputRef"
                        @bind="_query"
@@ -23,7 +23,7 @@
 
             @if (_results.Count > 0)
             {
-                <div class="space-y-4 overflow-y-auto max-h-[60vh] pr-2">
+                <div class="space-y-2 overflow-y-auto max-h-[60vh] pr-2 bg-background rounded-2xl p-4 shadow-lg border border-outline-variant/20">
                     @foreach (var result in _results)
                     {
                         <a href="/journal/@result.Slug" @onclick="Close"
@@ -40,14 +40,14 @@
             }
             else if (!string.IsNullOrWhiteSpace(_query) && _query.Length >= 2)
             {
-                <div class="text-center py-16">
+                <div class="text-center py-16 bg-background rounded-2xl shadow-lg border border-outline-variant/20">
                     <span class="material-symbols-outlined text-on-surface-variant/30 text-6xl mb-4">search_off</span>
                     <p class="text-on-surface-variant font-body">No articles found for "<span class="text-secondary font-semibold">@_query</span>"</p>
                 </div>
             }
             else
             {
-                <div class="text-center py-16">
+                <div class="text-center py-16 bg-background rounded-2xl shadow-lg border border-outline-variant/20">
                     <p class="text-on-surface-variant/50 font-body text-sm tracking-wide">Start typing to search the editorial...</p>
                 </div>
             }
