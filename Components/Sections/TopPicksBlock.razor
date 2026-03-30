@@ -1,0 +1,88 @@
+@using FiresideEditorial.Models
+
+<div class="my-10 p-6 bg-surface-container rounded-xl border border-outline-variant/30">
+    <div class="flex items-center gap-2 mb-1">
+        <span class="material-symbols-outlined text-secondary text-xl">verified</span>
+        <span class="font-label text-xs uppercase tracking-widest text-secondary font-semibold">@Label</span>
+    </div>
+    @if (!string.IsNullOrEmpty(Title))
+    {
+        <h3 class="font-headline text-xl text-primary mb-4">@Title</h3>
+    }
+
+    <div class="grid grid-cols-1 @(Products.Count >= 3 ? "md:grid-cols-3" : Products.Count == 2 ? "md:grid-cols-2" : "") gap-4">
+        @for (int i = 0; i < Products.Count; i++)
+        {
+            var product = Products[i];
+            var rank = i + 1;
+            <div class="relative bg-background rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-lg transition-shadow group">
+                @if (!string.IsNullOrEmpty(product.Badge))
+                {
+                    <div class="absolute top-3 left-3 z-10 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@product.Badge</div>
+                }
+                @if (product.IsEditorsPick)
+                {
+                    <div class="absolute top-3 right-3 z-10 bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex items-center gap-1">
+                        <span class="material-symbols-outlined text-xs">workspace_premium</span> Editor's Pick
+                    </div>
+                }
+
+                <!-- Product Image -->
+                <div class="aspect-square overflow-hidden bg-surface-container">
+                    @if (!string.IsNullOrEmpty(product.ImageUrl))
+                    {
+                        <img src="@product.ImageUrl" alt="@product.Name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                    }
+                    else
+                    {
+                        <div class="w-full h-full flex items-center justify-center text-on-surface-variant/40">
+                            <span class="material-symbols-outlined text-4xl">shopping_bag</span>
+                        </div>
+                    }
+                </div>
+
+                <!-- Product Info -->
+                <div class="p-4">
+                    <div class="flex items-center gap-1 mb-2">
+                        @for (int s = 0; s < 5; s++)
+                        {
+                            var starClass = s < (int)product.Rating ? "text-amber-500" : "text-outline-variant/30";
+                            <span class="material-symbols-outlined text-sm @starClass" style="font-variation-settings: 'FILL' 1;">star</span>
+                        }
+                        @if (product.ReviewCount > 0)
+                        {
+                            <span class="text-on-surface-variant text-xs ml-1">(@product.ReviewCount)</span>
+                        }
+                    </div>
+
+                    <h4 class="font-headline text-sm text-primary leading-snug mb-2">@product.Name</h4>
+                    <p class="text-on-surface-variant text-xs leading-relaxed mb-3 line-clamp-2">@product.Description</p>
+
+                    <!-- Price -->
+                    <div class="flex items-baseline gap-2 mb-3">
+                        <span class="font-bold text-primary text-lg">$@product.Price.ToString("F2")</span>
+                        @if (product.OriginalPrice.HasValue && product.OriginalPrice > product.Price)
+                        {
+                            <span class="text-on-surface-variant/50 text-xs line-through">$@product.OriginalPrice.Value.ToString("F2")</span>
+                        }
+                    </div>
+
+                    <a href="@product.AffiliateUrl"
+                       target="_blank"
+                       rel="noopener noreferrer sponsored"
+                       class="block w-full text-center bg-secondary text-white px-4 py-2.5 rounded-lg font-bold uppercase tracking-widest text-[11px] hover:brightness-110 transition-all shadow-sm shadow-secondary/20">
+                        View on Amazon
+                    </a>
+                </div>
+            </div>
+        }
+    </div>
+
+    <p class="text-on-surface-variant/60 text-[10px] mt-4 italic">As an Amazon Associate, The Fireside Editorial earns from qualifying purchases.</p>
+</div>
+
+@code {
+    [Parameter] public string Label { get; set; } = "Our Top Picks";
+    [Parameter] public string Title { get; set; } = string.Empty;
+    [Parameter] public List<AffiliateProduct> Products { get; set; } = [];
+}

@@ -1,0 +1,88 @@
+@page "/gift-guides"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IGiftGuideService GuideService
+
+<PageTitle>Gift Guides | The Fireside Editorial</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="Curated holiday gift guides — thoughtful presents for every budget and every person on your list." />
+    <meta property="og:title" content="Gift Guides | The Fireside Editorial" />
+    <meta property="og:description" content="Curated holiday gift guides for every budget and recipient." />
+    <meta property="og:type" content="website" />
+</HeadContent>
+
+<!-- Hero -->
+<section class="relative h-[400px] flex items-end overflow-hidden pt-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&q=80&w=1600"
+             alt="Beautifully wrapped holiday gifts"
+             class="editorial-img w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 pb-12 w-full">
+        <span class="font-label text-xs uppercase tracking-widest mb-3 font-semibold block" style="color: #ff6b6b;">Curated Gifts</span>
+        <h1 class="font-headline text-4xl md:text-5xl text-white leading-tight">Gift Guides</h1>
+        <p class="text-white/70 mt-3 max-w-xl">Thoughtful presents for every person on your list — chosen with care by the editors of The Fireside Editorial.</p>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="max-w-5xl mx-auto px-6 md:px-12 pt-12">
+    <div class="flex flex-wrap gap-2">
+        <button @onclick='() => _filter = ""'
+                class="@(_filter == "" ? "bg-primary text-white" : "bg-surface-container text-on-surface-variant hover:bg-primary/10") px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-colors">
+            All Guides
+        </button>
+        @foreach (var cat in _categories)
+        {
+            var c = cat;
+            <button @onclick="() => _filter = c"
+                    class="@(_filter == c ? "bg-primary text-white" : "bg-surface-container text-on-surface-variant hover:bg-primary/10") px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-colors">
+                @c
+            </button>
+        }
+    </div>
+</section>
+
+<!-- Guide Cards Grid -->
+<section class="max-w-5xl mx-auto px-6 md:px-12 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        @foreach (var guide in FilteredGuides)
+        {
+            <a href="/gift-guides/@guide.Slug" class="group block bg-background rounded-xl border border-outline-variant/20 overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-[16/9] overflow-hidden">
+                    <img src="@guide.ImageUrl" alt="@guide.ImageAlt" class="editorial-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                </div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <span class="bg-secondary/10 text-secondary text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@guide.Category</span>
+                        <span class="bg-primary/10 text-primary text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@guide.PriceRange</span>
+                    </div>
+                    <h2 class="font-headline text-xl text-primary group-hover:text-secondary transition-colors mb-2">@guide.Title</h2>
+                    <p class="text-on-surface-variant text-sm leading-relaxed mb-4">@guide.Description</p>
+                    <div class="flex items-center gap-2 text-secondary font-bold text-xs uppercase tracking-widest">
+                        <span>View @guide.Products.Count picks</span>
+                        <span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</section>
+
+@code {
+    private List<GiftGuide> _guides = [];
+    private string _filter = "";
+    private List<string> _categories = [];
+
+    private IEnumerable<GiftGuide> FilteredGuides => string.IsNullOrEmpty(_filter)
+        ? _guides
+        : _guides.Where(g => g.Category == _filter);
+
+    protected override async Task OnInitializedAsync()
+    {
+        _guides = await GuideService.GetAllGuidesAsync();
+        _categories = _guides.Select(g => g.Category).Distinct().ToList();
+    }
+}

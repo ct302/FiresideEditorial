@@ -18,6 +18,9 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IContentService, EfContentService>();
 builder.Services.AddScoped<SearchState>();
 builder.Services.AddScoped<INewsletterService, ButtondownNewsletterService>();
+builder.Services.AddSingleton<IGiftGuideService, JsonGiftGuideService>();
+builder.Services.AddSingleton<IRecipeService, JsonRecipeService>();
+builder.Services.AddSingleton<IShopService, JsonShopService>();
 builder.Services.AddSingleton<AdminAuthService>();
 builder.Services.AddHttpClient();
 

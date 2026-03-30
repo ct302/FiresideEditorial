@@ -1,0 +1,216 @@
+@page "/recipes/{Slug}"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IRecipeService RecipeService
+@inject IJSRuntime JS
+
+@if (_recipe is null)
+{
+    <section class="pt-32 pb-24 px-6 text-center">
+        <h1 class="font-headline text-4xl text-primary mb-4">Recipe Not Found</h1>
+        <p class="text-on-surface-variant mb-8">We couldn't find this recipe.</p>
+        <a href="/recipes" class="text-secondary font-bold uppercase tracking-widest text-sm">Back to Recipes</a>
+    </section>
+}
+else
+{
+    <PageTitle>@_recipe.Title | Recipes | The Fireside Editorial</PageTitle>
+
+    <HeadContent>
+        <meta name="description" content="@_recipe.Description" />
+        <meta property="og:title" content="@_recipe.Title | The Fireside Editorial" />
+        <meta property="og:description" content="@_recipe.Description" />
+        <meta property="og:image" content="@_recipe.ImageUrl" />
+        <script type="application/ld+json">
+        {
+            "@@context": "https://schema.org",
+            "@@type": "Recipe",
+            "name": "@_recipe.Title",
+            "description": "@_recipe.Description",
+            "image": "@_recipe.ImageUrl",
+            "author": { "@@type": "Organization", "name": "The Fireside Editorial" },
+            "prepTime": "PT@(_recipe.PrepTimeMinutes)M",
+            "cookTime": "PT@(_recipe.CookTimeMinutes)M",
+            "totalTime": "PT@(_recipe.PrepTimeMinutes + _recipe.CookTimeMinutes)M",
+            "recipeYield": "@_recipe.Servings servings",
+            "recipeCategory": "@_recipe.Category",
+            "recipeIngredient": [@string.Join(",", _recipe.Ingredients.Select(i => $"\"{i.Amount} {i.Unit} {i.Name}\""))],
+            "recipeInstructions": [
+                @for (int i = 0; i < _recipe.Instructions.Count; i++)
+                {
+                    <text>{ "@@type": "HowToStep", "text": "@_recipe.Instructions[i]" }@(i < _recipe.Instructions.Count - 1 ? "," : "")</text>
+                }
+            ]
+            @if (_recipe.Nutrition is not null)
+            {
+                <text>,
+                "nutrition": {
+                    "@@type": "NutritionInformation",
+                    "calories": "@(_recipe.Nutrition.Calories) calories",
+                    "fatContent": "@_recipe.Nutrition.Fat",
+                    "carbohydrateContent": "@_recipe.Nutrition.Carbs",
+                    "proteinContent": "@_recipe.Nutrition.Protein",
+                    "sugarContent": "@_recipe.Nutrition.Sugar"
+                }
+                </text>
+            }
+        }
+        </script>
+    </HeadContent>
+
+    <!-- Hero -->
+    <section class="relative h-[450px] flex items-end overflow-hidden pt-20">
+        <div class="absolute inset-0">
+            <img src="@_recipe.ImageUrl" alt="@_recipe.ImageAlt" class="editorial-img w-full h-full object-cover" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+        </div>
+        <div class="relative z-10 max-w-4xl mx-auto px-6 md:px-12 pb-12 w-full">
+            <a href="/recipes" class="inline-flex items-center gap-1 text-white/70 hover:text-white text-xs font-label uppercase tracking-widest mb-6 transition-colors">
+                <span class="material-symbols-outlined text-sm">arrow_back</span>
+                All Recipes
+            </a>
+            <span class="block font-label text-xs uppercase tracking-widest mb-3 font-semibold" style="color: #ff6b6b;">@_recipe.Category</span>
+            <h1 class="font-headline text-4xl md:text-5xl text-white leading-tight">@_recipe.Title</h1>
+            <p class="text-white/80 mt-3 max-w-xl text-lg">@_recipe.Description</p>
+        </div>
+    </section>
+
+    <!-- Quick Stats Bar -->
+    <section class="bg-primary/5 border-b border-outline-variant/20">
+        <div class="max-w-4xl mx-auto px-6 md:px-12 py-4 flex flex-wrap items-center justify-center gap-8 text-sm">
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined">timer</span>
+                <div><strong>Prep:</strong> @_recipe.PrepTimeMinutes min</div>
+            </div>
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined">local_fire_department</span>
+                <div><strong>Cook:</strong> @_recipe.CookTimeMinutes min</div>
+            </div>
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined">group</span>
+                <div><strong>Servings:</strong> @_recipe.Servings</div>
+            </div>
+            <div class="flex items-center gap-2 text-primary">
+                <span class="material-symbols-outlined">signal_cellular_alt</span>
+                <div><strong>Difficulty:</strong> @_recipe.Difficulty</div>
+            </div>
+            <button @onclick="PrintRecipe" class="flex items-center gap-1 text-secondary hover:text-secondary/80 font-bold text-xs uppercase tracking-widest transition-colors print:hidden">
+                <span class="material-symbols-outlined text-sm">print</span>
+                Print Recipe
+            </button>
+        </div>
+    </section>
+
+    <!-- Recipe Body -->
+    <article class="max-w-4xl mx-auto px-6 md:px-12 py-16 recipe-printable">
+        <div class="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-12">
+            <!-- Ingredients Column -->
+            <div>
+                <h2 class="font-headline text-2xl text-primary mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary">grocery</span>
+                    Ingredients
+                </h2>
+                <ul class="space-y-3">
+                    @foreach (var ing in _recipe.Ingredients)
+                    {
+                        <li class="flex items-start gap-3 text-on-surface text-sm leading-relaxed">
+                            <span class="material-symbols-outlined text-secondary/40 text-sm mt-0.5 shrink-0">check_box_outline_blank</span>
+                            <span>
+                                <strong class="text-primary">@ing.Amount @ing.Unit</strong> @ing.Name
+                                @if (!string.IsNullOrEmpty(ing.AffiliateUrl))
+                                {
+                                    <a href="@ing.AffiliateUrl" target="_blank" rel="noopener noreferrer sponsored" class="text-secondary text-[10px] font-bold uppercase tracking-wider hover:underline ml-1 print:hidden">shop</a>
+                                }
+                            </span>
+                        </li>
+                    }
+                </ul>
+
+                @if (_recipe.Nutrition is not null)
+                {
+                    <div class="mt-8 p-4 bg-surface-container rounded-lg">
+                        <h3 class="font-label text-xs uppercase tracking-widest text-on-surface-variant font-semibold mb-3">Nutrition (per serving)</h3>
+                        <div class="grid grid-cols-2 gap-2 text-xs">
+                            <div><strong>Calories:</strong> @_recipe.Nutrition.Calories</div>
+                            <div><strong>Fat:</strong> @_recipe.Nutrition.Fat</div>
+                            <div><strong>Carbs:</strong> @_recipe.Nutrition.Carbs</div>
+                            <div><strong>Protein:</strong> @_recipe.Nutrition.Protein</div>
+                            <div><strong>Sugar:</strong> @_recipe.Nutrition.Sugar</div>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <!-- Instructions Column -->
+            <div>
+                <h2 class="font-headline text-2xl text-primary mb-6 flex items-center gap-2">
+                    <span class="material-symbols-outlined text-secondary">menu_book</span>
+                    Instructions
+                </h2>
+                <ol class="space-y-6">
+                    @for (int i = 0; i < _recipe.Instructions.Count; i++)
+                    {
+                        var step = i + 1;
+                        <li class="flex gap-4">
+                            <span class="shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-bold">@step</span>
+                            <p class="text-on-surface text-sm leading-relaxed pt-1">@_recipe.Instructions[i]</p>
+                        </li>
+                    }
+                </ol>
+
+                @if (_recipe.Tips.Any())
+                {
+                    <div class="mt-10 p-6 bg-secondary/5 rounded-xl border border-secondary/10">
+                        <h3 class="font-headline text-lg text-secondary mb-4 flex items-center gap-2">
+                            <span class="material-symbols-outlined">lightbulb</span>
+                            Editor's Tips
+                        </h3>
+                        <ul class="space-y-3">
+                            @foreach (var tip in _recipe.Tips)
+                            {
+                                <li class="flex items-start gap-2 text-on-surface text-sm leading-relaxed">
+                                    <span class="material-symbols-outlined text-secondary text-sm mt-0.5 shrink-0">eco</span>
+                                    @tip
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <!-- Related Products -->
+        @if (_recipe.RelatedProducts.Any())
+        {
+            <TopPicksBlock Label="Recipe Essentials" Title="@($"Tools for {_recipe.Title}")" Products="@_recipe.RelatedProducts" />
+        }
+
+        <!-- Newsletter CTA -->
+        <div class="mt-16 border-t border-outline-variant/30 pt-12 text-center print:hidden">
+            <span class="material-symbols-outlined text-secondary text-3xl mb-3">restaurant</span>
+            <h3 class="font-headline text-2xl text-primary mb-2">Hungry for More?</h3>
+            <p class="text-on-surface-variant text-sm leading-relaxed max-w-md mx-auto mb-6">Get new recipes delivered weekly — plus tradition guides and seasonal stories.</p>
+            <a href="/#newsletter" class="bg-secondary text-white px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 transition-all shadow-lg shadow-secondary/20 inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-lg">mark_email_read</span>
+                Subscribe Free
+            </a>
+        </div>
+    </article>
+}
+
+@code {
+    [Parameter]
+    public string Slug { get; set; } = string.Empty;
+
+    private Recipe? _recipe;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        _recipe = await RecipeService.GetRecipeBySlugAsync(Slug);
+    }
+
+    private async Task PrintRecipe()
+    {
+        await JS.InvokeVoidAsync("window.print");
+    }
+}

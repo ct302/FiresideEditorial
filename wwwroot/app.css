@@ -107,3 +107,35 @@ html {
 input:focus, textarea:focus, button:focus-visible {
     outline-color: #002f19;
 }
+
+
+/* Line clamp utility */
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Print styles for recipes */
+@media print {
+    nav, .print\\:hidden, footer, .scroll-to-top {
+        display: none !important;
+    }
+    .recipe-printable {
+        padding: 0;
+        max-width: 100%;
+    }
+    body {
+        font-size: 12pt;
+        color: #000;
+    }
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+    .bg-primary, .bg-secondary, .bg-surface-container {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}

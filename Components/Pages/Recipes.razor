@@ -1,0 +1,85 @@
+@page "/recipes"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IRecipeService RecipeService
+
+<PageTitle>Recipes | The Fireside Editorial</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="Heirloom holiday recipes — from classic gingerbread to fireside hot chocolate. Tested, perfected, and shared with love." />
+    <meta property="og:title" content="Recipes | The Fireside Editorial" />
+    <meta property="og:description" content="Heirloom holiday recipes tested and perfected by the hearth." />
+</HeadContent>
+
+<!-- Hero -->
+<section class="relative h-[400px] flex items-end overflow-hidden pt-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=1600"
+             alt="Holiday baking scene"
+             class="editorial-img w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 pb-12 w-full">
+        <span class="font-label text-xs uppercase tracking-widest mb-3 font-semibold block" style="color: #ff6b6b;">From Our Kitchen</span>
+        <h1 class="font-headline text-4xl md:text-5xl text-white leading-tight">Recipes</h1>
+        <p class="text-white/70 mt-3 max-w-xl">Holiday recipes worth passing down — tested by our editors and perfected by the hearth.</p>
+    </div>
+</section>
+
+<!-- Filter Tabs -->
+<section class="max-w-5xl mx-auto px-6 md:px-12 pt-12">
+    <div class="flex flex-wrap gap-2">
+        <button @onclick='() => _filter = ""'
+                class="@(_filter == "" ? "bg-primary text-white" : "bg-surface-container text-on-surface-variant hover:bg-primary/10") px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-colors">
+            All Recipes
+        </button>
+        @foreach (var cat in _categories)
+        {
+            var c = cat;
+            <button @onclick="() => _filter = c"
+                    class="@(_filter == c ? "bg-primary text-white" : "bg-surface-container text-on-surface-variant hover:bg-primary/10") px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest transition-colors">
+                @c
+            </button>
+        }
+    </div>
+</section>
+
+<!-- Recipe Cards -->
+<section class="max-w-5xl mx-auto px-6 md:px-12 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        @foreach (var recipe in FilteredRecipes)
+        {
+            <a href="/recipes/@recipe.Slug" class="group block bg-background rounded-xl border border-outline-variant/20 overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div class="aspect-[4/3] overflow-hidden relative">
+                    <img src="@recipe.ImageUrl" alt="@recipe.ImageAlt" class="editorial-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    <div class="absolute top-3 left-3 bg-primary/90 text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@recipe.Category</div>
+                </div>
+                <div class="p-5">
+                    <h2 class="font-headline text-lg text-primary group-hover:text-secondary transition-colors mb-2">@recipe.Title</h2>
+                    <p class="text-on-surface-variant text-xs leading-relaxed mb-4 line-clamp-2">@recipe.Description</p>
+                    <div class="flex items-center gap-4 text-on-surface-variant text-[11px]">
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">timer</span> @(recipe.PrepTimeMinutes + recipe.CookTimeMinutes) min</span>
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">group</span> @recipe.Servings servings</span>
+                        <span class="flex items-center gap-1"><span class="material-symbols-outlined text-sm">signal_cellular_alt</span> @recipe.Difficulty</span>
+                    </div>
+                </div>
+            </a>
+        }
+    </div>
+</section>
+
+@code {
+    private List<Recipe> _recipes = [];
+    private string _filter = "";
+    private List<string> _categories = [];
+
+    private IEnumerable<Recipe> FilteredRecipes => string.IsNullOrEmpty(_filter)
+        ? _recipes
+        : _recipes.Where(r => r.Category == _filter);
+
+    protected override async Task OnInitializedAsync()
+    {
+        _recipes = await RecipeService.GetAllRecipesAsync();
+        _categories = _recipes.Select(r => r.Category).Distinct().ToList();
+    }
+}

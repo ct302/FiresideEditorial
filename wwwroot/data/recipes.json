@@ -1,0 +1,184 @@
+[
+  {
+    "title": "Classic Gingerbread Cookies",
+    "slug": "classic-gingerbread-cookies",
+    "description": "The definitive gingerbread recipe — crisp edges, chewy centers, and a spice blend that fills the entire house.",
+    "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Freshly baked gingerbread cookies on a cooling rack",
+    "category": "Baking",
+    "prepTimeMinutes": 30,
+    "cookTimeMinutes": 12,
+    "servings": 36,
+    "difficulty": "Easy",
+    "ingredients": [
+      { "amount": "3", "unit": "cups", "name": "all-purpose flour" },
+      { "amount": "1.5", "unit": "tsp", "name": "baking powder" },
+      { "amount": "0.75", "unit": "tsp", "name": "baking soda" },
+      { "amount": "1", "unit": "tbsp", "name": "ground ginger" },
+      { "amount": "2", "unit": "tsp", "name": "ground cinnamon", "affiliateUrl": "https://www.amazon.com/s?k=ceylon+cinnamon+ground&tag=YOUR-TAG-20" },
+      { "amount": "0.5", "unit": "tsp", "name": "ground cloves" },
+      { "amount": "0.5", "unit": "tsp", "name": "ground nutmeg" },
+      { "amount": "0.25", "unit": "tsp", "name": "fine salt" },
+      { "amount": "0.75", "unit": "cup", "name": "unsalted butter, softened" },
+      { "amount": "0.75", "unit": "cup", "name": "dark brown sugar, packed" },
+      { "amount": "1", "unit": "", "name": "large egg" },
+      { "amount": "0.5", "unit": "cup", "name": "unsulphured molasses", "affiliateUrl": "https://www.amazon.com/s?k=unsulphured+molasses&tag=YOUR-TAG-20" },
+      { "amount": "2", "unit": "tsp", "name": "vanilla extract" }
+    ],
+    "instructions": [
+      "Whisk flour, baking powder, baking soda, ginger, cinnamon, cloves, nutmeg, and salt in a large bowl.",
+      "In a separate bowl, cream butter and brown sugar until light and fluffy, about 3 minutes.",
+      "Beat in the egg, then add molasses and vanilla. Mix until smooth.",
+      "Gradually add the dry ingredients to the wet mixture, mixing on low until just combined.",
+      "Divide dough in half, flatten into discs, wrap in plastic, and refrigerate for at least 2 hours or overnight.",
+      "Preheat oven to 350°F (175°C). Line baking sheets with parchment paper.",
+      "Roll dough to 1/4-inch thickness on a floured surface. Cut into shapes.",
+      "Bake 10-12 minutes until edges are firm but centers still look slightly soft.",
+      "Cool on baking sheet for 5 minutes, then transfer to a wire rack."
+    ],
+    "tips": [
+      "Chill the dough overnight for the best flavor — the spices deepen as they rest.",
+      "For softer cookies, pull them at 10 minutes. For snappier ones, go the full 12.",
+      "Use a mix of dark and light molasses for complexity.",
+      "These freeze beautifully — bake a double batch and freeze half for cookie emergencies."
+    ],
+    "relatedProducts": [
+      {
+        "name": "Copper Cookie Cutter Set",
+        "description": "12 classic holiday shapes in heirloom copper.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=copper+christmas+cookie+cutters&tag=YOUR-TAG-20",
+        "price": 38.99,
+        "rating": 4.8,
+        "reviewCount": 2800,
+        "isEditorsPick": true,
+        "badge": "Our Pick",
+        "features": []
+      }
+    ],
+    "nutrition": {
+      "calories": 120,
+      "fat": "4g",
+      "carbs": "20g",
+      "protein": "1g",
+      "sugar": "10g"
+    }
+  },
+  {
+    "title": "Fireside Hot Chocolate",
+    "slug": "fireside-hot-chocolate",
+    "description": "Rich, dark, and impossibly velvety — this is the hot chocolate that ruins all other hot chocolates for you.",
+    "imageUrl": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Steaming mug of dark hot chocolate with marshmallows",
+    "category": "Drinks",
+    "prepTimeMinutes": 5,
+    "cookTimeMinutes": 10,
+    "servings": 4,
+    "difficulty": "Easy",
+    "ingredients": [
+      { "amount": "3", "unit": "cups", "name": "whole milk" },
+      { "amount": "1", "unit": "cup", "name": "heavy cream" },
+      { "amount": "6", "unit": "oz", "name": "dark chocolate (70%), chopped", "affiliateUrl": "https://www.amazon.com/s?k=dark+chocolate+baking+70&tag=YOUR-TAG-20" },
+      { "amount": "2", "unit": "tbsp", "name": "Dutch-process cocoa powder", "affiliateUrl": "https://www.amazon.com/s?k=dutch+process+cocoa+powder&tag=YOUR-TAG-20" },
+      { "amount": "3", "unit": "tbsp", "name": "sugar" },
+      { "amount": "0.5", "unit": "tsp", "name": "vanilla extract" },
+      { "amount": "1", "unit": "pinch", "name": "fine sea salt" },
+      { "amount": "1", "unit": "pinch", "name": "ground cinnamon" }
+    ],
+    "instructions": [
+      "Heat milk and cream in a heavy saucepan over medium heat until steaming but not boiling.",
+      "Remove from heat. Add chopped chocolate and let sit for 1 minute undisturbed.",
+      "Whisk gently until chocolate is completely melted and smooth.",
+      "Sift in cocoa powder and sugar. Whisk until no lumps remain.",
+      "Return to low heat and warm through for 2-3 minutes, stirring constantly.",
+      "Remove from heat, add vanilla, salt, and cinnamon. Whisk once more.",
+      "Pour into warmed mugs. Top with whipped cream, marshmallows, or a cinnamon stick."
+    ],
+    "tips": [
+      "The better the chocolate, the better the cocoa. Use something you'd eat on its own.",
+      "Warm your mugs with hot water first — the cocoa stays hot much longer.",
+      "For a Mexican twist, add a pinch of cayenne and extra cinnamon.",
+      "Leftover cocoa reheats beautifully the next day on the stovetop."
+    ],
+    "relatedProducts": [
+      {
+        "name": "Artisan Hot Cocoa Gift Set",
+        "description": "Four single-origin drinking chocolates in a keepsake tin.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=artisan+hot+chocolate+gift+set&tag=YOUR-TAG-20",
+        "price": 22.50,
+        "rating": 4.5,
+        "reviewCount": 890,
+        "isEditorsPick": true,
+        "badge": "Our Pick",
+        "features": []
+      }
+    ],
+    "nutrition": {
+      "calories": 340,
+      "fat": "22g",
+      "carbs": "30g",
+      "protein": "6g",
+      "sugar": "24g"
+    }
+  },
+  {
+    "title": "Spiced Mulled Cider",
+    "slug": "spiced-mulled-cider",
+    "description": "The smell alone is worth making this. Slow-simmered apple cider with warming spices and a hint of orange.",
+    "imageUrl": "https://images.unsplash.com/photo-1574484284002-952d92456975?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Glass mugs of warm mulled cider with cinnamon sticks and orange slices",
+    "category": "Drinks",
+    "prepTimeMinutes": 10,
+    "cookTimeMinutes": 30,
+    "servings": 8,
+    "difficulty": "Easy",
+    "ingredients": [
+      { "amount": "2", "unit": "quarts", "name": "fresh apple cider" },
+      { "amount": "1", "unit": "", "name": "orange, sliced into rounds" },
+      { "amount": "4", "unit": "", "name": "whole cinnamon sticks", "affiliateUrl": "https://www.amazon.com/s?k=ceylon+cinnamon+sticks&tag=YOUR-TAG-20" },
+      { "amount": "8", "unit": "", "name": "whole cloves" },
+      { "amount": "4", "unit": "", "name": "whole star anise" },
+      { "amount": "1", "unit": "tsp", "name": "whole allspice berries" },
+      { "amount": "1", "unit": "inch", "name": "fresh ginger, sliced" },
+      { "amount": "2", "unit": "tbsp", "name": "maple syrup" },
+      { "amount": "1", "unit": "tbsp", "name": "vanilla extract" }
+    ],
+    "instructions": [
+      "Pour apple cider into a large pot or slow cooker.",
+      "Add orange slices, cinnamon sticks, cloves, star anise, allspice, and ginger.",
+      "Bring to a gentle simmer over medium-low heat. Do not boil.",
+      "Reduce heat to low, cover, and simmer for 25-30 minutes.",
+      "Stir in maple syrup and vanilla extract.",
+      "Strain through a fine mesh sieve into a warmed pitcher or serve directly with a ladle.",
+      "Garnish each mug with a cinnamon stick and orange slice."
+    ],
+    "tips": [
+      "Use unfiltered cider for the best flavor — the cloudier, the better.",
+      "This keeps warm in a slow cooker on low for hours, making it perfect for parties.",
+      "For an adult version, add 2 oz bourbon or dark rum per mug.",
+      "The spices can be reused once — save the cinnamon sticks for a second batch."
+    ],
+    "relatedProducts": [
+      {
+        "name": "Beeswax Candle Gift Set",
+        "description": "Hand-rolled beeswax tapers with a warm honey scent.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=beeswax+candle+gift+set&tag=YOUR-TAG-20",
+        "price": 18.99,
+        "rating": 4.7,
+        "reviewCount": 1240,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": []
+      }
+    ],
+    "nutrition": {
+      "calories": 140,
+      "fat": "0g",
+      "carbs": "35g",
+      "protein": "0g",
+      "sugar": "30g"
+    }
+  }
+]

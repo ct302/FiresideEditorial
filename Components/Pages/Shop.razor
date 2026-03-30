@@ -1,0 +1,129 @@
+@page "/shop"
+@using FiresideEditorial.Models
+@using FiresideEditorial.Services
+@inject IShopService ShopService
+
+<PageTitle>Shop | The Fireside Editorial</PageTitle>
+
+<HeadContent>
+    <meta name="description" content="Digital products from The Fireside Editorial — printable advent calendars, recipe booklets, tradition planning kits, and more." />
+    <meta property="og:title" content="Shop | The Fireside Editorial" />
+    <meta property="og:description" content="Digital holiday products — printables, kits, and booklets." />
+</HeadContent>
+
+<!-- Hero -->
+<section class="relative h-[400px] flex items-end overflow-hidden pt-20">
+    <div class="absolute inset-0">
+        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=1600"
+             alt="Holiday crafting supplies"
+             class="editorial-img w-full h-full object-cover" />
+        <div class="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-5xl mx-auto px-6 md:px-12 pb-12 w-full">
+        <span class="font-label text-xs uppercase tracking-widest mb-3 font-semibold block" style="color: #ff6b6b;">Digital Products</span>
+        <h1 class="font-headline text-4xl md:text-5xl text-white leading-tight">The Fireside Shop</h1>
+        <p class="text-white/70 mt-3 max-w-xl">Printable planners, recipe cards, and tradition kits — designed by our editors, delivered instantly.</p>
+    </div>
+</section>
+
+<!-- Featured Products -->
+@if (_featured.Any())
+{
+    <section class="max-w-5xl mx-auto px-6 md:px-12 pt-16">
+        <h2 class="font-headline text-2xl text-primary mb-8 flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary">star</span>
+            Featured
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            @foreach (var product in _featured)
+            {
+                <div class="bg-background rounded-xl border border-outline-variant/20 overflow-hidden hover:shadow-xl transition-all duration-300 group relative">
+                    @if (!string.IsNullOrEmpty(product.Badge))
+                    {
+                        <div class="absolute top-3 right-3 z-10 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@product.Badge</div>
+                    }
+                    <div class="aspect-[4/3] overflow-hidden">
+                        <img src="@product.ImageUrl" alt="@product.Title" class="editorial-img w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">@product.Category</span>
+                        <h3 class="font-headline text-lg text-primary mt-1 mb-2">@product.Title</h3>
+                        <p class="text-on-surface-variant text-xs leading-relaxed mb-4">@product.Description</p>
+                        @if (product.Features.Any())
+                        {
+                            <ul class="flex flex-wrap gap-1 mb-4">
+                                @foreach (var f in product.Features)
+                                {
+                                    <li class="bg-primary/5 text-primary text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full">@f</li>
+                                }
+                            </ul>
+                        }
+
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-primary text-2xl">$@product.Price.ToString("F2")</span>
+                            <a href="@product.GumroadUrl"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="bg-secondary text-white px-5 py-2.5 rounded-lg font-bold uppercase tracking-widest text-[11px] hover:brightness-110 transition-all shadow-sm shadow-secondary/20 flex items-center gap-1">
+                                <span class="material-symbols-outlined text-sm">download</span>
+                                Get It
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<!-- All Products -->
+@if (_otherProducts.Any())
+{
+    <section class="max-w-5xl mx-auto px-6 md:px-12 py-16">
+        <h2 class="font-headline text-2xl text-primary mb-8">All Products</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            @foreach (var product in _otherProducts)
+            {
+                <div class="bg-background rounded-xl border border-outline-variant/20 p-6 flex gap-6 items-center hover:shadow-lg transition-shadow">
+                    <img src="@product.ImageUrl" alt="@product.Title" class="editorial-img w-24 h-24 rounded-lg object-cover shrink-0" loading="lazy" />
+                    <div class="flex-grow min-w-0">
+                        <span class="text-on-surface-variant text-[10px] font-bold uppercase tracking-wider">@product.Category</span>
+                        <h3 class="font-headline text-sm text-primary mt-0.5 mb-1">@product.Title</h3>
+                        <p class="text-on-surface-variant text-xs leading-relaxed line-clamp-2 mb-2">@product.Description</p>
+                        <div class="flex items-center gap-3">
+                            <span class="font-bold text-primary">$@product.Price.ToString("F2")</span>
+                            <a href="@product.GumroadUrl" target="_blank" rel="noopener noreferrer"
+                               class="text-secondary font-bold text-[10px] uppercase tracking-widest hover:underline">View →</a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </section>
+}
+
+<!-- Hearthside Society Teaser -->
+<section class="max-w-3xl mx-auto px-6 md:px-12 pb-24">
+    <div class="bg-primary text-white rounded-2xl p-8 md:p-12 text-center">
+        <span class="material-symbols-outlined text-4xl mb-4 opacity-80">local_fire_department</span>
+        <h2 class="font-headline text-3xl mb-3">The Hearthside Society</h2>
+        <p class="text-white/70 max-w-lg mx-auto mb-6">Coming soon — a membership for those who take their traditions seriously. Exclusive recipes, printables, early access, and a private community.</p>
+        <a href="/#newsletter" class="inline-flex items-center gap-2 bg-white text-primary px-8 py-4 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-white/90 transition-colors">
+            <span class="material-symbols-outlined text-lg">mark_email_read</span>
+            Join the Waitlist
+        </a>
+    </div>
+</section>
+
+@code {
+    private List<ShopProduct> _all = [];
+    private List<ShopProduct> _featured = [];
+    private List<ShopProduct> _otherProducts = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _all = await ShopService.GetAllProductsAsync();
+        _featured = _all.Where(p => p.IsFeatured).ToList();
+        _otherProducts = _all.Where(p => !p.IsFeatured).ToList();
+    }
+}

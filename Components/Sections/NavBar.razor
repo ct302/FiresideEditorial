@@ -11,8 +11,9 @@
         <div class="hidden lg:flex items-center justify-center gap-6 absolute left-1/2 -translate-x-1/2">
             <a class="@NavClass("/") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
             <a class="@NavClass("/journal") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
-            <a class="@NavClass("/#newsletter") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
-            <a class="@NavClass("/#share") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#share">Traditions</a>
+            <a class="@NavClass("/gift-guides") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/gift-guides">Gift Guides</a>
+            <a class="@NavClass("/recipes") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/recipes">Recipes</a>
+            <a class="@NavClass("/shop") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/shop">Shop</a>
             <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
         </div>
         <div class="flex items-center gap-4 shrink-0">
@@ -29,8 +30,9 @@
     <div class="fixed inset-0 z-40 bg-background/98 backdrop-blur-lg flex flex-col items-center justify-center gap-8 lg:hidden animate-fade-in">
         <a class="@MobileNavClass("/") font-headline text-2xl tracking-wide" href="/" @onclick="CloseMobile">Home</a>
         <a class="@MobileNavClass("/journal") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/journal" @onclick="CloseMobile">Journal</a>
-        <a class="@MobileNavClass("/#newsletter") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#newsletter" @onclick="CloseMobile">Newsletter</a>
-        <a class="@MobileNavClass("/#share") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/#share" @onclick="CloseMobile">Traditions</a>
+        <a class="@MobileNavClass("/gift-guides") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/gift-guides" @onclick="CloseMobile">Gift Guides</a>
+        <a class="@MobileNavClass("/recipes") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/recipes" @onclick="CloseMobile">Recipes</a>
+        <a class="@MobileNavClass("/shop") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/shop" @onclick="CloseMobile">Shop</a>
         <a class="@MobileNavClass("/about") font-headline text-2xl tracking-wide hover:text-secondary transition-colors" href="/about" @onclick="CloseMobile">Our Story</a>
         <button @onclick="OpenSearchFromMobile" class="font-headline text-2xl tracking-wide text-on-surface hover:text-secondary transition-colors flex items-center gap-3">
             <span class="material-symbols-outlined">search</span> Search
@@ -91,6 +93,14 @@
         // /journal matches /journal and /journal/{slug}
         if (href == "/journal")
             return currentPath.StartsWith("/journal", StringComparison.OrdinalIgnoreCase);
+
+        // /gift-guides matches /gift-guides and /gift-guides/{slug}
+        if (href == "/gift-guides")
+            return currentPath.StartsWith("/gift-guides", StringComparison.OrdinalIgnoreCase);
+
+        // /recipes matches /recipes and /recipes/{slug}
+        if (href == "/recipes")
+            return currentPath.StartsWith("/recipes", StringComparison.OrdinalIgnoreCase);
 
         // Everything else: exact prefix match
         return currentPath.StartsWith(href, StringComparison.OrdinalIgnoreCase);

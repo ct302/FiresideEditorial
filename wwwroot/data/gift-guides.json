@@ -1,0 +1,193 @@
+[
+  {
+    "title": "Gifts Under $25",
+    "slug": "under-25",
+    "description": "Thoughtful holiday gifts that won't break the bank — each one chosen for warmth, charm, and staying power.",
+    "imageUrl": "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Beautifully wrapped small gifts in kraft paper with pine sprigs",
+    "category": "Budget",
+    "priceRange": "Under $25",
+    "products": [
+      {
+        "name": "Beeswax Candle Gift Set",
+        "description": "Hand-rolled beeswax tapers with a warm honey scent. Burns clean for 8+ hours each.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=beeswax+candle+gift+set&tag=YOUR-TAG-20",
+        "price": 18.99,
+        "originalPrice": 24.99,
+        "rating": 4.7,
+        "reviewCount": 1240,
+        "isEditorsPick": true,
+        "badge": "Best Value",
+        "features": ["Hand-rolled", "Natural beeswax", "8+ hour burn", "Gift boxed"]
+      },
+      {
+        "name": "Artisan Hot Cocoa Collection",
+        "description": "Four single-origin drinking chocolates in a keepsake tin. From dark Peruvian to spiced Mexican.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=artisan+hot+chocolate+gift+set&tag=YOUR-TAG-20",
+        "price": 22.50,
+        "rating": 4.5,
+        "reviewCount": 890,
+        "isEditorsPick": false,
+        "badge": "Top Rated",
+        "features": ["Single-origin", "Four varieties", "Keepsake tin", "No artificial flavors"]
+      },
+      {
+        "name": "Wool Blend Reading Socks",
+        "description": "Knee-high cable-knit socks in heathered cranberry. Warm enough for the coldest reading nook.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=wool+cable+knit+christmas+socks&tag=YOUR-TAG-20",
+        "price": 16.99,
+        "rating": 4.3,
+        "reviewCount": 2100,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": ["Wool blend", "Cable-knit", "Knee-high", "Machine washable"]
+      }
+    ]
+  },
+  {
+    "title": "Gifts for Grandparents",
+    "slug": "for-grandparents",
+    "description": "Heirloom-worthy presents for the people who taught you what traditions mean.",
+    "imageUrl": "https://images.unsplash.com/photo-1545048702-79362596cdc9?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Elderly hands holding a wrapped gift by the fireplace",
+    "category": "Recipient",
+    "priceRange": "$25-$75",
+    "products": [
+      {
+        "name": "Personalized Family Recipe Book",
+        "description": "A linen-bound blank recipe journal with family tree pages and space for 80+ recipes.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+book+journal&tag=YOUR-TAG-20",
+        "price": 29.99,
+        "rating": 4.8,
+        "reviewCount": 3200,
+        "isEditorsPick": true,
+        "badge": "Bestseller",
+        "features": ["Linen bound", "80+ recipe pages", "Family tree section", "Archival quality"]
+      },
+      {
+        "name": "Cashmere-Blend Throw Blanket",
+        "description": "Lightweight yet impossibly warm. The kind of blanket that becomes someone's favorite.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=cashmere+throw+blanket+gift&tag=YOUR-TAG-20",
+        "price": 49.99,
+        "originalPrice": 65.00,
+        "rating": 4.6,
+        "reviewCount": 1800,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": ["Cashmere blend", "Lightweight warmth", "Gift boxed", "Multiple colors"]
+      },
+      {
+        "name": "Vintage-Style Photo Frame Set",
+        "description": "Set of three distressed wood frames. Fits 4x6, 5x7, and 8x10 prints.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=vintage+wood+photo+frame+set&tag=YOUR-TAG-20",
+        "price": 34.99,
+        "rating": 4.4,
+        "reviewCount": 950,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": ["Distressed wood", "Three sizes", "Wall or tabletop", "Gift ready"]
+      }
+    ]
+  },
+  {
+    "title": "The Cozy Night In",
+    "slug": "cozy-night-in",
+    "description": "Everything needed for a perfect winter evening — blankets, cocoa, candles, and something to read.",
+    "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Cozy reading nook with blanket, candles, and hot drink",
+    "category": "Theme",
+    "priceRange": "$15-$50",
+    "products": [
+      {
+        "name": "Hygge Candle Trio",
+        "description": "Cedar, vanilla, and cinnamon bark. Poured in small batches with cotton wicks.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=hygge+candle+set+winter&tag=YOUR-TAG-20",
+        "price": 28.99,
+        "rating": 4.6,
+        "reviewCount": 670,
+        "isEditorsPick": true,
+        "badge": "Editor's Pick",
+        "features": ["Small-batch", "Cotton wicks", "Soy wax", "30+ hour burn"]
+      },
+      {
+        "name": "Classic Christmas Stories Anthology",
+        "description": "A clothbound collection of Dickens, O. Henry, and lesser-known gems. Gold-foil spine.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=christmas+stories+anthology+hardcover&tag=YOUR-TAG-20",
+        "price": 19.99,
+        "rating": 4.7,
+        "reviewCount": 4500,
+        "isEditorsPick": false,
+        "badge": "Classic",
+        "features": ["Clothbound", "Gold foil", "12 stories", "Gift edition"]
+      },
+      {
+        "name": "Merino Wool Lap Blanket",
+        "description": "Compact enough for the sofa, warm enough for the porch. Ethically sourced New Zealand merino.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=merino+wool+lap+blanket&tag=YOUR-TAG-20",
+        "price": 44.99,
+        "rating": 4.5,
+        "reviewCount": 1100,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": ["Merino wool", "Ethically sourced", "Compact size", "Multiple colors"]
+      }
+    ]
+  },
+  {
+    "title": "Gifts for the Baker",
+    "slug": "for-the-baker",
+    "description": "For the one who fills the house with the scent of cinnamon and butter every December.",
+    "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=800",
+    "imageAlt": "Rolling pin with flour and cookie cutters on wooden surface",
+    "category": "Recipient",
+    "priceRange": "$20-$60",
+    "products": [
+      {
+        "name": "Copper Cookie Cutter Collection",
+        "description": "12 heirloom-quality copper cutters in a wooden display box. Snowflakes, trees, stars, and more.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=copper+christmas+cookie+cutters+set&tag=YOUR-TAG-20",
+        "price": 38.99,
+        "rating": 4.8,
+        "reviewCount": 2800,
+        "isEditorsPick": true,
+        "badge": "Heirloom",
+        "features": ["Solid copper", "12 shapes", "Wooden box", "Dishwasher safe"]
+      },
+      {
+        "name": "Marble Rolling Pin",
+        "description": "Stays cool for perfect pastry. Weighted for effortless rolling.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=marble+rolling+pin&tag=YOUR-TAG-20",
+        "price": 24.99,
+        "rating": 4.5,
+        "reviewCount": 1500,
+        "isEditorsPick": false,
+        "badge": "",
+        "features": ["Natural marble", "Stays cool", "Weighted", "Easy to clean"]
+      },
+      {
+        "name": "Spice Rack Baking Set",
+        "description": "Cinnamon, nutmeg, cardamom, ginger, allspice, and cloves — all freshly ground, in glass jars.",
+        "imageUrl": "",
+        "affiliateUrl": "https://www.amazon.com/s?k=baking+spice+set+gift&tag=YOUR-TAG-20",
+        "price": 32.99,
+        "originalPrice": 39.99,
+        "rating": 4.6,
+        "reviewCount": 780,
+        "isEditorsPick": false,
+        "badge": "Fresh Ground",
+        "features": ["Six spices", "Freshly ground", "Glass jars", "Wooden rack"]
+      }
+    ]
+  }
+]

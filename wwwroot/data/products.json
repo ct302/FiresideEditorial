@@ -1,0 +1,57 @@
+[
+  {
+    "title": "Printable Advent Calendar",
+    "description": "24 beautifully illustrated doors with daily prompts, activities, and family traditions. Print at home on cardstock.",
+    "imageUrl": "https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?auto=format&fit=crop&q=80&w=800",
+    "price": 4.99,
+    "gumroadUrl": "https://gumroad.com/l/YOUR-PRODUCT-ID",
+    "category": "Printable",
+    "badge": "Bestseller",
+    "features": ["24 illustrated doors", "Daily tradition prompts", "Print at home", "A4 & Letter sizes"],
+    "isFeatured": true
+  },
+  {
+    "title": "Holiday Traditions Planning Kit",
+    "description": "A 20-page printable workbook to plan your family's holiday season — menus, gift lists, tradition schedules, and more.",
+    "imageUrl": "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&q=80&w=800",
+    "price": 7.99,
+    "gumroadUrl": "https://gumroad.com/l/YOUR-PRODUCT-ID",
+    "category": "Kit",
+    "badge": "New",
+    "features": ["20 pages", "Menu planner", "Gift tracker", "Tradition calendar", "Printable"],
+    "isFeatured": true
+  },
+  {
+    "title": "Fireside Recipe Collection",
+    "description": "12 of our most-loved holiday recipes in a beautifully designed PDF booklet. From gingerbread to mulled cider.",
+    "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=800",
+    "price": 5.99,
+    "gumroadUrl": "https://gumroad.com/l/YOUR-PRODUCT-ID",
+    "category": "Booklet",
+    "badge": "",
+    "features": ["12 recipes", "Printable cards", "Metric & imperial", "Photography included"],
+    "isFeatured": true
+  },
+  {
+    "title": "Gift Tag & Card Printable Set",
+    "description": "40 unique gift tags and 8 greeting card designs in our signature Fireside style. Cut, fold, give.",
+    "imageUrl": "https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&q=80&w=800",
+    "price": 3.99,
+    "gumroadUrl": "https://gumroad.com/l/YOUR-PRODUCT-ID",
+    "category": "Printable",
+    "badge": "",
+    "features": ["40 gift tags", "8 card designs", "Print at home", "Cardstock recommended"],
+    "isFeatured": false
+  },
+  {
+    "title": "12 Days of Traditions Journal",
+    "description": "A guided journaling experience for the 12 days leading to Christmas. Prompts, reflections, and space for photos.",
+    "imageUrl": "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=800",
+    "price": 6.99,
+    "gumroadUrl": "https://gumroad.com/l/YOUR-PRODUCT-ID",
+    "category": "Kit",
+    "badge": "",
+    "features": ["12 guided prompts", "Reflection pages", "Photo spaces", "Printable PDF"],
+    "isFeatured": false
+  }
+]
