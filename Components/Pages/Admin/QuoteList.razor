@@ -1,0 +1,102 @@
+@page "/admin/quotes"
+@layout FiresideEditorial.Components.Layout.AdminLayout
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@inject FiresideEditorial.Data.AppDbContext Db
+@using Microsoft.EntityFrameworkCore
+
+<h1 class="font-headline text-3xl text-primary mb-8">Quotes</h1>
+
+<div class="max-w-2xl space-y-6">
+    @foreach (var quote in _quotes)
+    {
+        <div class="bg-white rounded-xl p-6 border border-outline-variant/10 shadow-sm">
+            @if (_editingId == quote.Id)
+            {
+                <div class="space-y-3">
+                    <textarea @bind="_editText" rows="3"
+                              class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                    <input @bind="_editAttr" type="text"
+                           class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                    <div class="flex gap-2">
+                        <button @onclick="() => SaveQuote(quote)"
+                                class="bg-secondary text-white px-4 py-2 rounded-lg text-sm font-bold">Save</button>
+                        <button @onclick="() => _editingId = 0"
+                                class="bg-surface-container text-on-surface-variant px-4 py-2 rounded-lg text-sm font-bold">Cancel</button>
+                    </div>
+                </div>
+            }
+            else
+            {
+                <blockquote class="text-on-surface italic font-headline text-lg leading-relaxed mb-2">"@quote.Text"</blockquote>
+                <p class="text-on-surface-variant text-sm">— @quote.Attribution</p>
+                <div class="flex gap-3 mt-3">
+                    <button @onclick="() => StartEdit(quote)" class="text-secondary text-sm hover:underline">Edit</button>
+                    <button @onclick="() => DeleteQuote(quote.Id)" class="text-secondary/60 text-sm hover:text-secondary">Delete</button>
+                </div>
+            }
+        </div>
+    }
+
+    <div class="border-t border-outline-variant/20 pt-6">
+        <h2 class="font-headline text-xl text-primary mb-4">Add New Quote</h2>
+        <div class="space-y-3">
+            <textarea @bind="_newText" rows="2" placeholder="Quote text..."
+                      class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+            <input @bind="_newAttr" type="text" placeholder="Attribution (e.g., Charles Dickens)"
+                   class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+            <button @onclick="AddQuote"
+                    class="bg-secondary text-white px-5 py-2.5 rounded-lg font-bold text-sm uppercase tracking-widest hover:brightness-110 transition-all">
+                Add Quote
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+    private List<FiresideEditorial.Models.QuoteModel> _quotes = [];
+    private int _editingId;
+    private string _editText = "", _editAttr = "";
+    private string _newText = "", _newAttr = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        _quotes = await Db.Quotes.OrderBy(q => q.Id).ToListAsync();
+    }
+
+    private void StartEdit(FiresideEditorial.Models.QuoteModel q)
+    {
+        _editingId = q.Id;
+        _editText = q.Text;
+        _editAttr = q.Attribution;
+    }
+
+    private async Task SaveQuote(FiresideEditorial.Models.QuoteModel q)
+    {
+        q.Text = _editText;
+        q.Attribution = _editAttr;
+        Db.Quotes.Update(q);
+        await Db.SaveChangesAsync();
+        _editingId = 0;
+    }
+
+    private async Task DeleteQuote(int id)
+    {
+        var q = await Db.Quotes.FindAsync(id);
+        if (q is not null)
+        {
+            Db.Quotes.Remove(q);
+            await Db.SaveChangesAsync();
+            _quotes = await Db.Quotes.OrderBy(x => x.Id).ToListAsync();
+        }
+    }
+
+    private async Task AddQuote()
+    {
+        if (string.IsNullOrWhiteSpace(_newText)) return;
+        Db.Quotes.Add(new() { Text = _newText, Attribution = _newAttr });
+        await Db.SaveChangesAsync();
+        _quotes = await Db.Quotes.OrderBy(q => q.Id).ToListAsync();
+        _newText = "";
+        _newAttr = "";
+    }
+}

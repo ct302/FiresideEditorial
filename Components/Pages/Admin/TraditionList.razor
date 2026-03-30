@@ -1,0 +1,61 @@
+@page "/admin/traditions"
+@layout FiresideEditorial.Components.Layout.AdminLayout
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@inject FiresideEditorial.Data.AppDbContext Db
+@using Microsoft.EntityFrameworkCore
+
+<div class="flex justify-between items-center mb-8">
+    <h1 class="font-headline text-3xl text-primary">Traditions</h1>
+    <span class="text-on-surface-variant text-sm">@_traditions.Count submissions</span>
+</div>
+
+@if (_traditions.Any())
+{
+    <div class="bg-white rounded-xl border border-outline-variant/10 divide-y divide-outline-variant/10">
+        @foreach (var t in _traditions)
+        {
+            <div class="p-5 flex justify-between items-start gap-4">
+                <div class="min-w-0 flex-1">
+                    <div class="flex items-center gap-3 mb-1">
+                        <span class="font-semibold text-on-surface">@t.Name</span>
+                        <span class="text-xs text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">@t.SubmittedAt.ToString("MMM dd, yyyy h:mm tt")</span>
+                    </div>
+                    <p class="text-sm text-on-surface-variant leading-relaxed">@t.Story</p>
+                </div>
+                <button @onclick="() => Delete(t.Id)"
+                        class="text-secondary/50 hover:text-secondary shrink-0 material-symbols-outlined text-lg">delete</button>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="text-center py-16">
+        <span class="material-symbols-outlined text-on-surface-variant/30 text-6xl mb-4">diversity_3</span>
+        <p class="text-on-surface-variant">No traditions submitted yet. They'll appear here when visitors share their stories.</p>
+    </div>
+}
+
+@code {
+    private List<FiresideEditorial.Models.TraditionSubmission> _traditions = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _traditions = await Db.Traditions
+            .OrderByDescending(t => t.SubmittedAt)
+            .ToListAsync();
+    }
+
+    private async Task Delete(int id)
+    {
+        var t = await Db.Traditions.FindAsync(id);
+        if (t is not null)
+        {
+            Db.Traditions.Remove(t);
+            await Db.SaveChangesAsync();
+            _traditions = await Db.Traditions
+                .OrderByDescending(x => x.SubmittedAt)
+                .ToListAsync();
+        }
+    }
+}

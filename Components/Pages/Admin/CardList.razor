@@ -1,0 +1,65 @@
+@page "/admin/cards"
+@layout FiresideEditorial.Components.Layout.AdminLayout
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@inject FiresideEditorial.Data.AppDbContext Db
+@inject NavigationManager Nav
+@using Microsoft.EntityFrameworkCore
+
+<div class="flex justify-between items-center mb-8">
+    <h1 class="font-headline text-3xl text-primary">Cards</h1>
+    <a href="/admin/cards/new"
+       class="bg-secondary text-white px-5 py-2.5 rounded-lg font-bold text-sm uppercase tracking-widest hover:brightness-110 transition-all inline-flex items-center gap-2">
+        <span class="material-symbols-outlined text-lg">add</span> New Card
+    </a>
+</div>
+
+<div class="bg-white rounded-xl border border-outline-variant/10 overflow-hidden">
+    <table class="w-full text-sm">
+        <thead class="bg-surface-container/50">
+            <tr>
+                <th class="text-left p-4 font-label uppercase tracking-widest text-on-surface-variant text-xs">Image</th>
+                <th class="text-left p-4 font-label uppercase tracking-widest text-on-surface-variant text-xs">Title</th>
+                <th class="text-left p-4 font-label uppercase tracking-widest text-on-surface-variant text-xs">Category</th>
+                <th class="text-left p-4 font-label uppercase tracking-widest text-on-surface-variant text-xs">Slug</th>
+                <th class="text-right p-4 font-label uppercase tracking-widest text-on-surface-variant text-xs">Actions</th>
+            </tr>
+        </thead>
+        <tbody class="divide-y divide-outline-variant/10">
+            @foreach (var card in _cards)
+            {
+                <tr class="hover:bg-surface-container/30 transition-colors">
+                    <td class="p-4">
+                        <img src="@card.ImageUrl" alt="" class="w-12 h-12 rounded-lg object-cover" />
+                    </td>
+                    <td class="p-4 font-medium text-on-surface">@card.Title</td>
+                    <td class="p-4 text-on-surface-variant">@card.Category</td>
+                    <td class="p-4 text-on-surface-variant font-mono text-xs">@card.Slug</td>
+                    <td class="p-4 text-right">
+                        <a href="/admin/cards/edit/@card.Id" class="text-secondary hover:underline mr-3">Edit</a>
+                        <button @onclick="() => DeleteCard(card.Id)" class="text-secondary/60 hover:text-secondary">Delete</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<FiresideEditorial.Models.EditorialCardModel> _cards = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cards = await Db.Cards.OrderBy(c => c.Id).ToListAsync();
+    }
+
+    private async Task DeleteCard(int id)
+    {
+        var card = await Db.Cards.FindAsync(id);
+        if (card is not null)
+        {
+            Db.Cards.Remove(card);
+            await Db.SaveChangesAsync();
+            _cards = await Db.Cards.OrderBy(c => c.Id).ToListAsync();
+        }
+    }
+}

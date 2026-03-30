@@ -1,0 +1,27 @@
+@inject NavigationManager Nav
+
+<a href="@Href" class="@CssClass">
+    <span class="material-symbols-outlined text-lg">@Icon</span>
+    @Label
+</a>
+
+@code {
+    [Parameter] public string Href { get; set; } = "";
+    [Parameter] public string Icon { get; set; } = "";
+    [Parameter] public string Label { get; set; } = "";
+
+    private string CssClass
+    {
+        get
+        {
+            var path = new Uri(Nav.Uri).AbsolutePath;
+            var active = Href == "/admin"
+                ? path == "/admin"
+                : path.StartsWith(Href, StringComparison.OrdinalIgnoreCase);
+            var baseClass = "flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-colors";
+            return active
+                ? $"{baseClass} bg-white/15 text-white"
+                : $"{baseClass} text-white/60 hover:text-white hover:bg-white/5";
+        }
+    }
+}

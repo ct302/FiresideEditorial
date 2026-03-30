@@ -1,0 +1,145 @@
+@page "/admin/cards/new"
+@page "/admin/cards/edit/{Id:int}"
+@layout FiresideEditorial.Components.Layout.AdminLayout
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@inject FiresideEditorial.Data.AppDbContext Db
+@inject NavigationManager Nav
+@using Microsoft.EntityFrameworkCore
+
+<div class="max-w-3xl">
+    <h1 class="font-headline text-3xl text-primary mb-8">@(Id.HasValue ? "Edit Card" : "New Card")</h1>
+
+    <EditForm Model="@_card" OnValidSubmit="HandleSave" FormName="card-form">
+        <DataAnnotationsValidator />
+        <div class="space-y-5">
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Title</label>
+                    <InputText @bind-Value="_card.Title"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                </div>
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Category</label>
+                    <InputText @bind-Value="_card.Category"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Slug</label>
+                <InputText @bind-Value="_card.Slug"
+                           class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface font-mono text-sm" />
+            </div>
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Description</label>
+                <InputTextArea @bind-Value="_card.Description" rows="2"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+            </div>
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Image URL</label>
+                <InputText @bind-Value="_card.ImageUrl"
+                           class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface text-sm" />
+            </div>
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Image Alt</label>
+                    <InputText @bind-Value="_card.ImageAlt"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                </div>
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">CTA Text</label>
+                    <InputText @bind-Value="_card.CtaText"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 gap-5">
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Affiliate URL</label>
+                    <InputText @bind-Value="_card.AffiliateUrl"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface text-sm" />
+                </div>
+                <div>
+                    <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Affiliate Label</label>
+                    <InputText @bind-Value="_card.AffiliateLabel"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-body text-on-surface" />
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Article Markdown</label>
+                <InputTextArea @bind-Value="_articleMarkdown" rows="15"
+                               class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary py-3 px-4 font-mono text-sm text-on-surface" />
+                <p class="text-xs text-on-surface-variant mt-1">Saved as wwwroot/data/articles/@(_card.Slug).md</p>
+            </div>
+
+            @if (_saved)
+            {
+                <div class="bg-primary-fixed/20 text-primary py-3 px-4 rounded-lg text-sm font-semibold inline-flex items-center gap-2">
+                    <span class="material-symbols-outlined text-lg">check_circle</span> Saved successfully
+                </div>
+            }
+
+            <div class="flex gap-3">
+                <button type="submit"
+                        class="bg-secondary text-white px-6 py-3 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-secondary/20">
+                    @(Id.HasValue ? "Update Card" : "Create Card")
+                </button>
+                <a href="/admin/cards"
+                   class="bg-surface-container text-on-surface-variant px-6 py-3 rounded-lg font-bold uppercase tracking-widest text-sm hover:bg-surface-container/80 transition-colors">
+                    Cancel
+                </a>
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter] public int? Id { get; set; }
+
+    private FiresideEditorial.Models.EditorialCardModel _card = new();
+    private string _articleMarkdown = string.Empty;
+    private bool _saved;
+
+    [Inject] private IWebHostEnvironment Env { get; set; } = default!;
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (Id.HasValue)
+        {
+            var existing = await Db.Cards.FindAsync(Id.Value);
+            if (existing is not null)
+            {
+                _card = existing;
+                var mdPath = Path.Combine(Env.WebRootPath, "data", "articles", $"{_card.Slug}.md");
+                if (File.Exists(mdPath))
+                    _articleMarkdown = await File.ReadAllTextAsync(mdPath);
+            }
+        }
+    }
+
+    private async Task HandleSave()
+    {
+        if (Id.HasValue)
+        {
+            Db.Cards.Update(_card);
+        }
+        else
+        {
+            _card.CreatedAt = DateTime.UtcNow;
+            Db.Cards.Add(_card);
+        }
+        await Db.SaveChangesAsync();
+
+        // Save article markdown to disk
+        if (!string.IsNullOrWhiteSpace(_articleMarkdown) && !string.IsNullOrWhiteSpace(_card.Slug))
+        {
+            var dir = Path.Combine(Env.WebRootPath, "data", "articles");
+            Directory.CreateDirectory(dir);
+            var mdPath = Path.Combine(dir, $"{_card.Slug}.md");
+            await File.WriteAllTextAsync(mdPath, _articleMarkdown);
+        }
+
+        _saved = true;
+    }
+}

@@ -1,0 +1,68 @@
+@page "/admin"
+@layout FiresideEditorial.Components.Layout.AdminLayout
+@attribute [Microsoft.AspNetCore.Authorization.Authorize]
+@inject FiresideEditorial.Data.AppDbContext Db
+@using Microsoft.EntityFrameworkCore
+
+<h1 class="font-headline text-3xl text-primary mb-8">Dashboard</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-outline-variant/10">
+        <div class="flex items-center gap-3 mb-2">
+            <span class="material-symbols-outlined text-secondary text-2xl">view_module</span>
+            <span class="text-on-surface-variant text-sm font-label uppercase tracking-widest">Cards</span>
+        </div>
+        <p class="text-4xl font-headline text-primary">@_cardCount</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-outline-variant/10">
+        <div class="flex items-center gap-3 mb-2">
+            <span class="material-symbols-outlined text-secondary text-2xl">format_quote</span>
+            <span class="text-on-surface-variant text-sm font-label uppercase tracking-widest">Quotes</span>
+        </div>
+        <p class="text-4xl font-headline text-primary">@_quoteCount</p>
+    </div>
+    <div class="bg-white rounded-xl p-6 shadow-sm border border-outline-variant/10">
+        <div class="flex items-center gap-3 mb-2">
+            <span class="material-symbols-outlined text-secondary text-2xl">diversity_3</span>
+            <span class="text-on-surface-variant text-sm font-label uppercase tracking-widest">Traditions</span>
+        </div>
+        <p class="text-4xl font-headline text-primary">@_tradCount</p>
+    </div>
+</div>
+
+<h2 class="font-headline text-xl text-primary mb-4">Recent Traditions</h2>
+@if (_recentTraditions.Any())
+{
+    <div class="bg-white rounded-xl border border-outline-variant/10 divide-y divide-outline-variant/10">
+        @foreach (var t in _recentTraditions)
+        {
+            <div class="p-4">
+                <div class="flex justify-between items-center mb-1">
+                    <span class="font-semibold text-on-surface">@t.Name</span>
+                    <span class="text-xs text-on-surface-variant">@t.SubmittedAt.ToString("MMM dd, yyyy")</span>
+                </div>
+                <p class="text-sm text-on-surface-variant line-clamp-2">@t.Story</p>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <p class="text-on-surface-variant text-sm">No traditions submitted yet.</p>
+}
+
+@code {
+    private int _cardCount, _quoteCount, _tradCount;
+    private List<FiresideEditorial.Models.TraditionSubmission> _recentTraditions = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        _cardCount = await Db.Cards.CountAsync();
+        _quoteCount = await Db.Quotes.CountAsync();
+        _tradCount = await Db.Traditions.CountAsync();
+        _recentTraditions = await Db.Traditions
+            .OrderByDescending(t => t.SubmittedAt)
+            .Take(5)
+            .ToListAsync();
+    }
+}

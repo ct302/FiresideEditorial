@@ -1,0 +1,52 @@
+@page "/admin/login"
+@layout FiresideEditorial.Components.Layout.MainLayout
+
+<div class="min-h-screen flex items-center justify-center px-6 -mt-16">
+    <div class="w-full max-w-sm">
+        <div class="text-center mb-8">
+            <span class="material-symbols-outlined text-primary text-5xl mb-3">park</span>
+            <h1 class="font-headline text-3xl text-primary italic">Fireside Admin</h1>
+            <p class="text-on-surface-variant text-sm mt-2">Sign in to manage the editorial</p>
+        </div>
+
+        @if (_error)
+        {
+            <div class="bg-secondary/10 text-secondary text-sm px-4 py-3 rounded-lg mb-4 text-center">
+                Invalid credentials. Please try again.
+            </div>
+        }
+
+        <form method="post" action="/admin/login-handler"
+              class="space-y-4">
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Username</label>
+                <input name="username" type="text" required
+                       class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent py-3 px-4 font-body text-on-surface" />
+            </div>
+            <div>
+                <label class="block text-xs font-label uppercase tracking-widest text-primary mb-1.5 font-bold">Password</label>
+                <input name="password" type="password" required
+                       class="w-full bg-surface-container border border-outline-variant/30 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent py-3 px-4 font-body text-on-surface" />
+            </div>
+            <button type="submit"
+                    class="w-full bg-secondary text-white py-3.5 rounded-lg font-bold uppercase tracking-widest text-sm hover:brightness-110 active:scale-[0.98] transition-all shadow-lg shadow-secondary/20">
+                Sign In
+            </button>
+        </form>
+        <p class="text-center mt-6">
+            <a href="/" class="text-on-surface-variant text-xs hover:text-secondary transition-colors">&larr; Back to editorial</a>
+        </p>
+    </div>
+</div>
+
+@code {
+    private bool _error;
+
+    protected override void OnInitialized()
+    {
+        var uri = new Uri(NavigationManager.Uri);
+        _error = uri.Query.Contains("error=1");
+    }
+
+    [Inject] private NavigationManager NavigationManager { get; set; } = default!;
+}
