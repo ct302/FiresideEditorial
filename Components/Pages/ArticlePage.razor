@@ -48,7 +48,7 @@ else
                 <span class="material-symbols-outlined text-sm">arrow_back</span>
                 Back to Journal
             </a>
-            <span class="block font-label text-xs uppercase tracking-widest mb-3 font-semibold" style="color: #ff6b6b;">@_card.Category · @_readingTime min read</span>
+            <span class="block font-label text-xs uppercase tracking-widest mb-3 font-semibold" style="color: #ff6b6b;">@_card.Category · @(_card.CreatedAt != default ? _card.CreatedAt.ToString("MMM dd, yyyy") + " · " : "")@_readingTime min read</span>
             <h1 class="font-headline text-4xl md:text-6xl text-white leading-tight">@_card.Title</h1>
         </div>
     </section>

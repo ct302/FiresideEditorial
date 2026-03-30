@@ -34,7 +34,7 @@ jobs:
         run: |
           git config user.name "Fireside Bot"
           git config user.email "bot@firesideeditorial.com"
-          git add wwwroot/data/articles/ wwwroot/data/content.json
+          git add wwwroot/data/articles/ wwwroot/data/content.json wwwroot/images/articles/
           # Only commit if there are changes
           git diff --cached --quiet || (
             git commit -m "Auto: new article $(date +%Y-%m-%d)" &&

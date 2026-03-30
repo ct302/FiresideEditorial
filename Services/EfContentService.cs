@@ -23,7 +23,16 @@ public class EfContentService : IContentService
     public async Task<List<EditorialCardModel>> GetCardsAsync()
     {
         return await _db.Cards
-            .OrderBy(c => c.Id)
+            .OrderByDescending(c => c.CreatedAt)
+            .AsNoTracking()
+            .ToListAsync();
+    }
+
+    public async Task<List<EditorialCardModel>> GetCardsAsync(int take)
+    {
+        return await _db.Cards
+            .OrderByDescending(c => c.CreatedAt)
+            .Take(take)
             .AsNoTracking()
             .ToListAsync();
     }

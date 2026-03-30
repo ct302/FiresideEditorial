@@ -29,6 +29,12 @@ public class JsonContentService : IContentService
         return content?.Cards ?? [];
     }
 
+    public async Task<List<EditorialCardModel>> GetCardsAsync(int take)
+    {
+        var cards = await GetCardsAsync();
+        return cards.Take(take).ToList();
+    }
+
     public async Task<EditorialCardModel?> GetCardBySlugAsync(string slug)
     {
         var cards = await GetCardsAsync();

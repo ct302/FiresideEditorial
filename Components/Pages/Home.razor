@@ -44,7 +44,7 @@
 
     protected override async Task OnInitializedAsync()
     {
-        _cards = await ContentService.GetCardsAsync();
+        _cards = await ContentService.GetCardsAsync(9);
         _quote = await ContentService.GetQuoteAsync();
     }
 }

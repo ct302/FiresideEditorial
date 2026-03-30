@@ -13,6 +13,9 @@ ARTICLES_DIR = REPO_ROOT / "wwwroot" / "data" / "articles"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 MODEL = os.environ.get("OPENROUTER_MODEL", "stepfun/step-3.5-flash:free")
+IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image-preview")
+
+IMAGES_DIR = REPO_ROOT / "wwwroot" / "images" / "articles"
 
 # Seasonal topic pools — the AI picks from these or riffs on them
 TOPIC_POOLS = {
@@ -183,6 +186,94 @@ def call_openrouter(topic: str) -> dict:
         sys.exit(1)
 
 
+def generate_image(title: str, image_alt: str, slug: str) -> str:
+    """Generate an editorial photo via Nano Banana and save as PNG. Returns relative URL path."""
+    if not OPENROUTER_KEY:
+        return DEFAULT_IMAGE
+
+    IMAGES_DIR.mkdir(parents=True, exist_ok=True)
+
+    prompt = (
+        f"Generate a warm, editorial-style photograph for a winter traditions magazine article titled '{title}'. "
+        f"Description: {image_alt}. "
+        "Style: Cozy, sepia-toned, soft natural lighting, nostalgic warmth. "
+        "No text, no watermarks, no logos. Photographic quality, shot on 35mm film aesthetic."
+    )
+
+    payload = json.dumps({
+        "model": IMAGE_MODEL,
+        "max_tokens": 4096,
+        "modalities": ["image"],
+        "messages": [
+            {"role": "user", "content": prompt}
+        ]
+    }).encode()
+
+    req = urllib.request.Request(
+        "https://openrouter.ai/api/v1/chat/completions",
+        data=payload,
+        headers={
+            "Authorization": f"Bearer {OPENROUTER_KEY}",
+            "Content-Type": "application/json",
+            "HTTP-Referer": "https://github.com/ct302/FiresideEditorial",
+            "X-Title": "Fireside Editorial Image Generator",
+        },
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json.loads(resp.read())
+    except urllib.error.HTTPError as e:
+        body = e.read().decode() if e.fp else ""
+        print(f"  Image API error {e.code}: {body[:200]}", file=sys.stderr)
+        return DEFAULT_IMAGE
+    except Exception as e:
+        print(f"  Image generation failed: {e}", file=sys.stderr)
+        return DEFAULT_IMAGE
+
+    # Extract base64 image from response
+    try:
+        choice = data.get("choices", [{}])[0]
+        message = choice.get("message", {})
+
+        # Check for images array (OpenRouter image response format)
+        images = message.get("images", [])
+        if images:
+            b64_data = images[0]
+        else:
+            # Some models embed base64 in content
+            content_blocks = message.get("content", [])
+            b64_data = None
+            if isinstance(content_blocks, list):
+                for block in content_blocks:
+                    if isinstance(block, dict) and block.get("type") == "image_url":
+                        url = block.get("image_url", {}).get("url", "")
+                        if url.startswith("data:image"):
+                            b64_data = url.split(",", 1)[1]
+                            break
+            elif isinstance(content_blocks, str) and content_blocks.startswith("data:image"):
+                b64_data = content_blocks.split(",", 1)[1]
+
+        if not b64_data:
+            print("  No image data in response, using fallback", file=sys.stderr)
+            return DEFAULT_IMAGE
+
+        # Strip data URL prefix if present
+        if b64_data.startswith("data:image"):
+            b64_data = b64_data.split(",", 1)[1]
+
+        import base64
+        img_bytes = base64.b64decode(b64_data)
+        img_path = IMAGES_DIR / f"{slug}.png"
+        img_path.write_bytes(img_bytes)
+        print(f"  Generated image: {img_path.name} ({len(img_bytes) // 1024}KB)")
+        return f"/images/articles/{slug}.png"
+
+    except Exception as e:
+        print(f"  Image extraction failed: {e}", file=sys.stderr)
+        return DEFAULT_IMAGE
+
+
 def update_content_json(card_entry: dict):
     """Append a new card to content.json."""
     with open(CONTENT_JSON, "r", encoding="utf-8") as f:
@@ -218,6 +309,11 @@ def main():
     md_path.write_text(article["markdown"], encoding="utf-8")
     print(f"  Wrote: {md_path.name}")
 
+    # Generate editorial image
+    image_alt = article.get("imageAlt", f"Editorial photo for {title}")
+    print("  Generating image via Nano Banana...")
+    image_url = generate_image(title, image_alt, slug)
+
     # Build the card entry for content.json
     amazon_tag = os.environ.get("AMAZON_TAG", "YOUR-TAG-20")
     search_term = article.get("affiliateSearch", title.lower())
@@ -228,8 +324,8 @@ def main():
         "title": title,
         "slug": slug,
         "description": article.get("description", "A new tradition from The Fireside Editorial."),
-        "imageUrl": DEFAULT_IMAGE,
-        "imageAlt": article.get("imageAlt", f"Editorial photo for {title}"),
+        "imageUrl": image_url,
+        "imageAlt": image_alt,
         "ctaText": article.get("ctaText", "Read More"),
         "affiliateUrl": f"https://www.amazon.com/s?k={search_encoded}&tag={amazon_tag}",
         "affiliateLabel": article.get("affiliateLabel", "Shop Related"),

@@ -9,6 +9,10 @@
     </div>
     <div class="p-8 flex flex-col flex-grow">
         <span class="text-primary font-label text-xs uppercase tracking-widest mb-2 block font-semibold">@Card.Category</span>
+        @if (Card.CreatedAt != default)
+        {
+            <span class="text-on-surface-variant/60 font-label text-[11px] tracking-wide block mb-1">@Card.CreatedAt.ToString("MMM dd, yyyy")</span>
+        }
         <h3 class="font-headline text-2xl text-primary mb-3">@Card.Title</h3>
         <p class="text-on-surface-variant text-sm leading-relaxed mb-6">@Card.Description</p>
         <div class="mt-auto space-y-3">
