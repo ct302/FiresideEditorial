@@ -11,7 +11,7 @@
       {
         "name": "Beeswax Candle Gift Set",
         "description": "Hand-rolled beeswax tapers with a warm honey scent. Burns clean for 8+ hours each.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1602523961358-f9f03dd557db?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=beeswax+candle+gift+set&tag=YOUR-TAG-20",
         "price": 18.99,
         "originalPrice": 24.99,
@@ -24,7 +24,7 @@
       {
         "name": "Artisan Hot Cocoa Collection",
         "description": "Four single-origin drinking chocolates in a keepsake tin. From dark Peruvian to spiced Mexican.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1517578239113-b03992dcdd25?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=artisan+hot+chocolate+gift+set&tag=YOUR-TAG-20",
         "price": 22.50,
         "rating": 4.5,
@@ -36,7 +36,7 @@
       {
         "name": "Wool Blend Reading Socks",
         "description": "Knee-high cable-knit socks in heathered cranberry. Warm enough for the coldest reading nook.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1543087903-1ac2ec7aa8c5?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=wool+cable+knit+christmas+socks&tag=YOUR-TAG-20",
         "price": 16.99,
         "rating": 4.3,
@@ -59,7 +59,7 @@
       {
         "name": "Personalized Family Recipe Book",
         "description": "A linen-bound blank recipe journal with family tree pages and space for 80+ recipes.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+book+journal&tag=YOUR-TAG-20",
         "price": 29.99,
         "rating": 4.8,
@@ -71,7 +71,7 @@
       {
         "name": "Cashmere-Blend Throw Blanket",
         "description": "Lightweight yet impossibly warm. The kind of blanket that becomes someone's favorite.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1580301762395-21ce6d5d4bc4?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=cashmere+throw+blanket+gift&tag=YOUR-TAG-20",
         "price": 49.99,
         "originalPrice": 65.00,
@@ -84,7 +84,7 @@
       {
         "name": "Vintage-Style Photo Frame Set",
         "description": "Set of three distressed wood frames. Fits 4x6, 5x7, and 8x10 prints.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1513519245088-0e12902e35ca?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=vintage+wood+photo+frame+set&tag=YOUR-TAG-20",
         "price": 34.99,
         "rating": 4.4,
@@ -107,7 +107,7 @@
       {
         "name": "Hygge Candle Trio",
         "description": "Cedar, vanilla, and cinnamon bark. Poured in small batches with cotton wicks.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1608181831718-2501cdcf74cc?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=hygge+candle+set+winter&tag=YOUR-TAG-20",
         "price": 28.99,
         "rating": 4.6,
@@ -119,7 +119,7 @@
       {
         "name": "Classic Christmas Stories Anthology",
         "description": "A clothbound collection of Dickens, O. Henry, and lesser-known gems. Gold-foil spine.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=christmas+stories+anthology+hardcover&tag=YOUR-TAG-20",
         "price": 19.99,
         "rating": 4.7,
@@ -131,7 +131,7 @@
       {
         "name": "Merino Wool Lap Blanket",
         "description": "Compact enough for the sofa, warm enough for the porch. Ethically sourced New Zealand merino.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1600369672770-985fd30004eb?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=merino+wool+lap+blanket&tag=YOUR-TAG-20",
         "price": 44.99,
         "rating": 4.5,
@@ -154,7 +154,7 @@
       {
         "name": "Copper Cookie Cutter Collection",
         "description": "12 heirloom-quality copper cutters in a wooden display box. Snowflakes, trees, stars, and more.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1481391319762-47dff72954d9?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=copper+christmas+cookie+cutters+set&tag=YOUR-TAG-20",
         "price": 38.99,
         "rating": 4.8,
@@ -166,7 +166,7 @@
       {
         "name": "Marble Rolling Pin",
         "description": "Stays cool for perfect pastry. Weighted for effortless rolling.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1590080875515-8a3a8dc5735e?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=marble+rolling+pin&tag=YOUR-TAG-20",
         "price": 24.99,
         "rating": 4.5,
@@ -178,7 +178,7 @@
       {
         "name": "Spice Rack Baking Set",
         "description": "Cinnamon, nutmeg, cardamom, ginger, allspice, and cloves — all freshly ground, in glass jars.",
-        "imageUrl": "",
+        "imageUrl": "https://images.unsplash.com/photo-1532336414038-cf19250c5757?auto=format&fit=crop&q=80&w=400",
         "affiliateUrl": "https://www.amazon.com/s?k=baking+spice+set+gift&tag=YOUR-TAG-20",
         "price": 32.99,
         "originalPrice": 39.99,
