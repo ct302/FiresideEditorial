@@ -108,7 +108,7 @@ def call_openrouter(topic: str) -> dict:
 
     payload = json.dumps({
         "model": MODEL,
-        "max_tokens": 8000,
+        "max_tokens": 16000,
         "messages": [
             {"role": "system", "content": SYSTEM_PROMPT},
             {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
@@ -182,6 +182,35 @@ def call_openrouter(topic: str) -> dict:
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
+        # Try to repair truncated JSON — common when model runs out of tokens
+        # If we have at least title and category, try to close the JSON
+        repaired = raw.rstrip()
+        if '"title"' in repaired and '"markdown"' not in repaired:
+            # JSON was cut before the markdown field — add a placeholder
+            if repaired.endswith('"'):
+                repaired += ','
+            elif not repaired.endswith(','):
+                repaired += '",'
+            repaired += '\n  "markdown": "Article content is being regenerated. Please check back soon."\n}'
+            try:
+                result = json.loads(repaired)
+                print("  WARNING: Response was truncated, using placeholder article body", file=sys.stderr)
+                return result
+            except json.JSONDecodeError:
+                pass
+        elif '"markdown"' in repaired:
+            # JSON was cut mid-markdown — try closing the string and object
+            # Find the last complete sentence
+            last_period = repaired.rfind('.')
+            if last_period > repaired.rfind('"markdown"'):
+                repaired = repaired[:last_period + 1] + '"\n}'
+                try:
+                    result = json.loads(repaired)
+                    print("  WARNING: Markdown was truncated, using partial article", file=sys.stderr)
+                    return result
+                except json.JSONDecodeError:
+                    pass
+
         print(f"Failed to parse AI response:\n{raw[:500]}", file=sys.stderr)
         sys.exit(1)
 

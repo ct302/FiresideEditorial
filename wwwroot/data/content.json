@@ -120,6 +120,17 @@
       "ctaText": "Savor the Craft",
       "affiliateUrl": "https://www.amazon.com/s?k=cheese+knives+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cheese Tools"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Ink-Stained Fingers Club: Starting Your Holiday Journal",
+      "slug": "the-ink-stained-fingers-club-starting-your-holiday-journal",
+      "description": "Discover how to start a simple, sensory-rich holiday journaling practice that captures the season's magic in crisp pages.",
+      "imageUrl": "/images/articles/the-ink-stained-fingers-club-starting-your-holiday-journal.png",
+      "imageAlt": "A worn leather journal open on a wooden table next to a steaming mug of tea, with frost patterns on a nearby window.",
+      "ctaText": "Begin Your Practice",
+      "affiliateUrl": "https://www.amazon.com/s?k=leather+journal+fountain+pen&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journaling Essentials"
     }
   ],
   "quote": {
