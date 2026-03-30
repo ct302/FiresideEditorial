@@ -5,7 +5,7 @@
 
 @if (Search.IsOpen)
 {
-    <div class="fixed inset-0 z-[60] bg-background/98 backdrop-blur-lg flex flex-col animate-fade-in">
+    <div class="fixed inset-0 z-[60] bg-background backdrop-blur-lg flex flex-col animate-fade-in">
         <div class="max-w-2xl w-full mx-auto px-6 pt-24">
             <div class="flex items-center gap-4 mb-8">
                 <span class="material-symbols-outlined text-secondary text-3xl">search</span>
@@ -16,8 +16,8 @@
                        @onkeydown="HandleKeydown"
                        type="text"
                        placeholder="Search articles, traditions, recipes..."
-                       class="flex-grow bg-transparent border-b-2 border-outline-variant/30 focus:border-primary text-on-surface font-headline text-2xl md:text-3xl py-3 outline-none placeholder:text-on-surface-variant/70 transition-colors"
-                       style="--tw-ring-color: transparent;" />
+                       class="flex-grow bg-transparent border-b-2 border-outline-variant/30 focus:border-primary text-on-surface font-headline text-2xl md:text-3xl py-3 outline-none placeholder:text-on-surface-variant transition-colors"
+                       style="outline-color: #002f19;" />
                 <button @onclick="Close" class="material-symbols-outlined text-on-surface-variant hover:text-secondary text-3xl transition-colors">close</button>
             </div>
 
