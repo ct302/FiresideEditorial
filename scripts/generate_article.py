@@ -13,7 +13,7 @@ ARTICLES_DIR = REPO_ROOT / "wwwroot" / "data" / "articles"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 MODEL = os.environ.get("OPENROUTER_MODEL", "stepfun/step-3.5-flash:free")
-IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image-preview")
+IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image")
 
 IMAGES_DIR = REPO_ROOT / "wwwroot" / "images" / "articles"
 
@@ -239,7 +239,13 @@ def generate_image(title: str, image_alt: str, slug: str) -> str:
         # Check for images array (OpenRouter image response format)
         images = message.get("images", [])
         if images:
-            b64_data = images[0]
+            img_item = images[0]
+            if isinstance(img_item, dict):
+                b64_data = img_item.get("image_url", {}).get("url", "")
+                if not b64_data:
+                    b64_data = img_item.get("url", img_item.get("data", ""))
+            else:
+                b64_data = img_item
         else:
             # Some models embed base64 in content
             content_blocks = message.get("content", [])
@@ -259,7 +265,7 @@ def generate_image(title: str, image_alt: str, slug: str) -> str:
             return DEFAULT_IMAGE
 
         # Strip data URL prefix if present
-        if b64_data.startswith("data:image"):
+        if isinstance(b64_data, str) and b64_data.startswith("data:image"):
             b64_data = b64_data.split(",", 1)[1]
 
         import base64
