@@ -2,23 +2,25 @@
 @inject NavigationManager Nav
 @inject SearchState Search
 
-<nav class="fixed top-0 w-full z-50 grid grid-cols-[auto_1fr_auto] items-center px-6 py-4 md:px-12 bg-background/95 backdrop-blur-md shadow-[0_2px_15px_rgba(30,27,19,0.05)]">
-    <div class="flex items-center gap-2 shrink-0">
-        <span class="material-symbols-outlined text-2xl" style="color: #05472A;">park</span>
-        <a href="/" class="font-headline font-bold text-2xl tracking-tight italic whitespace-nowrap" style="color: #05472A;">The Fireside Editorial</a>
-    </div>
-    <div class="hidden lg:flex items-center justify-center gap-6">
-        <a class="@NavClass("/") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
-        <a class="@NavClass("/journal") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
-        <a class="@NavClass("/#newsletter") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
-        <a class="@NavClass("/#share") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#share">Traditions</a>
-        <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
-    </div>
-    <div class="flex items-center justify-end gap-4 shrink-0">
-        <button @onclick="Search.Open" class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden lg:block" style="color: #05472A;">search</button>
-        <button class="material-symbols-outlined lg:hidden text-2xl active:scale-90 transition-transform" style="color: #05472A;" @onclick="ToggleMobile">
-            @(_mobileOpen ? "close" : "menu")
-        </button>
+<nav class="fixed top-0 w-full z-50 px-6 py-4 md:px-12 bg-background/95 backdrop-blur-md shadow-[0_2px_15px_rgba(30,27,19,0.05)]">
+    <div class="flex items-center justify-between">
+        <div class="flex items-center gap-2 shrink-0">
+            <span class="material-symbols-outlined text-2xl" style="color: #05472A;">park</span>
+            <a href="/" class="font-headline font-bold text-2xl tracking-tight italic whitespace-nowrap" style="color: #05472A;">The Fireside Editorial</a>
+        </div>
+        <div class="hidden lg:flex items-center justify-center gap-6 absolute left-1/2 -translate-x-1/2">
+            <a class="@NavClass("/") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/">Home</a>
+            <a class="@NavClass("/journal") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/journal">Journal</a>
+            <a class="@NavClass("/#newsletter") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#newsletter">Newsletter</a>
+            <a class="@NavClass("/#share") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/#share">Traditions</a>
+            <a class="@NavClass("/about") font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="/about">Our Story</a>
+        </div>
+        <div class="flex items-center gap-4 shrink-0">
+            <button @onclick="Search.Open" class="material-symbols-outlined scale-95 active:scale-90 transition-transform hidden lg:block" style="color: #05472A;">search</button>
+            <button class="material-symbols-outlined lg:hidden text-2xl active:scale-90 transition-transform" style="color: #05472A;" @onclick="ToggleMobile">
+                @(_mobileOpen ? "close" : "menu")
+            </button>
+        </div>
     </div>
 </nav>
 
