@@ -1,0 +1,115 @@
+@implements IDisposable
+
+<section class="py-16 px-6 md:px-12">
+    <div class="max-w-4xl mx-auto text-center">
+        <span class="material-symbols-outlined text-secondary text-4xl mb-4 block animate-pulse">alarm</span>
+        <h2 class="font-headline text-3xl md:text-4xl text-primary mb-2">Countdown to Christmas</h2>
+        <p class="text-on-surface-variant text-sm mb-10">The magic is almost here.</p>
+
+        @if (_isChristmas)
+        {
+            <div class="py-12">
+                <span class="material-symbols-outlined text-secondary text-6xl mb-4 block">celebration</span>
+                <h3 class="font-headline text-4xl text-secondary">Merry Christmas!</h3>
+                <p class="text-on-surface-variant mt-2">May your day be filled with warmth and wonder.</p>
+            </div>
+        }
+        else
+        {
+            <div class="flex items-center justify-center gap-4 md:gap-6">
+                <!-- Days -->
+                <div class="countdown-unit">
+                    <div class="countdown-number">@_days.ToString("D2")</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <!-- Hours -->
+                <div class="countdown-unit">
+                    <div class="countdown-number">@_hours.ToString("D2")</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <!-- Minutes -->
+                <div class="countdown-unit">
+                    <div class="countdown-number">@_minutes.ToString("D2")</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+
+                <div class="countdown-separator">:</div>
+
+                <!-- Seconds -->
+                <div class="countdown-unit">
+                    <div class="countdown-number seconds-pulse">@_seconds.ToString("D2")</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+
+            <!-- Progress bar showing how far through the season we are -->
+            @if (_seasonProgress > 0)
+            {
+                <div class="mt-10 max-w-md mx-auto">
+                    <div class="flex justify-between text-[10px] font-label uppercase tracking-widest text-on-surface-variant mb-2">
+                        <span>Dec 1</span>
+                        <span>Christmas</span>
+                    </div>
+                    <div class="h-2 bg-surface-container rounded-full overflow-hidden">
+                        <div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full transition-all duration-1000"
+                             style="width: @(_seasonProgress)%"></div>
+                    </div>
+                    <p class="text-on-surface-variant/60 text-[10px] mt-2 italic">@(_seasonProgress < 100 ? $"{_seasonProgress:F0}% of the advent season" : "It's here!")</p>
+                </div>
+            }
+        }
+    </div>
+</section>
+
+@code {
+    private System.Threading.Timer? _timer;
+    private int _days, _hours, _minutes, _seconds;
+    private bool _isChristmas;
+    private double _seasonProgress;
+
+    protected override void OnInitialized()
+    {
+        UpdateCountdown();
+        _timer = new System.Threading.Timer(_ =>
+        {
+            UpdateCountdown();
+            InvokeAsync(StateHasChanged);
+        }, null, TimeSpan.FromSeconds(1), TimeSpan.FromSeconds(1));
+    }
+
+    private void UpdateCountdown()
+    {
+        var now = DateTime.Now;
+        var christmas = new DateTime(now.Year, 12, 25, 0, 0, 0);
+
+        // If Christmas has passed this year, count to next year
+        if (now > christmas.AddDays(1))
+            christmas = new DateTime(now.Year + 1, 12, 25, 0, 0, 0);
+
+        _isChristmas = now.Month == 12 && now.Day == 25;
+
+        var remaining = christmas - now;
+        _days = (int)remaining.TotalDays;
+        _hours = remaining.Hours;
+        _minutes = remaining.Minutes;
+        _seconds = remaining.Seconds;
+
+        // Advent season progress (Dec 1 - Dec 25)
+        if (now.Month == 12 && now.Day >= 1 && now.Day <= 25)
+        {
+            _seasonProgress = ((now.Day - 1) / 24.0) * 100;
+        }
+        else
+        {
+            _seasonProgress = 0;
+        }
+    }
+
+    public void Dispose() => _timer?.Dispose();
+}

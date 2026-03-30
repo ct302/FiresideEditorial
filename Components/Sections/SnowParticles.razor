@@ -1,0 +1,16 @@
+<!-- CSS-only snow particles overlay. Place inside a relative-positioned parent. -->
+<div class="snow-container" aria-hidden="true">
+    @for (int i = 0; i < 40; i++)
+    {
+        var size = 2 + Random.Shared.Next(4);
+        var left = Random.Shared.Next(100);
+        var delay = Random.Shared.NextDouble() * 12;
+        var duration = 8 + Random.Shared.Next(10);
+        var opacity = 0.3 + Random.Shared.NextDouble() * 0.5;
+        var drift = -20 + Random.Shared.Next(40);
+
+        <div class="snowflake"
+             style="left: @(left)%; width: @(size)px; height: @(size)px; opacity: @(opacity.ToString("F2")); animation-delay: @(delay.ToString("F1"))s; animation-duration: @(duration)s; --drift: @(drift)px;">
+        </div>
+    }
+</div>

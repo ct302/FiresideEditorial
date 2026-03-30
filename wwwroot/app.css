@@ -144,3 +144,103 @@ input:focus, textarea:focus, button:focus-visible {
         color: #000 !important;
     }
 }
+
+
+/* ========== Advent Countdown ========== */
+.countdown-unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.countdown-number {
+    font-family: 'Noto Serif', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #002f19;
+    background: rgba(0, 47, 25, 0.04);
+    border: 1px solid rgba(0, 47, 25, 0.1);
+    border-radius: 0.75rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+@media (max-width: 640px) {
+    .countdown-number {
+        font-size: 1.75rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}
+
+.countdown-label {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #404942;
+}
+
+.countdown-separator {
+    font-family: 'Noto Serif', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #b51a1b;
+    padding-bottom: 1.5rem;
+}
+
+@media (max-width: 640px) {
+    .countdown-separator { font-size: 1.25rem; }
+}
+
+.seconds-pulse {
+    animation: secondsPulse 1s ease-in-out infinite;
+}
+
+@keyframes secondsPulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; }
+}
+
+/* ========== Snow Particles ========== */
+.snow-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    background: white;
+    border-radius: 50%;
+    animation: snowfall linear infinite;
+}
+
+@keyframes snowfall {
+    0% {
+        transform: translateY(-10px) translateX(0);
+        opacity: var(--start-opacity, 0.5);
+    }
+    50% {
+        transform: translateY(50vh) translateX(var(--drift, 10px));
+    }
+    100% {
+        transform: translateY(110vh) translateX(calc(var(--drift, 10px) * -1));
+        opacity: 0;
+    }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .snowflake { animation: none; opacity: 0.15; }
+    .seconds-pulse { animation: none; }
+}
