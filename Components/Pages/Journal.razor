@@ -23,18 +23,69 @@
     </div>
 </section>
 
-<!-- All Articles Grid -->
-<section class="py-16 px-6 md:px-12 max-w-7xl mx-auto">
-    <div class="flex items-center justify-between mb-12">
-        <p class="text-on-surface-variant font-label text-sm">@_cards.Count entries</p>
-        <div class="w-16 h-[2px] bg-secondary/30 rounded-full"></div>
+<!-- Search + Filter Bar -->
+<section class="py-10 px-6 md:px-12 max-w-7xl mx-auto">
+    <div class="flex flex-col sm:flex-row items-center gap-4">
+        <div class="relative flex-1 w-full">
+            <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-primary/50 text-xl">search</span>
+            <input @bind="_searchQuery"
+                   @bind:event="oninput"
+                   @bind:after="ApplyFilter"
+                   type="text"
+                   placeholder="Search by title, category, or keyword..."
+                   class="w-full bg-surface-container border border-outline-variant/30 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent py-3.5 pl-12 pr-5 font-body text-on-surface placeholder:text-on-surface-variant/60 transition-all" />
+        </div>
+        <p class="text-on-surface-variant font-label text-sm whitespace-nowrap">
+            @_filteredCards.Count of @_allCards.Count entries
+        </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        @foreach (var card in _cards)
+</section>
+
+<!-- Paginated Articles Grid -->
+<section class="pb-16 px-6 md:px-12 max-w-7xl mx-auto">
+    @if (_pagedCards.Any())
+    {
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            @foreach (var card in _pagedCards)
+            {
+                <EditorialCard Card="@card" />
+            }
+        </div>
+
+        <!-- Pagination Controls -->
+        @if (_totalPages > 1)
         {
-            <EditorialCard Card="@card" />
+            <div class="flex items-center justify-center gap-2 mt-14">
+                <button @onclick="PrevPage" disabled="@(_currentPage <= 1)"
+                        class="flex items-center gap-1 px-4 py-2.5 rounded-lg font-label text-sm uppercase tracking-widest transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white">
+                    <span class="material-symbols-outlined text-lg">chevron_left</span> Prev
+                </button>
+
+                @for (int i = 1; i <= _totalPages; i++)
+                {
+                    var pageNum = i;
+                    <button @onclick="() => GoToPage(pageNum)"
+                            class="@(pageNum == _currentPage
+                                ? "w-10 h-10 rounded-lg bg-primary text-white font-bold text-sm"
+                                : "w-10 h-10 rounded-lg bg-surface-container text-on-surface-variant hover:bg-primary/10 font-label text-sm transition-colors")">
+                        @pageNum
+                    </button>
+                }
+
+                <button @onclick="NextPage" disabled="@(_currentPage >= _totalPages)"
+                        class="flex items-center gap-1 px-4 py-2.5 rounded-lg font-label text-sm uppercase tracking-widest transition-all disabled:opacity-30 disabled:cursor-not-allowed bg-surface-container text-on-surface-variant hover:bg-primary hover:text-white">
+                    Next <span class="material-symbols-outlined text-lg">chevron_right</span>
+                </button>
+            </div>
         }
-    </div>
+    }
+    else if (!string.IsNullOrWhiteSpace(_searchQuery))
+    {
+        <div class="text-center py-20">
+            <span class="material-symbols-outlined text-on-surface-variant/30 text-6xl mb-4">search_off</span>
+            <p class="text-on-surface-variant font-body">No articles match "<span class="text-secondary font-semibold">@_searchQuery</span>"</p>
+        </div>
+    }
 </section>
 
 <!-- Newsletter CTA -->
@@ -51,10 +102,53 @@
 </section>
 
 @code {
-    private List<EditorialCardModel> _cards = [];
+    private const int PageSize = 9;
+
+    private List<EditorialCardModel> _allCards = [];
+    private List<EditorialCardModel> _filteredCards = [];
+    private List<EditorialCardModel> _pagedCards = [];
+    private string _searchQuery = string.Empty;
+    private int _currentPage = 1;
+    private int _totalPages = 1;
 
     protected override async Task OnInitializedAsync()
     {
-        _cards = await ContentService.GetCardsAsync();
+        _allCards = await ContentService.GetCardsAsync();
+        _filteredCards = _allCards;
+        UpdatePage();
     }
+
+    private void ApplyFilter()
+    {
+        if (string.IsNullOrWhiteSpace(_searchQuery))
+        {
+            _filteredCards = _allCards;
+        }
+        else
+        {
+            var terms = _searchQuery.ToLowerInvariant().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            _filteredCards = _allCards.Where(c =>
+                terms.All(t =>
+                    c.Title.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                    c.Description.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                    c.Category.Contains(t, StringComparison.OrdinalIgnoreCase))
+            ).ToList();
+        }
+        _currentPage = 1;
+        UpdatePage();
+    }
+
+    private void UpdatePage()
+    {
+        _totalPages = Math.Max(1, (int)Math.Ceiling(_filteredCards.Count / (double)PageSize));
+        _currentPage = Math.Clamp(_currentPage, 1, _totalPages);
+        _pagedCards = _filteredCards
+            .Skip((_currentPage - 1) * PageSize)
+            .Take(PageSize)
+            .ToList();
+    }
+
+    private void GoToPage(int page) { _currentPage = page; UpdatePage(); }
+    private void PrevPage() { _currentPage--; UpdatePage(); }
+    private void NextPage() { _currentPage++; UpdatePage(); }
 }

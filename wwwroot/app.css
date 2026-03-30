@@ -102,3 +102,8 @@ html {
     background: rgba(181, 26, 27, 0.15);
     color: #002f19;
 }
+
+/* Override browser default blue focus outlines */
+input:focus, textarea:focus, button:focus-visible {
+    outline-color: #002f19;
+}
