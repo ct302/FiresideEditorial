@@ -16,33 +16,34 @@
             var product = Products[i];
             var rank = i + 1;
             <div class="relative bg-background rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-lg transition-shadow group">
-                @if (!string.IsNullOrEmpty(product.Badge))
+                <!-- Product Image -->
+                @if (!string.IsNullOrEmpty(product.ImageUrl))
                 {
-                    <div class="absolute top-3 left-3 z-10 bg-secondary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full">@product.Badge</div>
+                    <div class="aspect-[4/3] overflow-hidden bg-surface-container">
+                        <img src="@product.ImageUrl" alt="@product.Name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
+                    </div>
                 }
-                @if (product.IsEditorsPick)
+                else
                 {
-                    <div class="absolute top-3 right-3 z-10 bg-primary text-white text-[10px] font-bold uppercase tracking-wider px-2 py-1 rounded-full flex items-center gap-1">
-                        <span class="material-symbols-outlined text-xs">workspace_premium</span> Editor's Pick
+                    <div class="h-24 bg-surface-container flex items-center justify-center">
+                        <span class="material-symbols-outlined text-3xl text-on-surface-variant/20">shopping_bag</span>
                     </div>
                 }
 
-                <!-- Product Image -->
-                <div class="aspect-square overflow-hidden bg-surface-container">
-                    @if (!string.IsNullOrEmpty(product.ImageUrl))
-                    {
-                        <img src="@product.ImageUrl" alt="@product.Name" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" />
-                    }
-                    else
-                    {
-                        <div class="w-full h-full flex items-center justify-center text-on-surface-variant/40">
-                            <span class="material-symbols-outlined text-4xl">shopping_bag</span>
-                        </div>
-                    }
-                </div>
-
                 <!-- Product Info -->
                 <div class="p-4">
+                    <div class="flex items-center gap-1.5 mb-2 flex-wrap">
+                        @if (!string.IsNullOrEmpty(product.Badge))
+                        {
+                            <span class="bg-secondary text-white text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full">@product.Badge</span>
+                        }
+                        @if (product.IsEditorsPick)
+                        {
+                            <span class="bg-primary text-white text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full flex items-center gap-0.5">
+                                <span class="material-symbols-outlined text-[10px]">workspace_premium</span> Pick
+                            </span>
+                        }
+                    </div>
                     <div class="flex items-center gap-1 mb-2">
                         @for (int s = 0; s < 5; s++)
                         {

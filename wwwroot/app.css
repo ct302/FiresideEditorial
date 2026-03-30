@@ -105,7 +105,12 @@ html {
 
 /* Override browser default blue focus outlines */
 input:focus, textarea:focus, button:focus-visible {
-    outline-color: #002f19;
+    outline: 2px solid #002f19;
+    outline-offset: 2px;
+}
+/* When Tailwind outline-none is used, respect it */
+.outline-none:focus, .outline-none:focus-visible {
+    outline: none !important;
 }
 
 

@@ -1,6 +1,9 @@
 @implements IDisposable
 @inject SearchState Search
 @inject IContentService Content
+@inject IGiftGuideService GuideService
+@inject IRecipeService RecipeService
+@inject IShopService ShopService
 @inject NavigationManager Nav
 
 @if (Search.IsOpen)
@@ -15,9 +18,8 @@
                        @bind:after="OnSearchAsync"
                        @onkeydown="HandleKeydown"
                        type="text"
-                       placeholder="Search articles, traditions, recipes..."
-                       class="flex-grow bg-transparent border-b-2 border-outline-variant/30 focus:border-primary text-on-surface font-headline text-2xl md:text-3xl py-3 outline-none placeholder:text-on-surface-variant transition-colors"
-                       style="outline-color: #002f19;" />
+                       placeholder="Search articles, recipes, gift guides..."
+                       class="flex-grow bg-transparent border-b-2 border-outline-variant/30 focus:border-primary text-on-surface font-headline text-2xl md:text-3xl py-3 outline-none placeholder:text-on-surface-variant/50 transition-colors" />
                 <button @onclick="Close" class="material-symbols-outlined text-on-surface-variant hover:text-secondary text-3xl transition-colors">close</button>
             </div>
 
@@ -26,11 +28,23 @@
                 <div class="space-y-2 overflow-y-auto max-h-[60vh] pr-2 bg-background rounded-2xl p-4 shadow-lg border border-outline-variant/20">
                     @foreach (var result in _results)
                     {
-                        <a href="/journal/@result.Slug" @onclick="Close"
+                        <a href="@result.Url" @onclick="Close"
                            class="flex gap-4 p-4 rounded-xl hover:bg-surface-container transition-colors group cursor-pointer">
-                            <img src="@result.ImageUrl" alt="" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" />
+                            @if (!string.IsNullOrEmpty(result.ImageUrl))
+                            {
+                                <img src="@result.ImageUrl" alt="" class="w-16 h-16 rounded-lg object-cover shrink-0" loading="lazy" />
+                            }
+                            else
+                            {
+                                <div class="w-16 h-16 rounded-lg bg-surface-container flex items-center justify-center shrink-0">
+                                    <span class="material-symbols-outlined text-on-surface-variant/30">@result.Icon</span>
+                                </div>
+                            }
                             <div class="min-w-0">
-                                <span class="text-xs font-label uppercase tracking-widest text-secondary">@result.Category</span>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-[10px] font-label uppercase tracking-widest text-white bg-primary/80 px-1.5 py-0.5 rounded">@result.Type</span>
+                                    <span class="text-xs font-label uppercase tracking-widest text-secondary">@result.Category</span>
+                                </div>
                                 <h3 class="font-headline text-lg text-on-surface group-hover:text-secondary transition-colors truncate">@result.Title</h3>
                                 <p class="text-sm text-on-surface-variant line-clamp-2 mt-1">@result.Snippet</p>
                             </div>
@@ -42,13 +56,13 @@
             {
                 <div class="text-center py-16 bg-background rounded-2xl shadow-lg border border-outline-variant/20">
                     <span class="material-symbols-outlined text-on-surface-variant/30 text-6xl mb-4">search_off</span>
-                    <p class="text-on-surface-variant font-body">No articles found for "<span class="text-secondary font-semibold">@_query</span>"</p>
+                    <p class="text-on-surface-variant font-body">Nothing found for "<span class="text-secondary font-semibold">@_query</span>"</p>
                 </div>
             }
             else
             {
                 <div class="text-center py-16 bg-background rounded-2xl shadow-lg border border-outline-variant/20">
-                    <p class="text-on-surface-variant/50 font-body text-sm tracking-wide">Start typing to search the editorial...</p>
+                    <p class="text-on-surface-variant/50 font-body text-sm tracking-wide">Search articles, recipes, gift guides, and the shop...</p>
                 </div>
             }
         </div>
@@ -57,7 +71,7 @@
 
 @code {
     private string _query = string.Empty;
-    private List<SearchResult> _results = [];
+    private List<UniversalSearchResult> _results = [];
     private ElementReference _inputRef;
     private CancellationTokenSource? _debounce;
 
@@ -71,7 +85,6 @@
         await InvokeAsync(StateHasChanged);
         if (Search.IsOpen)
         {
-            // Small delay to let the DOM render, then focus input
             await Task.Delay(100);
             try { await _inputRef.FocusAsync(); } catch { }
         }
@@ -86,9 +99,65 @@
         try
         {
             await Task.Delay(250, token);
-            if (!token.IsCancellationRequested)
+            if (!token.IsCancellationRequested && !string.IsNullOrWhiteSpace(_query) && _query.Length >= 2)
             {
-                _results = await Content.SearchAsync(_query);
+                var results = new List<UniversalSearchResult>();
+                var terms = _query.ToLowerInvariant().Split(' ', StringSplitOptions.RemoveEmptyEntries);
+
+                // Search journal articles
+                var articles = await Content.SearchAsync(_query);
+                results.AddRange(articles.Select(a => new UniversalSearchResult
+                {
+                    Title = a.Title, Category = a.Category, Snippet = a.Snippet,
+                    ImageUrl = a.ImageUrl, Url = $"/journal/{a.Slug}", Type = "Journal", Icon = "article"
+                }));
+
+                // Search gift guides
+                var guides = await GuideService.GetAllGuidesAsync();
+                results.AddRange(guides
+                    .Where(g => terms.All(t =>
+                        g.Title.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        g.Description.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        g.Category.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        g.Products.Any(p => p.Name.Contains(t, StringComparison.OrdinalIgnoreCase))))
+                    .Select(g => new UniversalSearchResult
+                    {
+                        Title = g.Title, Category = g.Category, Snippet = g.Description,
+                        ImageUrl = g.ImageUrl, Url = $"/gift-guides/{g.Slug}", Type = "Gift Guide", Icon = "redeem"
+                    }));
+
+                // Search recipes
+                var recipes = await RecipeService.GetAllRecipesAsync();
+                results.AddRange(recipes
+                    .Where(r => terms.All(t =>
+                        r.Title.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        r.Description.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        r.Category.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        r.Ingredients.Any(i => i.Name.Contains(t, StringComparison.OrdinalIgnoreCase))))
+                    .Select(r => new UniversalSearchResult
+                    {
+                        Title = r.Title, Category = r.Category, Snippet = r.Description,
+                        ImageUrl = r.ImageUrl, Url = $"/recipes/{r.Slug}", Type = "Recipe", Icon = "restaurant"
+                    }));
+
+                // Search shop products
+                var products = await ShopService.GetAllProductsAsync();
+                results.AddRange(products
+                    .Where(p => terms.All(t =>
+                        p.Title.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        p.Description.Contains(t, StringComparison.OrdinalIgnoreCase) ||
+                        p.Category.Contains(t, StringComparison.OrdinalIgnoreCase)))
+                    .Select(p => new UniversalSearchResult
+                    {
+                        Title = p.Title, Category = p.Category, Snippet = p.Description,
+                        ImageUrl = p.ImageUrl, Url = "/shop", Type = "Shop", Icon = "storefront"
+                    }));
+
+                _results = results;
+            }
+            else
+            {
+                _results = [];
             }
         }
         catch (TaskCanceledException) { }
@@ -110,5 +179,16 @@
     {
         Search.OnChange -= OnSearchStateChanged;
         _debounce?.Dispose();
+    }
+
+    private class UniversalSearchResult
+    {
+        public string Title { get; set; } = string.Empty;
+        public string Category { get; set; } = string.Empty;
+        public string Snippet { get; set; } = string.Empty;
+        public string ImageUrl { get; set; } = string.Empty;
+        public string Url { get; set; } = string.Empty;
+        public string Type { get; set; } = string.Empty;
+        public string Icon { get; set; } = "article";
     }
 }
