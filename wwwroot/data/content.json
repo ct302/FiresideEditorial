@@ -131,6 +131,17 @@
       "ctaText": "Begin Your Practice",
       "affiliateUrl": "https://www.amazon.com/s?k=leather+journal+fountain+pen&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journaling Essentials"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of the Hand-Wrapped Gift",
+      "slug": "the-quiet-art-of-the-hand-wrapped-gift",
+      "description": "Discover how the simple act of folding paper by hand can become a profound gesture of love and presence this season.",
+      "imageUrl": "/images/articles/the-quiet-art-of-the-hand-wrapped-gift.png",
+      "imageAlt": "Hands gently tying a twine bow around a gift wrapped in textured brown paper and dried orange slices",
+      "ctaText": "Find Your Fold",
+      "affiliateUrl": "https://www.amazon.com/s?k=natural+kraft+wrapping+paper&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wrapping Supplies"
     }
   ],
   "quote": {
