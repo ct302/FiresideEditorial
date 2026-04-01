@@ -142,6 +142,17 @@
       "ctaText": "Find Your Fold",
       "affiliateUrl": "https://www.amazon.com/s?k=natural+kraft+wrapping+paper&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wrapping Supplies"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Quiet Alchemy of a Holiday Journal",
+      "slug": "the-quiet-alchemy-of-a-holiday-journal",
+      "description": "Turn holiday chaos into calm with a simple nightly journaling practice that captures the season's true spirit.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-a-holiday-journal.png",
+      "imageAlt": "A worn leather-bound journal open on a rustic wooden table, a steaming mug of tea beside it, with faint pencil marks visible on the creamy page.",
+      "ctaText": "Begin the Practice",
+      "affiliateUrl": "https://www.amazon.com/s?k=leather+bound+journal+notebook&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journaling Supplies"
     }
   ],
   "quote": {
