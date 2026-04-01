@@ -8,10 +8,6 @@ public static class DbSeeder
 {
     public static async Task SeedAsync(AppDbContext db, IWebHostEnvironment env)
     {
-        // Only seed if the Cards table is empty
-        if (await db.Cards.AnyAsync())
-            return;
-
         var jsonPath = Path.Combine(env.WebRootPath, "data", "content.json");
         if (!File.Exists(jsonPath))
             return;
@@ -20,24 +16,35 @@ public static class DbSeeder
         var options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
         var content = JsonSerializer.Deserialize<SeedContent>(json, options);
 
-        if (content?.Cards is { Count: > 0 })
+        if (content?.Cards is not { Count: > 0 })
+            return;
+
+        var existingSlugs = await db.Cards.Select(c => c.Slug).ToListAsync();
+        var existingSet = new HashSet<string>(existingSlugs, StringComparer.OrdinalIgnoreCase);
+
+        var newCards = content.Cards.Where(c => !existingSet.Contains(c.Slug)).ToList();
+        if (newCards.Count > 0)
         {
-            foreach (var card in content.Cards)
+            foreach (var card in newCards)
             {
-                card.Id = 0; // Let DB assign IDs
+                card.Id = 0;
                 card.CreatedAt = DateTime.UtcNow;
             }
-            db.Cards.AddRange(content.Cards);
+            db.Cards.AddRange(newCards);
         }
 
-        if (content?.Quote is not null)
+        // Seed quote if none exists
+        if (!await db.Quotes.AnyAsync() && content.Quote is not null)
         {
             content.Quote.Id = 0;
             db.Quotes.Add(content.Quote);
         }
 
-        await db.SaveChangesAsync();
-        Console.WriteLine($"Seeded {content?.Cards?.Count ?? 0} cards and 1 quote from content.json");
+        if (db.ChangeTracker.HasChanges())
+        {
+            await db.SaveChangesAsync();
+            Console.WriteLine($"Synced {newCards.Count} new cards from content.json (total: {await db.Cards.CountAsync()})");
+        }
     }
 
     private class SeedContent
