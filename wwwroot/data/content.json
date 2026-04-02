@@ -153,6 +153,17 @@
       "ctaText": "Begin the Practice",
       "affiliateUrl": "https://www.amazon.com/s?k=leather+bound+journal+notebook&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journaling Supplies"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Anonymous Gift: A Secret Santa Story",
+      "slug": "the-anonymous-gift-a-secret-santa-story",
+      "description": "Unwrap the surprising history of the gift exchange that turns colleagues and friends into anonymous winter benefactors.",
+      "imageUrl": "/images/articles/the-anonymous-gift-a-secret-santa-story.png",
+      "imageAlt": "A stack of whimsically wrapped Secret Santa gifts on a rustic wooden table, with a single tag reading 'To: You, From: A Friend'.",
+      "ctaText": "Unwrap the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=Secret+Santa+gift+exchange+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Gift Exchange"
     }
   ],
   "quote": {
