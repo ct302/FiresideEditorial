@@ -164,6 +164,17 @@
       "ctaText": "Unwrap the Tradition",
       "affiliateUrl": "https://www.amazon.com/s?k=Secret+Santa+gift+exchange+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Gift Exchange"
+    },
+    {
+      "category": "Nature",
+      "title": "The Quiet Alchemy of a Winter Morning Walk",
+      "slug": "the-quiet-alchemy-of-a-winter-morning-walk",
+      "description": "Discover the hushed magic found in the first, frozen hours of a winter day—a walk that rewrites the world in blue and white.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-a-winter-morning-walk.png",
+      "imageAlt": "A close-up of boot prints in fresh, sparkling snow leading through a frost-covered birch forest, morning light filtering through the trees.",
+      "ctaText": "Wander Deeper",
+      "affiliateUrl": "https://www.amazon.com/s?k=wool+winter+coat+thermal+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Outerwear"
     }
   ],
   "quote": {
