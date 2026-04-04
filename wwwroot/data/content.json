@@ -175,6 +175,17 @@
       "ctaText": "Wander Deeper",
       "affiliateUrl": "https://www.amazon.com/s?k=wool+winter+coat+thermal+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Outerwear"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Weight of a Word: On Writing Christmas Cards",
+      "slug": "the-weight-of-a-word-on-writing-christmas-cards",
+      "description": "In a world of instant clicks, discover the slow, sensory joy of a handwritten card.",
+      "imageUrl": "/images/articles/the-weight-of-a-word-on-writing-christmas-cards.png",
+      "imageAlt": "Close-up of a hand holding a fountain pen, ink flowing onto thick, textured cream cardstock. A sprig of holly rests beside it.",
+      "ctaText": "Find Your Pen",
+      "affiliateUrl": "https://www.amazon.com/s?k=fountain+pen+ink&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stationery"
     }
   ],
   "quote": {
