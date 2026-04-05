@@ -186,6 +186,17 @@
       "ctaText": "Find Your Pen",
       "affiliateUrl": "https://www.amazon.com/s?k=fountain+pen+ink&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Alchemy of Glögg and Glühwein",
+      "slug": "the-alchemy-of-glgg-and-glhwein",
+      "description": "A steaming cup of mulled wine tells a story—from Swedish cardamom to Provencal honey, each region's winter elixir has its own secret.",
+      "imageUrl": "/images/articles/the-alchemy-of-glgg-and-glhwein.png",
+      "imageAlt": "A rustic ceramic mug filled with deep red mulled wine, studded with star anise and orange slices, steam rising against a woolen blanket backdrop.",
+      "ctaText": "Sip the Recipe",
+      "affiliateUrl": "https://www.amazon.com/s?k=christmas+market+gluhwein+mug&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulling Essentials"
     }
   ],
   "quote": {
