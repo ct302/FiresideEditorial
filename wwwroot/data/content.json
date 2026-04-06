@@ -197,6 +197,17 @@
       "ctaText": "Sip the Recipe",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+market+gluhwein+mug&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulling Essentials"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "A Steaming Tour of Europe's Winter in a Mug",
+      "slug": "a-steaming-tour-of-europes-winter-in-a-mug",
+      "description": "Journey through snow-dusted markets and cozy kitchens with three traditional recipes for mulled wine, each a toast to winter's warmth.",
+      "imageUrl": "/images/articles/a-steaming-tour-of-europes-winter-in-a-mug.png",
+      "imageAlt": "A close-up of a rustic ceramic mug filled with deep red mulled wine, a cinnamon stick and orange slice resting on the rim, steam rising into a soft-focus winter background.",
+      "ctaText": "Sip the Story",
+      "affiliateUrl": "https://www.amazon.com/s?k=slow+cooker+mulled+wine&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Slow Cooker"
     }
   ],
   "quote": {
