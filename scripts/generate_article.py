@@ -51,8 +51,17 @@ CATEGORIES = [
     "Heritage", "Gatherings", "Homestead", "Storytelling",
 ]
 
-# Default placeholder image for AI-generated articles
-DEFAULT_IMAGE = "https://images.unsplash.com/photo-1512389142860-9c449e58a814?w=800&q=80"
+def get_fallback_image() -> str:
+    """When AI image generation fails, reuse a random existing local image.
+    Guarantees the card always renders something instead of a dead URL."""
+    if IMAGES_DIR.exists():
+        existing = list(IMAGES_DIR.glob("*.png"))
+        if existing:
+            choice = random.choice(existing)
+            print(f"  IMAGE FALLBACK USED: reusing {choice.name}", file=sys.stderr)
+            return f"/images/articles/{choice.name}"
+    print("  IMAGE FALLBACK USED: no local images found, using empty placeholder", file=sys.stderr)
+    return "/images/articles/placeholder.png"
 
 SYSTEM_PROMPT = """You are the voice of The Fireside Editorial — a warm, literary Christmas and winter traditions magazine. Your tone is:
 - Intimate and nostalgic, like a letter from a well-read friend
@@ -218,7 +227,7 @@ def call_openrouter(topic: str) -> dict:
 def generate_image(title: str, image_alt: str, slug: str) -> str:
     """Generate an editorial photo via Nano Banana and save as PNG. Returns relative URL path."""
     if not OPENROUTER_KEY:
-        return DEFAULT_IMAGE
+        return get_fallback_image()
 
     IMAGES_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -255,10 +264,10 @@ def generate_image(title: str, image_alt: str, slug: str) -> str:
     except urllib.error.HTTPError as e:
         body = e.read().decode() if e.fp else ""
         print(f"  Image API error {e.code}: {body[:200]}", file=sys.stderr)
-        return DEFAULT_IMAGE
+        return get_fallback_image()
     except Exception as e:
         print(f"  Image generation failed: {e}", file=sys.stderr)
-        return DEFAULT_IMAGE
+        return get_fallback_image()
 
     # Extract base64 image from response
     try:
@@ -291,7 +300,7 @@ def generate_image(title: str, image_alt: str, slug: str) -> str:
 
         if not b64_data:
             print("  No image data in response, using fallback", file=sys.stderr)
-            return DEFAULT_IMAGE
+            return get_fallback_image()
 
         # Strip data URL prefix if present
         if isinstance(b64_data, str) and b64_data.startswith("data:image"):
@@ -306,7 +315,7 @@ def generate_image(title: str, image_alt: str, slug: str) -> str:
 
     except Exception as e:
         print(f"  Image extraction failed: {e}", file=sys.stderr)
-        return DEFAULT_IMAGE
+        return get_fallback_image()
 
 
 def update_content_json(card_entry: dict):
@@ -344,10 +353,16 @@ def main():
     md_path.write_text(article["markdown"], encoding="utf-8")
     print(f"  Wrote: {md_path.name}")
 
-    # Generate editorial image
+    # Generate editorial image (retry once if first attempt didn't produce a file)
     image_alt = article.get("imageAlt", f"Editorial photo for {title}")
     print("  Generating image via Nano Banana...")
     image_url = generate_image(title, image_alt, slug)
+    expected_path = IMAGES_DIR / f"{slug}.png"
+    if not expected_path.exists():
+        print("  First image attempt failed — retrying once after 5s...", file=sys.stderr)
+        import time
+        time.sleep(5)
+        image_url = generate_image(title, image_alt, slug)
 
     # Build the card entry for content.json
     amazon_tag = os.environ.get("AMAZON_TAG", "YOUR-TAG-20")
