@@ -23,7 +23,7 @@ jobs:
           dotnet-quality: preview
 
       - name: Publish
-        run: dotnet publish -c Release -o ./publish --self-contained true -r win-x64
+        run: dotnet publish FiresideEditorial.csproj -c Release -o ./publish --self-contained true -r win-x86
 
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
