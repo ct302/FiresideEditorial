@@ -15,7 +15,9 @@ builder.Services.AddRazorComponents()
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite("Data Source=fireside.db"));
 
-builder.Services.AddScoped<IContentService, EfContentService>();
+// NOTE: Using JsonContentService instead of EfContentService — Azure F1 free tier
+// has issues loading SQLite native libs. Swap back to EfContentService when on B1+.
+builder.Services.AddScoped<IContentService, JsonContentService>();
 builder.Services.AddScoped<SearchState>();
 builder.Services.AddScoped<INewsletterService, ButtondownNewsletterService>();
 builder.Services.AddSingleton<IGiftGuideService, JsonGiftGuideService>();
@@ -37,13 +39,21 @@ builder.Services.AddCascadingAuthenticationState();
 
 var app = builder.Build();
 
-// Auto-migrate and seed database
-using (var scope = app.Services.CreateScope())
+// Auto-migrate and seed database (wrapped — F1 tier may fail SQLite native init)
+try
 {
-    var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
-    var env = scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>();
-    await db.Database.EnsureCreatedAsync();
-    await DbSeeder.SeedAsync(db, env);
+    using (var scope = app.Services.CreateScope())
+    {
+        var db = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+        var env = scope.ServiceProvider.GetRequiredService<IWebHostEnvironment>();
+        await db.Database.EnsureCreatedAsync();
+        await DbSeeder.SeedAsync(db, env);
+    }
+}
+catch (Exception ex)
+{
+    var logger = app.Services.GetRequiredService<ILogger<Program>>();
+    logger.LogError(ex, "Database initialization failed — continuing without DB seed.");
 }
 
 if (!app.Environment.IsDevelopment())
