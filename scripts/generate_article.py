@@ -12,8 +12,17 @@ CONTENT_JSON = REPO_ROOT / "wwwroot" / "data" / "content.json"
 ARTICLES_DIR = REPO_ROOT / "wwwroot" / "data" / "articles"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
 IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image")
+
+# Ordered fallback list — tries each until one works
+MODEL_FALLBACKS = [
+    os.environ.get("OPENROUTER_MODEL", "google/gemma-4-31b-it:free"),
+    "inclusionai/ling-2.6-flash:free",
+    "meta-llama/llama-3.3-70b-instruct:free",
+    "mistralai/mistral-small-3.1-24b-instruct:free",
+    "nvidia/llama-3.1-nemotron-nano-8b-v1:free",
+]
+MODEL = MODEL_FALLBACKS[0]  # default for logging
 
 IMAGES_DIR = REPO_ROOT / "wwwroot" / "images" / "articles"
 
@@ -110,50 +119,56 @@ def pick_topic():
 
 
 def call_openrouter(topic: str) -> dict:
-    """Call OpenRouter API and return parsed JSON response."""
+    """Call OpenRouter API with model fallback. Tries each model until one works."""
+    global MODEL
     if not OPENROUTER_KEY:
         print("ERROR: OPENROUTER_API_KEY not set", file=sys.stderr)
         sys.exit(1)
 
-    payload = json.dumps({
-        "model": MODEL,
-        "max_tokens": 16000,
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
-        ]
-    }).encode()
+    import time
+    last_error = None
 
-    req = urllib.request.Request(
-        "https://openrouter.ai/api/v1/chat/completions",
-        data=payload,
-        headers={
-            "Authorization": f"Bearer {OPENROUTER_KEY}",
-            "Content-Type": "application/json",
-            "HTTP-Referer": "https://github.com/ct302/FiresideEditorial",
-            "X-Title": "Fireside Editorial Article Generator",
-        },
-    )
+    for model_id in MODEL_FALLBACKS:
+        MODEL = model_id
+        print(f"  Trying model: {model_id}", file=sys.stderr)
 
-    try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
-            data = json.loads(resp.read())
-    except urllib.error.HTTPError as e:
-        body = e.read().decode() if e.fp else ""
-        if e.code == 429:
-            print(f"  Rate limited. Retrying in 30 seconds...", file=sys.stderr)
-            import time
-            time.sleep(30)
-            try:
-                with urllib.request.urlopen(req, timeout=120) as resp:
-                    data = json.loads(resp.read())
-            except urllib.error.HTTPError as e2:
-                body2 = e2.read().decode() if e2.fp else ""
-                print(f"API error {e2.code} on retry: {body2}", file=sys.stderr)
-                sys.exit(1)
-        else:
-            print(f"API error {e.code}: {body}", file=sys.stderr)
-            sys.exit(1)
+        payload = json.dumps({
+            "model": model_id,
+            "max_tokens": 16000,
+            "messages": [
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
+            ]
+        }).encode()
+
+        req = urllib.request.Request(
+            "https://openrouter.ai/api/v1/chat/completions",
+            data=payload,
+            headers={
+                "Authorization": f"Bearer {OPENROUTER_KEY}",
+                "Content-Type": "application/json",
+                "HTTP-Referer": "https://github.com/ct302/FiresideEditorial",
+                "X-Title": "Fireside Editorial Article Generator",
+            },
+        )
+
+        try:
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                data = json.loads(resp.read())
+            # Success — break out of fallback loop
+            print(f"  Success with model: {model_id}")
+            break
+        except urllib.error.HTTPError as e:
+            body = e.read().decode() if e.fp else ""
+            print(f"  Model {model_id} failed ({e.code}): {body[:200]}", file=sys.stderr)
+            last_error = f"API error {e.code}: {body}"
+            if e.code == 429:
+                time.sleep(5)  # brief pause before trying next model
+            continue
+    else:
+        # All models failed
+        print(f"All {len(MODEL_FALLBACKS)} models failed. Last error: {last_error}", file=sys.stderr)
+        sys.exit(1)
 
     # Handle different response formats across models
     choice = data.get("choices", [{}])[0]
