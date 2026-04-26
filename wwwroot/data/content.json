@@ -219,6 +219,17 @@
       "ctaText": "Taste the Wild",
       "affiliateUrl": "https://www.amazon.com/s?k=glass+simmer+pot+aroma&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Foraging Tools"
+    },
+    {
+      "category": "The Forest",
+      "title": "The Magic of a Winter Morning Walk",
+      "slug": "the-magic-of-a-winter-morning-walk",
+      "description": "Awakened breath, quiet streets, and the hush of frost — rediscover winter mornings with gentle, unhurried steps.",
+      "imageUrl": "/images/articles/the-magic-of-a-winter-morning-walk.png",
+      "imageAlt": "Frosted pine path at dawn, breath visible, soft morning light",
+      "ctaText": "Walk in Silence",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+walk+essentials&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Footwear"
     }
   ],
   "quote": {
