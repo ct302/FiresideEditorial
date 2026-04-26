@@ -26,7 +26,7 @@ jobs:
       - name: Generate article
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
-          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'stepfun/step-3.5-flash:free' }}
+          OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'meta-llama/llama-3.3-70b-instruct:free' }}
           AMAZON_TAG: ${{ vars.AMAZON_TAG || 'YOUR-TAG-20' }}
         run: python scripts/generate_article.py
 

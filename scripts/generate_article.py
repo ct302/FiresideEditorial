@@ -12,7 +12,7 @@ CONTENT_JSON = REPO_ROOT / "wwwroot" / "data" / "content.json"
 ARTICLES_DIR = REPO_ROOT / "wwwroot" / "data" / "articles"
 
 OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
-MODEL = os.environ.get("OPENROUTER_MODEL", "stepfun/step-3.5-flash:free")
+MODEL = os.environ.get("OPENROUTER_MODEL", "meta-llama/llama-3.3-70b-instruct:free")
 IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image")
 
 IMAGES_DIR = REPO_ROOT / "wwwroot" / "images" / "articles"
