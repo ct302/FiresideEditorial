@@ -230,6 +230,17 @@
       "ctaText": "Walk in Silence",
       "affiliateUrl": "https://www.amazon.com/s?k=winter+walk+essentials&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Footwear"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Art of the Holiday Cheese Board",
+      "slug": "the-art-of-the-holiday-cheese-board",
+      "description": "A slow, sensory guide to building a festive cheese board that feels like home",
+      "imageUrl": "/images/articles/the-art-of-the-holiday-cheese-board.png",
+      "imageAlt": "A rustic wooden cheese board at candlelit evening, grapes and nuts scattered around",
+      "ctaText": "Build the Board",
+      "affiliateUrl": "https://www.amazon.com/s?k=holiday+cheese+board+gifts&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cheese Boards"
     }
   ],
   "quote": {
