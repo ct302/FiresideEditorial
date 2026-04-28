@@ -241,6 +241,17 @@
       "ctaText": "Build the Board",
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+cheese+board+gifts&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cheese Boards"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of the Wrap",
+      "slug": "the-quiet-art-of-the-wrap",
+      "description": "Discover the slow, sensory joy of wrapping gifts by hand using brown paper, dried botanicals, and twine.",
+      "imageUrl": "/images/articles/the-quiet-art-of-the-wrap.png",
+      "imageAlt": "Close-up of a gift wrapped in recycled brown paper tied with red twine and a sprig of fresh rosemary",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=brown+kraft+wrapping+paper+twine&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wrapping Supplies"
     }
   ],
   "quote": {
