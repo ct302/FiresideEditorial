@@ -15,13 +15,17 @@ OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 IMAGE_MODEL = os.environ.get("OPENROUTER_IMAGE_MODEL", "google/gemini-2.5-flash-image")
 
 # Ordered fallback list — tries each until one works
+# openrouter/free auto-routes to whatever's alive, so it goes first
 MODEL_FALLBACKS = [
-    os.environ.get("OPENROUTER_MODEL", "google/gemma-4-31b-it:free"),
-    "inclusionai/ling-2.6-flash:free",
+    os.environ.get("OPENROUTER_MODEL", "openrouter/free"),
+    "google/gemma-4-31b-it:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "inclusionai/ling-2.6-1t:free",
+    "tencent/hy3-preview:free",
     "meta-llama/llama-3.3-70b-instruct:free",
-    "mistralai/mistral-small-3.1-24b-instruct:free",
-    "nvidia/llama-3.1-nemotron-nano-8b-v1:free",
 ]
+MAX_RETRIES_PER_MODEL = 2  # retry 429s before moving to next model
+RETRY_DELAY_SECS = 15      # wait between retries on rate-limit
 MODEL = MODEL_FALLBACKS[0]  # default for logging
 
 IMAGES_DIR = REPO_ROOT / "wwwroot" / "images" / "articles"
@@ -119,7 +123,7 @@ def pick_topic():
 
 
 def call_openrouter(topic: str) -> dict:
-    """Call OpenRouter API with model fallback. Tries each model until one works."""
+    """Call OpenRouter API with model fallback + retry. Retries 429s before moving on."""
     global MODEL
     if not OPENROUTER_KEY:
         print("ERROR: OPENROUTER_API_KEY not set", file=sys.stderr)
@@ -132,39 +136,49 @@ def call_openrouter(topic: str) -> dict:
         MODEL = model_id
         print(f"  Trying model: {model_id}", file=sys.stderr)
 
-        payload = json.dumps({
-            "model": model_id,
-            "max_tokens": 16000,
-            "messages": [
-                {"role": "system", "content": SYSTEM_PROMPT},
-                {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
-            ]
-        }).encode()
+        for attempt in range(1, MAX_RETRIES_PER_MODEL + 1):
+            payload = json.dumps({
+                "model": model_id,
+                "max_tokens": 16000,
+                "messages": [
+                    {"role": "system", "content": SYSTEM_PROMPT},
+                    {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
+                ]
+            }).encode()
 
-        req = urllib.request.Request(
-            "https://openrouter.ai/api/v1/chat/completions",
-            data=payload,
-            headers={
-                "Authorization": f"Bearer {OPENROUTER_KEY}",
-                "Content-Type": "application/json",
-                "HTTP-Referer": "https://github.com/ct302/FiresideEditorial",
-                "X-Title": "Fireside Editorial Article Generator",
-            },
-        )
+            req = urllib.request.Request(
+                "https://openrouter.ai/api/v1/chat/completions",
+                data=payload,
+                headers={
+                    "Authorization": f"Bearer {OPENROUTER_KEY}",
+                    "Content-Type": "application/json",
+                    "HTTP-Referer": "https://github.com/ct302/FiresideEditorial",
+                    "X-Title": "Fireside Editorial Article Generator",
+                },
+            )
 
-        try:
-            with urllib.request.urlopen(req, timeout=120) as resp:
-                data = json.loads(resp.read())
-            # Success — break out of fallback loop
-            print(f"  Success with model: {model_id}")
-            break
-        except urllib.error.HTTPError as e:
-            body = e.read().decode() if e.fp else ""
-            print(f"  Model {model_id} failed ({e.code}): {body[:200]}", file=sys.stderr)
-            last_error = f"API error {e.code}: {body}"
-            if e.code == 429:
-                time.sleep(5)  # brief pause before trying next model
-            continue
+            try:
+                with urllib.request.urlopen(req, timeout=120) as resp:
+                    data = json.loads(resp.read())
+                # Success — break out of both loops
+                print(f"  Success with model: {model_id} (attempt {attempt})")
+                break
+            except urllib.error.HTTPError as e:
+                body = e.read().decode() if e.fp else ""
+                last_error = f"API error {e.code}: {body}"
+                if e.code == 429 and attempt < MAX_RETRIES_PER_MODEL:
+                    print(f"  Rate limited on {model_id} (attempt {attempt}), waiting {RETRY_DELAY_SECS}s...", file=sys.stderr)
+                    time.sleep(RETRY_DELAY_SECS)
+                    continue  # retry same model
+                elif e.code == 404:
+                    print(f"  Model {model_id} not found (404), skipping", file=sys.stderr)
+                    break  # skip to next model, no point retrying
+                else:
+                    print(f"  Model {model_id} failed ({e.code}): {body[:200]}", file=sys.stderr)
+                    break  # skip to next model
+        else:
+            continue  # inner loop exhausted retries, try next model
+        break  # inner loop broke on success, exit outer loop
     else:
         # All models failed
         print(f"All {len(MODEL_FALLBACKS)} models failed. Last error: {last_error}", file=sys.stderr)
