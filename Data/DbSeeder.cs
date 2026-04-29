@@ -28,7 +28,9 @@ public static class DbSeeder
             foreach (var card in newCards)
             {
                 card.Id = 0;
-                card.CreatedAt = DateTime.UtcNow;
+                // Use date from content.json if present, otherwise fall back to now
+                if (card.CreatedAt == default || card.CreatedAt == DateTime.MinValue)
+                    card.CreatedAt = DateTime.UtcNow;
             }
             db.Cards.AddRange(newCards);
         }

@@ -408,6 +408,7 @@ def main():
         "ctaText": article.get("ctaText", "Read More"),
         "affiliateUrl": f"https://www.amazon.com/s?k={search_encoded}&tag={amazon_tag}",
         "affiliateLabel": article.get("affiliateLabel", "Shop Related"),
+        "createdAt": datetime.date.today().isoformat(),
     }
 
     update_content_json(card)

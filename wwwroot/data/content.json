@@ -9,7 +9,8 @@
       "imageAlt": "Traditional gingerbread house baking scene with flour",
       "ctaText": "Read Secret Recipe",
       "affiliateUrl": "https://www.amazon.com/s?k=gingerbread+house+kit&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Gingerbread Kits"
+      "affiliateLabel": "Shop Gingerbread Kits",
+      "createdAt": "2026-01-15"
     },
     {
       "category": "Evening Ritual",
@@ -20,7 +21,8 @@
       "imageAlt": "Close up of a steaming mug of cocoa with marshmallows by a window",
       "ctaText": "Discover the Blend",
       "affiliateUrl": "https://www.amazon.com/s?k=artisan+hot+chocolate+gift+set&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Hot Cocoa Sets"
+      "affiliateLabel": "Shop Hot Cocoa Sets",
+      "createdAt": "2026-01-22"
     },
     {
       "category": "Craft & Care",
@@ -31,7 +33,8 @@
       "imageAlt": "Close up of hand-knitted red stockings",
       "ctaText": "View Patterns",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+knitting+kit+stocking&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Knitting Kits"
+      "affiliateLabel": "Shop Knitting Kits",
+      "createdAt": "2026-02-01"
     },
     {
       "category": "The Forest",
@@ -42,7 +45,8 @@
       "imageAlt": "Wreath making with fresh pine and berries",
       "ctaText": "Workshop Guide",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+wreath+making+kit&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Wreath Kits"
+      "affiliateLabel": "Shop Wreath Kits",
+      "createdAt": "2026-02-10"
     },
     {
       "category": "Harmony",
@@ -53,7 +57,8 @@
       "imageAlt": "Classic caroling group in festive winter attire",
       "ctaText": "Songbook Selection",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+carol+songbook&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Songbooks"
+      "affiliateLabel": "Shop Songbooks",
+      "createdAt": "2026-02-18"
     },
     {
       "category": "Artisanal",
@@ -64,7 +69,8 @@
       "imageAlt": "Beautifully crafted handmade glass ornaments",
       "ctaText": "Collector's Gallery",
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+glass+christmas+ornaments&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Handmade Ornaments"
+      "affiliateLabel": "Shop Handmade Ornaments",
+      "createdAt": "2026-02-25"
     },
     {
       "category": "Nature",
@@ -75,7 +81,8 @@
       "imageAlt": "Cozy winter scene with warm glowing candles and pine cones",
       "ctaText": "Solstice Rituals",
       "affiliateUrl": "https://www.amazon.com/s?k=beeswax+candle+gift+set+winter&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Solstice Candles"
+      "affiliateLabel": "Shop Solstice Candles",
+      "createdAt": "2026-03-03"
     },
     {
       "category": "Leisure",
@@ -86,7 +93,8 @@
       "imageAlt": "A cozy reading nook with a book, a warm blanket, and a steaming mug by the window",
       "ctaText": "Winter Reading List",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+classic+books+gift+set&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Winter Reads"
+      "affiliateLabel": "Shop Winter Reads",
+      "createdAt": "2026-03-10"
     },
     {
       "category": "Nostalgia",
@@ -97,7 +105,8 @@
       "imageAlt": "A high-quality, nostalgic holiday photograph of a vintage wooden sleigh resting in fresh snow at dusk",
       "ctaText": "Explore Trails",
       "affiliateUrl": "https://www.amazon.com/s?k=vintage+christmas+decor+sleigh&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Vintage Decor"
+      "affiliateLabel": "Shop Vintage Decor",
+      "createdAt": "2026-03-17"
     },
     {
       "category": "Gatherings",
@@ -108,7 +117,8 @@
       "imageAlt": "Hands decorating sugar cookies with royal icing, surrounded by bowls of colored frosting and sprinkles on a flour-dusted wooden table",
       "ctaText": "Read the Recipe",
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies+royal+icing&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Decorating Tools"
+      "affiliateLabel": "Shop Decorating Tools",
+      "createdAt": "2026-03-29"
     },
     {
       "category": "Gatherings",
@@ -119,7 +129,8 @@
       "imageAlt": "A rustic wooden board piled with aged cheddar, a soft-ripened bloomy rind cheese, honeycomb, dried figs, and crusty bread, all softly lit by candlelight.",
       "ctaText": "Savor the Craft",
       "affiliateUrl": "https://www.amazon.com/s?k=cheese+knives+set&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Cheese Tools"
+      "affiliateLabel": "Shop Cheese Tools",
+      "createdAt": "2026-03-29"
     },
     {
       "category": "Evening Ritual",
@@ -130,7 +141,8 @@
       "imageAlt": "A worn leather journal open on a wooden table next to a steaming mug of tea, with frost patterns on a nearby window.",
       "ctaText": "Begin Your Practice",
       "affiliateUrl": "https://www.amazon.com/s?k=leather+journal+fountain+pen&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Journaling Essentials"
+      "affiliateLabel": "Shop Journaling Essentials",
+      "createdAt": "2026-03-30"
     },
     {
       "category": "Craft & Care",
@@ -141,7 +153,8 @@
       "imageAlt": "Hands gently tying a twine bow around a gift wrapped in textured brown paper and dried orange slices",
       "ctaText": "Find Your Fold",
       "affiliateUrl": "https://www.amazon.com/s?k=natural+kraft+wrapping+paper&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Wrapping Supplies"
+      "affiliateLabel": "Shop Wrapping Supplies",
+      "createdAt": "2026-03-31"
     },
     {
       "category": "Evening Ritual",
@@ -152,7 +165,8 @@
       "imageAlt": "A worn leather-bound journal open on a rustic wooden table, a steaming mug of tea beside it, with faint pencil marks visible on the creamy page.",
       "ctaText": "Begin the Practice",
       "affiliateUrl": "https://www.amazon.com/s?k=leather+bound+journal+notebook&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Journaling Supplies"
+      "affiliateLabel": "Shop Journaling Supplies",
+      "createdAt": "2026-04-01"
     },
     {
       "category": "Gatherings",
@@ -163,7 +177,8 @@
       "imageAlt": "A stack of whimsically wrapped Secret Santa gifts on a rustic wooden table, with a single tag reading 'To: You, From: A Friend'.",
       "ctaText": "Unwrap the Tradition",
       "affiliateUrl": "https://www.amazon.com/s?k=Secret+Santa+gift+exchange+kit&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Gift Exchange"
+      "affiliateLabel": "Shop Gift Exchange",
+      "createdAt": "2026-04-02"
     },
     {
       "category": "Nature",
@@ -174,7 +189,8 @@
       "imageAlt": "A close-up of boot prints in fresh, sparkling snow leading through a frost-covered birch forest, morning light filtering through the trees.",
       "ctaText": "Wander Deeper",
       "affiliateUrl": "https://www.amazon.com/s?k=wool+winter+coat+thermal+boots&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Winter Outerwear"
+      "affiliateLabel": "Shop Winter Outerwear",
+      "createdAt": "2026-04-03"
     },
     {
       "category": "Craft & Care",
@@ -185,7 +201,8 @@
       "imageAlt": "Close-up of a hand holding a fountain pen, ink flowing onto thick, textured cream cardstock. A sprig of holly rests beside it.",
       "ctaText": "Find Your Pen",
       "affiliateUrl": "https://www.amazon.com/s?k=fountain+pen+ink&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Stationery"
+      "affiliateLabel": "Shop Stationery",
+      "createdAt": "2026-04-04"
     },
     {
       "category": "Evening Ritual",
@@ -196,7 +213,8 @@
       "imageAlt": "A rustic ceramic mug filled with deep red mulled wine, studded with star anise and orange slices, steam rising against a woolen blanket backdrop.",
       "ctaText": "Sip the Recipe",
       "affiliateUrl": "https://www.amazon.com/s?k=christmas+market+gluhwein+mug&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Mulling Essentials"
+      "affiliateLabel": "Shop Mulling Essentials",
+      "createdAt": "2026-04-05"
     },
     {
       "category": "Evening Ritual",
@@ -207,7 +225,8 @@
       "imageAlt": "A close-up of a rustic ceramic mug filled with deep red mulled wine, a cinnamon stick and orange slice resting on the rim, steam rising into a soft-focus winter background.",
       "ctaText": "Sip the Story",
       "affiliateUrl": "https://www.amazon.com/s?k=slow+cooker+mulled+wine&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Slow Cooker"
+      "affiliateLabel": "Shop Slow Cooker",
+      "createdAt": "2026-04-06"
     },
     {
       "category": "The Forest",
@@ -218,7 +237,8 @@
       "imageAlt": "Close-up of hands holding a small bundle of fresh pine needles, rosemary sprigs, and dark blue juniper berries on a rustic wooden table, morning light filtering through a frosted window.",
       "ctaText": "Taste the Wild",
       "affiliateUrl": "https://www.amazon.com/s?k=glass+simmer+pot+aroma&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Foraging Tools"
+      "affiliateLabel": "Shop Foraging Tools",
+      "createdAt": "2026-04-07"
     },
     {
       "category": "The Forest",
@@ -229,7 +249,8 @@
       "imageAlt": "Frosted pine path at dawn, breath visible, soft morning light",
       "ctaText": "Walk in Silence",
       "affiliateUrl": "https://www.amazon.com/s?k=winter+walk+essentials&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Footwear"
+      "affiliateLabel": "Shop Footwear",
+      "createdAt": "2026-04-26"
     },
     {
       "category": "Gatherings",
@@ -240,7 +261,8 @@
       "imageAlt": "A rustic wooden cheese board at candlelit evening, grapes and nuts scattered around",
       "ctaText": "Build the Board",
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+cheese+board+gifts&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Cheese Boards"
+      "affiliateLabel": "Shop Cheese Boards",
+      "createdAt": "2026-04-27"
     },
     {
       "category": "Craft & Care",
@@ -251,7 +273,8 @@
       "imageAlt": "Close-up of a gift wrapped in recycled brown paper tied with red twine and a sprig of fresh rosemary",
       "ctaText": "Explore the Craft",
       "affiliateUrl": "https://www.amazon.com/s?k=brown+kraft+wrapping+paper+twine&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Wrapping Supplies"
+      "affiliateLabel": "Shop Wrapping Supplies",
+      "createdAt": "2026-04-28"
     },
     {
       "category": "Gatherings",
@@ -262,7 +285,8 @@
       "imageAlt": "Warm living room with beeswax candles, pine garland, mulled cider, and knit-sweatered guests near a crackling fireplace on winter solstice.",
       "ctaText": "Host the Gathering",
       "affiliateUrl": "https://www.amazon.com/s?k=winter+solstice+party+supplies&tag=YOUR-TAG-20",
-      "affiliateLabel": "Shop Solstice Supplies"
+      "affiliateLabel": "Shop Solstice Supplies",
+      "createdAt": "2026-04-29"
     }
   ],
   "quote": {
