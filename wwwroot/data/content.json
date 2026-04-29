@@ -252,6 +252,17 @@
       "ctaText": "Explore the Craft",
       "affiliateUrl": "https://www.amazon.com/s?k=brown+kraft+wrapping+paper+twine&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wrapping Supplies"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Gathering the Solstice: Warmth for the Longest Night",
+      "slug": "gathering-the-solstice-warmth-for-the-longest-night",
+      "description": "A gentle, sensory guide to hosting an intimate winter solstice gathering full of warmth, light, and quiet tradition.",
+      "imageUrl": "/images/articles/gathering-the-solstice-warmth-for-the-longest-night.png",
+      "imageAlt": "Warm living room with beeswax candles, pine garland, mulled cider, and knit-sweatered guests near a crackling fireplace on winter solstice.",
+      "ctaText": "Host the Gathering",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+solstice+party+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Solstice Supplies"
     }
   ],
   "quote": {
