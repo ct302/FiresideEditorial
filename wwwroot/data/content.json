@@ -287,6 +287,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+solstice+party+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Solstice Supplies",
       "createdAt": "2026-04-29"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Quiet Alchemy of Keeping Family Recipes Alive",
+      "slug": "the-quiet-alchemy-of-keeping-family-recipes-alive",
+      "description": "A gentle guide to turning treasured dishes into heirloom stories for the generations that follow.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-keeping-family-recipes-alive.png",
+      "imageAlt": "Grandmother's handwritten recipe card beside a steaming pot of broth",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+journal&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Recipe Journals",
+      "createdAt": "2026-04-30"
     }
   ],
   "quote": {
