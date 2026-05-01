@@ -299,6 +299,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+journal&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Recipe Journals",
       "createdAt": "2026-04-30"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Cookie Decorating Party: The Sweet Art of Making Memories",
+      "slug": "cookie-decorating-party-the-sweet-art-of-making-memories",
+      "description": "A cozy guide to rallying your crew for a cookie-decorating feast of colors, sprinkles, and laughter.",
+      "imageUrl": "/images/articles/cookie-decorating-party-the-sweet-art-of-making-memories.png",
+      "imageAlt": "A sunlit kitchen table covered in cocoa-dusted sheet cookies, rainbow sprinkles, and a half-full bag of lollipops, with friends reaching eagerly for supplies.",
+      "ctaText": "Plan Your Festivity",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kits+holiday+baking+ideas&tag=YOUR-TAG-20",
+      "affiliateLabel": "Party Supplies",
+      "createdAt": "2026-05-01"
     }
   ],
   "quote": {
