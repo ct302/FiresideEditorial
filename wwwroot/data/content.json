@@ -311,6 +311,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kits+holiday+baking+ideas&tag=YOUR-TAG-20",
       "affiliateLabel": "Party Supplies",
       "createdAt": "2026-05-01"
+    },
+    {
+      "category": "Nature",
+      "title": "Winter Foraging: Harvesting the Forest’s Bounty",
+      "slug": "winter-foraging-harvesting-the-forests-bounty",
+      "description": "A guide to gathering pine, rosemary, and juniper from your woods for winter magic—fragrant remedies, cozy decor, and earthy stories.",
+      "imageUrl": "/images/articles/winter-foraging-harvesting-the-forests-bounty.png",
+      "imageAlt": "A rustic cutting board holds bundles of dried pine needles, sprigs of rosemary, and juniper berries among wild-bloomed tea flowers, bathed in golden forest light.",
+      "ctaText": "Taste the Earth",
+      "affiliateUrl": "https://www.amazon.com/s?k=Foraging+pine+rosemary+juniper+herbs+for+crafting&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Foraged Herbs",
+      "createdAt": "2026-05-02"
     }
   ],
   "quote": {
