@@ -323,6 +323,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Foraging+pine+rosemary+juniper+herbs+for+crafting&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Foraged Herbs",
       "createdAt": "2026-05-02"
+    },
+    {
+      "category": "Heritage",
+      "title": "Spiced & Storied: Europe’s Traditional Mulled Wine Recipes",
+      "slug": "spiced-storied-europes-traditional-mulled-wine-recipes",
+      "description": "A sensory journey through Europe’s most cherished traditional mulled wine recipes, from Nordic glögg to Alpine glühwein.",
+      "imageUrl": "/images/articles/spiced-storied-europes-traditional-mulled-wine-recipes.png",
+      "imageAlt": "Steaming ceramic mug of mulled wine on a rustic wooden table with cinnamon sticks, orange slices, and snow falling outside a frosted window.",
+      "ctaText": "Sip the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kits&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-05-03"
     }
   ],
   "quote": {
