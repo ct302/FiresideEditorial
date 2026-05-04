@@ -335,6 +335,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kits&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-05-03"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Slow Craft of a Winter Reading Nook",
+      "slug": "the-slow-craft-of-a-winter-reading-nook",
+      "description": "A guide to building a cozy, sensory-rich winter reading nook from well-loved pieces, no trendy decor required.",
+      "imageUrl": "/images/articles/the-slow-craft-of-a-winter-reading-nook.png",
+      "imageAlt": "A cozy winter reading nook with a sagging wool armchair, stacked dog-eared books, and a warm amber table lamp.",
+      "ctaText": "Craft the Nook",
+      "affiliateUrl": "https://www.amazon.com/s?k=wool+throw+blankets&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Throws",
+      "createdAt": "2026-05-04"
     }
   ],
   "quote": {
