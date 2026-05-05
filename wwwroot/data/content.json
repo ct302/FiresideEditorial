@@ -347,6 +347,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=wool+throw+blankets&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Throws",
       "createdAt": "2026-05-04"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Snow Globe Collecting as a Family Tradition",
+      "slug": "snow-globe-collecting-as-a-family-tradition",
+      "description": "A cozy whisper of winter brought to life through the gentle art of collecting snow globes.",
+      "imageUrl": "/images/articles/snow-globe-collecting-as-a-family-tradition.png",
+      "imageAlt": "A family gathered around a beautifully labeled snow globe, candles flickering softly.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=snow+globe+kits+family+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop our Curated Collection",
+      "createdAt": "2026-05-05"
     }
   ],
   "quote": {
