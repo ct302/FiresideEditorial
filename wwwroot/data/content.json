@@ -359,6 +359,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=snow+globe+kits+family+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop our Curated Collection",
       "createdAt": "2026-05-05"
+    },
+    {
+      "category": "Heritage",
+      "title": "Embers of Yule: The Hearth’s Timeless Tale",
+      "slug": "embers-of-yule-the-hearths-timeless-tale",
+      "description": "Journey into the flickering heart of winter through the age‑old ritual of the Yule log and its warm, fragrant whispers.",
+      "imageUrl": "/images/articles/embers-of-yule-the-hearths-timeless-tale.png",
+      "imageAlt": "A rustic stone hearth cradling a smoldering Yule log, surrounded by pine boughs and candlelight",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handcrafted+Yule+log+stand&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stands",
+      "createdAt": "2026-05-07"
     }
   ],
   "quote": {
