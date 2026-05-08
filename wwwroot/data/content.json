@@ -371,6 +371,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handcrafted+Yule+log+stand&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stands",
       "createdAt": "2026-05-07"
+    },
+    {
+      "category": "Storytelling",
+      "title": "Ink and Evergreen: The Art of Handwritten Christmas Cards",
+      "slug": "ink-and-evergreen-the-art-of-handwritten-christmas-cards",
+      "description": "Discover the quiet magic of pen, paper, and holiday sentiment in handcrafted Christmas cards.",
+      "imageUrl": "/images/articles/ink-and-evergreen-the-art-of-handwritten-christmas-cards.png",
+      "imageAlt": "A handwritten Christmas card lying on a woolen blanket beside a steaming mug of cocoa",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+cards&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cards",
+      "createdAt": "2026-05-08"
     }
   ],
   "quote": {
