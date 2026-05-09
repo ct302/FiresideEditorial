@@ -383,6 +383,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+cards&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cards",
       "createdAt": "2026-05-08"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Joy of Secret Santa: A History",
+      "slug": "the-joy-of-secret-santa-a-history",
+      "description": "A tale of hidden gifts, old traditions, and the warmth of shared laughter.",
+      "imageUrl": "/images/articles/the-joy-of-secret-santa-a-history.png",
+      "imageAlt": "A cozy room with a wooden table, twinkling lights, and friends exchanging gifts",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+ornaments%2C+classic+cards%2C+festive+decorations&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Timeless North American Goods",
+      "createdAt": "2026-05-09"
     }
   ],
   "quote": {
