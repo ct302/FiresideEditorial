@@ -213,44 +213,70 @@ def call_openrouter(topic: str) -> dict:
         print(f"No content in API response. Full response:\n{json.dumps(data, indent=2)[:1000]}", file=sys.stderr)
         sys.exit(1)
 
-    # Strip markdown fences if the model added them
+    # --- Robust JSON extraction ---
+    # 1. Strip <think>/<reasoning> tags some models add
+    raw = re.sub(r'<think>.*?</think>', '', raw, flags=re.DOTALL).strip()
+    raw = re.sub(r'<reasoning>.*?</reasoning>', '', raw, flags=re.DOTALL).strip()
+
+    # 2. Strip markdown fences
     raw = re.sub(r"^```json\s*", "", raw.strip())
     raw = re.sub(r"\s*```$", "", raw.strip())
 
+    # 3. Try direct parse first
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
-        # Try to repair truncated JSON — common when model runs out of tokens
-        # If we have at least title and category, try to close the JSON
-        repaired = raw.rstrip()
-        if '"title"' in repaired and '"markdown"' not in repaired:
-            # JSON was cut before the markdown field — add a placeholder
-            if repaired.endswith('"'):
-                repaired += ','
-            elif not repaired.endswith(','):
-                repaired += '",'
-            repaired += '\n  "markdown": "Article content is being regenerated. Please check back soon."\n}'
+        pass
+
+    # 4. Try to extract a JSON object from anywhere in the response
+    #    (handles preamble text like "Here is the article:" before the JSON)
+    json_match = re.search(r'(\{[^{}]*"title".*)', raw, re.DOTALL)
+    if json_match:
+        candidate = json_match.group(1).strip()
+        # Try to find matching closing brace
+        depth = 0
+        end_idx = -1
+        for i, ch in enumerate(candidate):
+            if ch == '{':
+                depth += 1
+            elif ch == '}':
+                depth -= 1
+                if depth == 0:
+                    end_idx = i
+                    break
+        if end_idx > 0:
+            try:
+                return json.loads(candidate[:end_idx + 1])
+            except json.JSONDecodeError:
+                pass
+
+    # 5. Try to repair truncated JSON
+    repaired = raw.rstrip()
+    if '"title"' in repaired and '"markdown"' not in repaired:
+        if repaired.endswith('"'):
+            repaired += ','
+        elif not repaired.endswith(','):
+            repaired += '",'
+        repaired += '\n  "markdown": "Article content is being regenerated. Please check back soon."\n}'
+        try:
+            result = json.loads(repaired)
+            print("  WARNING: Response was truncated, using placeholder article body", file=sys.stderr)
+            return result
+        except json.JSONDecodeError:
+            pass
+    elif '"markdown"' in repaired:
+        last_period = repaired.rfind('.')
+        if last_period > repaired.rfind('"markdown"'):
+            repaired = repaired[:last_period + 1] + '"\n}'
             try:
                 result = json.loads(repaired)
-                print("  WARNING: Response was truncated, using placeholder article body", file=sys.stderr)
+                print("  WARNING: Markdown was truncated, using partial article", file=sys.stderr)
                 return result
             except json.JSONDecodeError:
                 pass
-        elif '"markdown"' in repaired:
-            # JSON was cut mid-markdown — try closing the string and object
-            # Find the last complete sentence
-            last_period = repaired.rfind('.')
-            if last_period > repaired.rfind('"markdown"'):
-                repaired = repaired[:last_period + 1] + '"\n}'
-                try:
-                    result = json.loads(repaired)
-                    print("  WARNING: Markdown was truncated, using partial article", file=sys.stderr)
-                    return result
-                except json.JSONDecodeError:
-                    pass
 
-        print(f"Failed to parse AI response:\n{raw[:500]}", file=sys.stderr)
-        sys.exit(1)
+    print(f"Failed to parse AI response:\n{raw[:500]}", file=sys.stderr)
+    sys.exit(1)
 
 
 def generate_image(title: str, image_alt: str, slug: str) -> str:
