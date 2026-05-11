@@ -407,6 +407,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+essential+oil+diffusers&tag=YOUR-TAG-20",
       "affiliateLabel": "Scented Candles for Winter Evenings",
       "createdAt": "2026-05-10"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Creating a Christmas Morning Playlist",
+      "slug": "creating-a-christmas-morning-playlist",
+      "description": "A cozy blend of songs that set the tone for a peaceful Christmas morning.",
+      "imageUrl": "/images/articles/creating-a-christmas-morning-playlist.png",
+      "imageAlt": "Warmly lit room with calendars and holiday cards scattered around",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+Playlist+Spotify&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Re损听会",
+      "createdAt": "2026-05-11"
     }
   ],
   "quote": {
