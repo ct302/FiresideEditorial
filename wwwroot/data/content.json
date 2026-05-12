@@ -419,6 +419,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+Playlist+Spotify&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Re损听会",
       "createdAt": "2026-05-11"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Boxing Day Stroll: Mapping a Countryside Walk",
+      "slug": "boxing-day-stroll-mapping-a-countryside-walk",
+      "description": "Discover how to craft a peaceful Boxing Day countryside walk, blending crisp air, heritage trails, and quiet reflection.",
+      "imageUrl": "/images/articles/boxing-day-stroll-mapping-a-countryside-walk.png",
+      "imageAlt": "A snowy footpath winding through a leafless English countryside on Boxing Day",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=thermal+walking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Thermal Boots",
+      "createdAt": "2026-05-12"
     }
   ],
   "quote": {
