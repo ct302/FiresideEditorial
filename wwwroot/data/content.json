@@ -431,6 +431,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=thermal+walking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Thermal Boots",
       "createdAt": "2026-05-12"
+    },
+    {
+      "category": "Gatherings",
+      "title": "A Mural of Morsels: How to Host a Cookie Decorating Party",
+      "slug": "a-mural-of-morsels-how-to-host-a-cookie-decorating-party",
+      "description": "Turn baking into a bonding ritual with our cozy cookie decorating guide—perfect for family, friends, and nostalgic memories.",
+      "imageUrl": "/images/articles/a-mural-of-morsels-how-to-host-a-cookie-decorating-party.png",
+      "imageAlt": "A faded journal page titled 'Homemade Joy' laid on a wooden table filled with decorated cookies—chocolate-dipped lace cookies in the foreground, a bowl of gold washi tape to the left, a half-full rainbow of sprinkles to the right, and a bottle of milk beside a Dixie cup of cider.",
+      "ctaText": "Plan Your Plate",
+      "affiliateUrl": "https://www.amazon.com/s?k=DIY+Cookie+Decorating+Kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Kits",
+      "createdAt": "2026-05-13"
     }
   ],
   "quote": {

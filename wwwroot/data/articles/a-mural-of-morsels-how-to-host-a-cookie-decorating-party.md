@@ -1,0 +1,1 @@
+You’ve heard it a thousand times: baking brings people together. But what about the mess? Clearing out the clatter of cookie cutters and the sticky fingerprints from frosting? Enter cookie decorating—your new go-to ritual for making memories. It’s sweet, chaotic, and entirely worth the cleanup.$$ting.
