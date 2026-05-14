@@ -443,6 +443,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=DIY+Cookie+Decorating+Kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Kits",
       "createdAt": "2026-05-13"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "A Stroke of Sentiment: The Joy of Handwriting Winter Greetings",
+      "slug": "a-stroke-of-sentiment-the-joy-of-handwriting-winter-greeting",
+      "description": "Rediscover the magic of personal touch with handwritten Christmas cards, where every word carries the warmth of shared memories.",
+      "imageUrl": "/images/articles/a-stroke-of-sentiment-the-joy-of-handwriting-winter-greeting.png",
+      "imageAlt": "A handwritten card glowing in soft candlelight beside a steaming mug of cocoa",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+Christmas+cards&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Handmade Cards",
+      "createdAt": "2026-05-14"
     }
   ],
   "quote": {
