@@ -455,6 +455,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+Christmas+cards&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Handmade Cards",
       "createdAt": "2026-05-14"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of Christmas Potpourri",
+      "slug": "the-quiet-art-of-christmas-potpourri",
+      "description": "A slow, sensory guide to blending dried citrus, spices, and pine into something that makes your house smell like the holidays.",
+      "imageUrl": "/images/articles/the-quiet-art-of-christmas-potpourri.png",
+      "imageAlt": "Rustic wooden bowl filled with homemade Christmas potpourri — dried orange slices, cinnamon sticks, star anise, cloves, and rosemary on a worn linen cloth near a sunlit window.",
+      "ctaText": "Make Your Own",
+      "affiliateUrl": "https://www.amazon.com/s?k=dried+potpourri+making+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Potpourri Making Sets",
+      "createdAt": "2026-05-15"
     }
   ],
   "quote": {
