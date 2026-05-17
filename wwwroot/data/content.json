@@ -467,6 +467,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=dried+potpourri+making+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Making Sets",
       "createdAt": "2026-05-15"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Ink of Memory: Beginning Your Holiday Journal",
+      "slug": "the-ink-of-memory-beginning-your-holiday-journal",
+      "description": "Capture the season's magic through words—a gentle tradition that warms the heart through winter nights.",
+      "imageUrl": "/images/articles/the-ink-of-memory-beginning-your-holiday-journal.png",
+      "imageAlt": "A leather-bound journal resting on a wooden table beside a steaming mug of hot chocolate, with soft holiday lights in the background",
+      "ctaText": "Begin Your Story",
+      "affiliateUrl": "https://www.amazon.com/s?k=holiday+journals+and+notebooks&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journals",
+      "createdAt": "2026-05-17"
     }
   ],
   "quote": {
