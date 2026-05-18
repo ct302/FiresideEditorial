@@ -479,6 +479,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+journals+and+notebooks&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journals",
       "createdAt": "2026-05-17"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Ink & Evergreen: Beginning a Holiday Journaling Ritual",
+      "slug": "ink-evergreen-beginning-a-holiday-journaling-ritual",
+      "description": "Warm up your winter evenings with a simple, sensory journaling practice that captures the season’s quiet magic.",
+      "imageUrl": "/images/articles/ink-evergreen-beginning-a-holiday-journaling-ritual.png",
+      "imageAlt": "A cozy wooden desk beside a window, a steaming mug, a candle, and an open journal with a fountain pen.",
+      "ctaText": "Start Writing",
+      "affiliateUrl": "https://www.amazon.com/s?k=leather+holiday+journal&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journal",
+      "createdAt": "2026-05-18"
     }
   ],
   "quote": {
