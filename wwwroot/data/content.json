@@ -491,6 +491,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=leather+holiday+journal&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journal",
       "createdAt": "2026-05-18"
+    },
+    {
+      "category": "Storytelling",
+      "title": "Ink & Evergreen: The Art of Handwritten Christmas Cards",
+      "slug": "ink-evergreen-the-art-of-handwritten-christmas-cards",
+      "description": "Rediscover the warm, tactile ritual of penning holiday greetings and savor the intimacy of a handwritten note.",
+      "imageUrl": "/images/articles/ink-evergreen-the-art-of-handwritten-christmas-cards.png",
+      "imageAlt": "A wooden desk scattered with vellum paper, a fountain pen, and a sprig of pine needles beside a steaming mug.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handwritten+holiday+cards&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cards",
+      "createdAt": "2026-05-19"
     }
   ],
   "quote": {
