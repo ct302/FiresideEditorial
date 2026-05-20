@@ -222,13 +222,24 @@ def call_openrouter(topic: str) -> dict:
     raw = re.sub(r"^```json\s*", "", raw.strip())
     raw = re.sub(r"\s*```$", "", raw.strip())
 
-    # 3. Try direct parse first
+    # 3. If response starts with a key like "title" but no opening brace, wrap it
+    stripped = raw.strip()
+    if stripped.startswith('"') and not stripped.startswith('{'):
+        wrapped = '{' + stripped
+        if not wrapped.rstrip().endswith('}'):
+            wrapped = wrapped.rstrip().rstrip(',') + '}'
+        try:
+            return json.loads(wrapped)
+        except json.JSONDecodeError:
+            pass
+
+    # 4. Try direct parse
     try:
         return json.loads(raw)
     except json.JSONDecodeError:
         pass
 
-    # 4. Try to extract a JSON object from anywhere in the response
+    # 5. Try to extract a JSON object from anywhere in the response
     #    (handles preamble text like "Here is the article:" before the JSON)
     json_match = re.search(r'(\{[^{}]*"title".*)', raw, re.DOTALL)
     if json_match:
