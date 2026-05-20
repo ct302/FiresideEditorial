@@ -140,9 +140,11 @@ def call_openrouter(topic: str) -> dict:
             payload = json.dumps({
                 "model": model_id,
                 "max_tokens": 16000,
+                "response_format": {"type": "json_object"},
+                "transforms": ["response-healing"],
                 "messages": [
                     {"role": "system", "content": SYSTEM_PROMPT},
-                    {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}"}
+                    {"role": "user", "content": f"Write a Fireside Editorial article about: {topic}\n\nUse one of these categories: {', '.join(CATEGORIES)}\n\nRespond with ONLY a valid JSON object."}
                 ]
             }).encode()
 
