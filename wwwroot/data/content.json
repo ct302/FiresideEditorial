@@ -503,6 +503,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handwritten+holiday+cards&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cards",
       "createdAt": "2026-05-19"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Art of Gathering by Firelight: A Solstice Ritual for You and Yours",
+      "slug": "the-art-of-gathering-by-firelight-a-solstice-ritual-for-you-",
+      "description": "A cozy guide to creating meaningful solstice gatherings filled with tradition, tales, and twinkling lights",
+      "imageUrl": "/images/articles/the-art-of-gathering-by-firelight-a-solstice-ritual-for-you-.png",
+      "imageAlt": "A warmly lit indoor space with a table adorned with candles, seasonal foods, and a cozy fire crackling in the background",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=solstice+gathering+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Gathering Essentials",
+      "createdAt": "2026-05-20"
     }
   ],
   "quote": {
