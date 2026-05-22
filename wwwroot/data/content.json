@@ -515,6 +515,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=solstice+gathering+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Gathering Essentials",
       "createdAt": "2026-05-20"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Pop of Tradition: Christmas Crackers Unwrapped",
+      "slug": "the-pop-of-tradition-christmas-crackers-unwrapped",
+      "description": "Tracing the origins and evolution of Christmas crackers, from Victorian parlor games to festive table decorations.",
+      "imageUrl": "/images/articles/the-pop-of-tradition-christmas-crackers-unwrapped.png",
+      "imageAlt": "A festive Christmas table adorned with crackers and holiday decorations",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+decorations&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Crackers & Decorations",
+      "createdAt": "2026-05-22"
     }
   ],
   "quote": {
