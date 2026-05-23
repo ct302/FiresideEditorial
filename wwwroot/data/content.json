@@ -527,6 +527,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+decorations&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Crackers & Decorations",
       "createdAt": "2026-05-22"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Warmth of Old Worlds: A Map of Mulled Wine",
+      "slug": "the-warmth-of-old-worlds-a-map-of-mulled-wine",
+      "description": "A sensory journey through Europe's winter warmest, from the spice markets of Germany to the citrus groves of Spain.",
+      "imageUrl": "/images/articles/the-warmth-of-old-worlds-a-map-of-mulled-wine.png",
+      "imageAlt": "A steaming pot of deep red wine with cinnamon sticks and star anise on a rustic wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Blends",
+      "createdAt": "2026-05-23"
     }
   ],
   "quote": {
