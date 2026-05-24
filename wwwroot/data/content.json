@@ -539,6 +539,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Blends",
       "createdAt": "2026-05-23"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Lost Art of Christmas Letter Writing",
+      "slug": "the-lost-art-of-christmas-letter-writing",
+      "description": "Handwritten letters once carried warmth and connection; today, they’re replaced by pixels. Rediscover the joy of slow, thoughtful correspondence.",
+      "imageUrl": "/images/articles/the-lost-art-of-christmas-letter-writing.png",
+      "imageAlt": "A leather-bound journal filled with 1970s Christmas letters nestled beside a crackling fireplace",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=vintage+writing+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop stationery",
+      "createdAt": "2026-05-24"
     }
   ],
   "quote": {
