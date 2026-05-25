@@ -551,6 +551,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=vintage+writing+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop stationery",
       "createdAt": "2026-05-24"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Sweetweight of Heritage",
+      "slug": "the-sweetweight-of-heritage",
+      "description": "A cách 일반적으로 không traditionally passed down through generations, filling kitchens with stories as much as steam.",
+      "imageUrl": "/images/articles/the-sweetweight-of-heritage.png",
+      "imageAlt": "A weathered notebook with handwritten recipes surrounded by cinnamon sticks and flour-dusted hands",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Vintage+recipe+book&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Vintage Books",
+      "createdAt": "2026-05-25"
     }
   ],
   "quote": {
