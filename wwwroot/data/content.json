@@ -563,6 +563,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Vintage+recipe+book&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Vintage Books",
       "createdAt": "2026-05-25"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Glow of the Yule Log: A Fire That Binds",
+      "slug": "the-glow-of-the-yule-log-a-fire-that-binds",
+      "description": "Discover the ancient magic of Yule logs and hearth fires that keep winter's chill at bay with curated traditions and sensory experiences.",
+      "imageUrl": "/images/articles/the-glow-of-the-yule-log-a-fire-that-binds.png",
+      "imageAlt": "A crackling Yule log in a stone fireplace surrounded by evergreen branches and candles",
+      "ctaText": "Light the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+lighting+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Fire Starters",
+      "createdAt": "2026-05-27"
     }
   ],
   "quote": {
