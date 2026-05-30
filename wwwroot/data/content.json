@@ -587,6 +587,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+holiday+journals&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Handmade Journals",
       "createdAt": "2026-05-28"
+    },
+    {
+      "category": "Heritage",
+      "title": "Heirlooms in Hiding: The Secret of Sentimental Advent Calendars",
+      "slug": "heirlooms-in-hiding-the-secret-of-sentimental-advent-calenda",
+      "description": "Handcrafted traditions wrapped in warmth. Discover how a simple advent calendar can become a cherished family heirloom, filled with memories and cozy rituals.",
+      "imageUrl": "/images/articles/heirlooms-in-hiding-the-secret-of-sentimental-advent-calenda.png",
+      "imageAlt": "A vintage advent calendar adorned with handwritten notes and nostalgic trinkets nestled beside a steaming mug of cocoa.",
+      "ctaText": "Start Your Legacy",
+      "affiliateUrl": "https://www.amazon.com/s?k=vintage-style+advent+calendar+wooden&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wooden Calendars",
+      "createdAt": "2026-05-30"
     }
   ],
   "quote": {
