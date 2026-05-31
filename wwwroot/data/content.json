@@ -599,6 +599,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=vintage-style+advent+calendar+wooden&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wooden Calendars",
       "createdAt": "2026-05-30"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Sweet Gatherings: Baking Joy with Friends",
+      "slug": "sweet-gatherings-baking-joy-with-friends",
+      "description": "Savor a night of sweet memories with friends as you craft edible art together.",
+      "imageUrl": "/images/articles/sweet-gatherings-baking-joy-with-friends.png",
+      "imageAlt": "A cozy table filled with cookies, icing, and laughing faces",
+      "ctaText": "Host Together",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cookie Decorating Kits",
+      "createdAt": "2026-05-31"
     }
   ],
   "quote": {
