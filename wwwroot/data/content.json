@@ -611,6 +611,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cookie Decorating Kits",
       "createdAt": "2026-05-31"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "A Journal of Light and Layers",
+      "slug": "a-journal-of-light-and-layers",
+      "description": "Capture the magic of the season through words hugged by memories.",
+      "imageUrl": "/images/articles/a-journal-of-light-and-layers.png",
+      "imageAlt": "A vintage leather-bound notebook resting on a windowsill, snowflakes gently dusting the page edges, soft golden light from a nearby lamp casting warm shadows",
+      "ctaText": "Begin Your Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Weekly+holiday+journal+prompts&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journal Prompts",
+      "createdAt": "2026-06-01"
     }
   ],
   "quote": {
