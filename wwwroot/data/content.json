@@ -623,6 +623,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Weekly+holiday+journal+prompts&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journal Prompts",
       "createdAt": "2026-06-01"
+    },
+    {
+      "category": "The Forest",
+      "title": "Whispers of the Pine: A Winter Forager’s Journal",
+      "slug": "whispers-of-the-pine-a-winter-foragers-journal",
+      "description": "Explore the quiet art of harvesting winter treasures—pine, rosemary, and juniper—with sensory-rich details and a touch of old magic.",
+      "imageUrl": "/images/articles/whispers-of-the-pine-a-winter-foragers-journal.png",
+      "imageAlt": "A basket filled with pine cones, rosemary sprigs, and juniper berries nestled in a wooden crate",
+      "ctaText": "Discover the Effortless",
+      "affiliateUrl": "https://www.amazon.com/s?k=Winter+foraging+herbs+and+spices&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Foraging Essentials",
+      "createdAt": "2026-06-02"
     }
   ],
   "quote": {
