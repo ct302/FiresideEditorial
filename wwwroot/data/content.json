@@ -635,6 +635,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Winter+foraging+herbs+and+spices&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Foraging Essentials",
       "createdAt": "2026-06-02"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Hidden Sparkle of Christmas Crackers",
+      "slug": "the-hidden-sparkle-of-christmas-crackers",
+      "description": "Discover the whimsical origins and joyful evolution of Christmas crackers, perfect for cozy gatherings",
+      "imageUrl": "/images/articles/the-hidden-sparkle-of-christmas-crackers.png",
+      "imageAlt": "A vintage wooden tray filled with classic Christmas crackers and a steaming mug of cocoa",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Traditional+Christmas+crackers+with+favors&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Favors",
+      "createdAt": "2026-06-03"
     }
   ],
   "quote": {
