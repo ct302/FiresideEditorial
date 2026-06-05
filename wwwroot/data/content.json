@@ -647,6 +647,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Traditional+Christmas+crackers+with+favors&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Favors",
       "createdAt": "2026-06-03"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Longest Night: A Guide to Solstice Gathering",
+      "slug": "the-longest-night-a-guide-to-solstice-gathering",
+      "description": "Embrace the deep winter stillness with an intimate evening of candlelight, evergreen boughs, and the warmth of shared stories.",
+      "imageUrl": "/images/articles/the-longest-night-a-guide-to-solstice-gathering.png",
+      "imageAlt": "A rustic wooden table set with beeswax candles, pine needles, and steaming mugs of mulled cider.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=beeswax+taper+candles+evergreen+garland&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Decor",
+      "createdAt": "2026-06-05"
     }
   ],
   "quote": {
