@@ -659,6 +659,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=beeswax+taper+candles+evergreen+garland&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Decor",
       "createdAt": "2026-06-05"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Mulled Wines of Europe: A Toast to Tradition",
+      "slug": "mulled-wines-of-europe-a-toast-to-tradition",
+      "description": "Explore age-old recipes from Germany, France, and Scandinavia—scented with spices, citrus, and warmth. A cozy way to celebrate winter traditions.",
+      "imageUrl": "/images/articles/mulled-wines-of-europe-a-toast-to-tradition.png",
+      "imageAlt": "A rustic table adorned with mugs of mulled wine, cinnamon sticks, and orange slices, warm steam rising.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spices",
+      "createdAt": "2026-06-06"
     }
   ],
   "quote": {
