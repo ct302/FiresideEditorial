@@ -671,6 +671,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spices",
       "createdAt": "2026-06-06"
+    },
+    {
+      "category": "Leisure",
+      "title": "Boxing Day Cowpath Cannon: A Winter Walk Through the Chiltern Hills",
+      "slug": "boxing-day-cowpath-cannon-a-winter-walk-through-the-chiltern",
+      "description": "A serene stroll through frost-kissed fields with the scent of pine and warm tea in hand",
+      "imageUrl": "/images/articles/boxing-day-cowpath-cannon-a-winter-walk-through-the-chiltern.png",
+      "imageAlt": "A family walking through a snowy countryside path with a rustic cottage visible in the distance",
+      "ctaText": "Discover the Walk",
+      "affiliateUrl": "https://www.amazon.com/s?k=waterproof+hiking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Walking Boots",
+      "createdAt": "2026-06-07"
     }
   ],
   "quote": {
