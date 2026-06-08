@@ -60,6 +60,7 @@ Site is live on Azure F1 Free tier. Custom domain purchase deferred until CT is 
 - **Models:** `stepfun/step-3.5-flash:free` (text), `google/gemini-2.5-flash-image` (Nano Banana, image).
 - **Script:** `scripts/generate_article.py`. Picks unused topic from `TOPIC_POOLS`, generates article + metadata as JSON, writes `.md` + appends to `content.json`, generates image PNG, commits as "Fireside Bot".
 - **Image fallback (hardened):** If image generation returns empty, retries once after 5s; if still fails, `get_fallback_image()` reuses a random existing PNG from `wwwroot/images/articles/` instead of an external URL. Logs `IMAGE FALLBACK USED:` line on failure.
+- **Non-JSON 200 guard (Jun 8 fix):** `call_openrouter` previously only caught `HTTPError`. OpenRouter can return HTTP 200 with a malformed/empty/HTML body (seen after a 429+retry), which crashed `json.loads` with `JSONDecodeError` and killed the run before the fallback chain could try the next model. Now the `json.loads` is wrapped: a non-JSON 200 is logged and treated as a model failure, falling through to the next model. (Run #77, 2026-06-08.)
 - **DbSeeder:** Incremental slug-based sync (NOT empty-only guard) — runs on local startup to keep DB in sync with `content.json`.
 - **Status:** 20 articles total (9 original + 11 AI-generated). Pipeline running cleanly since Mar 31.
 
@@ -128,4 +129,4 @@ All three are blocked on the same thing: domain purchase → account signups →
 
 ---
 
-**Last updated:** 2026-04-07 — End of Phase 6 deploy session. Site live on F1, paused before B1 upgrade.
+**Last updated:** 2026-06-08 — Fixed AI pipeline crash (non-JSON 200 from OpenRouter, run #77). Site still live on F1, paused before B1 upgrade.

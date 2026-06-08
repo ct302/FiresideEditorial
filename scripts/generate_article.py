@@ -161,7 +161,14 @@ def call_openrouter(topic: str) -> dict:
 
             try:
                 with urllib.request.urlopen(req, timeout=120) as resp:
-                    data = json.loads(resp.read())
+                    body_bytes = resp.read()
+                try:
+                    data = json.loads(body_bytes)
+                except json.JSONDecodeError:
+                    snippet = body_bytes.decode(errors="replace")[:200]
+                    last_error = f"Non-JSON 200 response from {model_id}: {snippet}"
+                    print(f"  Model {model_id} returned non-JSON body, skipping: {snippet}", file=sys.stderr)
+                    break  # skip to next model
                 # Success — break out of both loops
                 print(f"  Success with model: {model_id} (attempt {attempt})")
                 break
