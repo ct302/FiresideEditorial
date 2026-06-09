@@ -683,6 +683,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=waterproof+hiking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Walking Boots",
       "createdAt": "2026-06-07"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Simmering Memories: Crafting Your Own Christmas Potpourri",
+      "slug": "simmering-memories-crafting-your-own-christmas-potpourri",
+      "description": "Learn to blend dried citrus, spices, and evergreen for a fragrant holiday potpourri that fills your home with nostalgic warmth.",
+      "imageUrl": "/images/articles/simmering-memories-crafting-your-own-christmas-potpourri.png",
+      "imageAlt": "A glass jar filled with dried orange slices, cinnamon sticks, cloves, and pine sprigs beside a wooden spoon",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+cinnamon+potpourri&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Potpourri Supplies",
+      "createdAt": "2026-06-09"
     }
   ],
   "quote": {
