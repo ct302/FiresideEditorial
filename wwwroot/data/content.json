@@ -695,6 +695,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+cinnamon+potpourri&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Supplies",
       "createdAt": "2026-06-09"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Sugar, Spice, and Shared Stories",
+      "slug": "sugar-spice-and-shared-stories",
+      "description": "Transform your kitchen into a sanctuary of sweetness with our guide to hosting an intimate, flour-dusted cookie decorating evening.",
+      "imageUrl": "/images/articles/sugar-spice-and-shared-stories.png",
+      "imageAlt": "A rustic wooden table covered in dusting of flour, colorful icing tubes, and gingerbread men under warm candlelight.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Tools",
+      "createdAt": "2026-06-10"
     }
   ],
   "quote": {
