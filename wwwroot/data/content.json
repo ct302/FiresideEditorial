@@ -707,6 +707,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Decorating Tools",
       "createdAt": "2026-06-10"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "A Scented Journey Through Time",
+      "slug": "a-scented-journey-through-time",
+      "description": "Handcrafted holiday scent blending pine, citrus, and spice",
+      "imageUrl": "/images/articles/a-scented-journey-through-time.png",
+      "imageAlt": "A mason jar filled with homemade Christmas potpourri with pinecones and citrus peels",
+      "ctaText": "Explore the Recipe",
+      "affiliateUrl": "https://www.amazon.com/s?k=woodland+Christmas+potpourri&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Crafts",
+      "createdAt": "2026-06-11"
     }
   ],
   "quote": {
