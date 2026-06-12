@@ -719,6 +719,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=woodland+Christmas+potpourri&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Crafts",
       "createdAt": "2026-06-11"
+    },
+    {
+      "category": "Heritage",
+      "title": "Guardian the Legacy on Every Page",
+      "slug": "guardian-the-legacy-on-every-page",
+      "description": "Pass down secret family recipes through handwritten notes and shared stories, savoring each ingredient's memory.",
+      "imageUrl": "/images/articles/guardian-the-legacy-on-every-page.png",
+      "imageAlt": "A weathered notebook open to a page filled with handwritten recipes, sunlight streaming through a kitchen window",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=nail-resistant+recipe+card+paper&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Recipe Cards",
+      "createdAt": "2026-06-12"
     }
   ],
   "quote": {
