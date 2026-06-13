@@ -731,6 +731,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=nail-resistant+recipe+card+paper&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Recipe Cards",
       "createdAt": "2026-06-12"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Crackle of Tradition: A History of Christmas Crackers",
+      "slug": "the-crackle-of-tradition-a-history-of-christmas-crackers",
+      "description": "Discover how a Victorian sweet-shop invention became the festive pop that lights our holiday tables.",
+      "imageUrl": "/images/articles/the-crackle-of-tradition-a-history-of-christmas-crackers.png",
+      "imageAlt": "Vintage Christmas crackers arranged on a wooden table beside pine cones and candlelight",
+      "ctaText": "Discover the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+vintage+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Christmas Crackers",
+      "createdAt": "2026-06-13"
     }
   ],
   "quote": {
