@@ -743,6 +743,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+vintage+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Christmas Crackers",
       "createdAt": "2026-06-13"
+    },
+    {
+      "category": "Heritage",
+      "title": "Keeping the Hearth Alive: Preserving Family Recipes for Future Generations",
+      "slug": "keeping-the-hearth-alive-preserving-family-recipes-for-futur",
+      "description": "A gentle guide to saving beloved kitchen legacies, ensuring flavors and stories endure across generations.",
+      "imageUrl": "/images/articles/keeping-the-hearth-alive-preserving-family-recipes-for-futur.png",
+      "imageAlt": "A weathered recipe card tucked inside a well‑used wooden box, steam curling from a nearby pie",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+journal&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Recipe Journals",
+      "createdAt": "2026-06-14"
     }
   ],
   "quote": {
