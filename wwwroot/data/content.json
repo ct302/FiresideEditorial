@@ -755,6 +755,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=family+recipe+journal&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Recipe Journals",
       "createdAt": "2026-06-14"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log: A Fire Kept Through the Longest Nights",
+      "slug": "the-yule-log-a-fire-kept-through-the-longest-nights",
+      "description": "A warm meditation on the old Yule log, hearth fires, and the quiet magic of keeping darkness company.",
+      "imageUrl": "/images/articles/the-yule-log-a-fire-kept-through-the-longest-nights.png",
+      "imageAlt": "A seasoned Yule log glowing in a stone hearth with evergreen boughs and a wool blanket nearby.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+holder&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Fireplace Tools",
+      "createdAt": "2026-06-15"
     }
   ],
   "quote": {
