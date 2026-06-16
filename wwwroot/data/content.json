@@ -767,6 +767,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+holder&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Fireplace Tools",
       "createdAt": "2026-06-15"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of the Handwritten Christmas Card",
+      "slug": "the-quiet-art-of-the-handwritten-christmas-card",
+      "description": "A gentle ritual of ink, paper, memory, and postage for the Christmas cards that feel like small hearths.",
+      "imageUrl": "/images/articles/the-quiet-art-of-the-handwritten-christmas-card.png",
+      "imageAlt": "Hands writing Christmas cards at a wooden table with evergreen sprigs, candlelight, envelopes, and a fountain pen.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+card+stationery&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stationery",
+      "createdAt": "2026-06-16"
     }
   ],
   "quote": {
