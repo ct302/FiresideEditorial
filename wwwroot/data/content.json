@@ -779,6 +779,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+card+stationery&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery",
       "createdAt": "2026-06-16"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Whispers of Wood and Spice: Crafting Your Own Christmas Potpourri",
+      "slug": "whispers-of-wood-and-spice-crafting-your-own-christmas-potpo",
+      "description": "Stir up scents and memories with fresh, handcrafted potpourri—warm, aromatic, and DIY-friendly for your holiday décor.",
+      "imageUrl": "/images/articles/whispers-of-wood-and-spice-crafting-your-own-christmas-potpo.png",
+      "imageAlt": "Close‑up of a wooden bowl filled with incense‑spiced potpourri and twine",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=DIY+potpourri+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Potpourri Kits",
+      "createdAt": "2026-06-17"
     }
   ],
   "quote": {
