@@ -791,6 +791,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=DIY+potpourri+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Kits",
       "createdAt": "2026-06-17"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "How to Start a Holiday Journaling Practice",
+      "slug": "how-to-start-a-holiday-journaling-practice",
+      "description": "Discover the gentle art of holiday journaling to capture fleeting moments and warm memories this season.",
+      "imageUrl": "/images/articles/how-to-start-a-holiday-journaling-practice.png",
+      "imageAlt": "A leather-bound journal and vintage fountain pen resting beside cinnamon sticks and a cup of hot cocoa on a wooden desk",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=holiday+journal+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Journal Supplies",
+      "createdAt": "2026-06-18"
     }
   ],
   "quote": {
