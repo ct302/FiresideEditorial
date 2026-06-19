@@ -803,6 +803,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+journal+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Journal Supplies",
       "createdAt": "2026-06-18"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "A Bowl of Christmas You Can Smell",
+      "slug": "a-bowl-of-christmas-you-can-smell",
+      "description": "Simmer, dry, and gather winter botanicals into a handmade Christmas potpourri that fills the house with memory.",
+      "imageUrl": "/images/articles/a-bowl-of-christmas-you-can-smell.png",
+      "imageAlt": "A ceramic bowl of dried orange slices, cinnamon sticks, pine needles, and cloves beside a wool blanket.",
+      "ctaText": "Make the Blend",
+      "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+potpourri+ingredients&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Potpourri Ingredients",
+      "createdAt": "2026-06-19"
     }
   ],
   "quote": {
