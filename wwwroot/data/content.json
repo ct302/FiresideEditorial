@@ -815,6 +815,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+potpourri+ingredients&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Ingredients",
       "createdAt": "2026-06-19"
+    },
+    {
+      "category": "Heritage",
+      "title": "Preserving Family Recipes for Future Generations",
+      "slug": "preserving-family-recipes-for-future-generations",
+      "description": "Learn how to safeguard your family's culinary stories, turning kitchen moments into cherished heirlooms crafted for generations to savor.",
+      "imageUrl": "/images/articles/preserving-family-recipes-for-future-generations.png",
+      "imageAlt": "A wooden cutting board with a handwritten recipe card, a sprig of rosemary, and a pot of simmering soup",
+      "ctaText": "Explore the Recipe",
+      "affiliateUrl": "https://www.amazon.com/s?k=Recipe+card+binder&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Recipe Books",
+      "createdAt": "2026-06-20"
     }
   ],
   "quote": {
