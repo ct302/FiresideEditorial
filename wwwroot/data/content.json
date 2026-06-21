@@ -827,6 +827,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Recipe+card+binder&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Recipe Books",
       "createdAt": "2026-06-20"
+    },
+    {
+      "category": "Gatherings",
+      "title": "A Cookie Decorating Party, Sweetly Set",
+      "slug": "a-cookie-decorating-party-sweetly-set",
+      "description": "A cozy guide to turning sugar cookies, warm drinks, and good company into a winter tradition worth repeating.",
+      "imageUrl": "/images/articles/a-cookie-decorating-party-sweetly-set.png",
+      "imageAlt": "Frosted sugar cookies with sprinkles on a wooden table beside cocoa and holiday napkins",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Supplies",
+      "createdAt": "2026-06-21"
     }
   ],
   "quote": {
