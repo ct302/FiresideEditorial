@@ -839,6 +839,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Decorating Supplies",
       "createdAt": "2026-06-21"
+    },
+    {
+      "category": "Nature",
+      "title": "Charting a Quiet Boxing Day in the Countryside",
+      "slug": "charting-a-quiet-boxing-day-in-the-countryside",
+      "description": "Stroll into the crisp post‑holiday hush, mapping peace, fresh air, and hidden past of a winter farm.",
+      "imageUrl": "/images/articles/charting-a-quiet-boxing-day-in-the-countryside.png",
+      "imageAlt": "Snow‑dusted roadside path in a quiet English countryside at dawn",
+      "ctaText": "Start the Walk",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+trekking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Boots",
+      "createdAt": "2026-06-22"
     }
   ],
   "quote": {
