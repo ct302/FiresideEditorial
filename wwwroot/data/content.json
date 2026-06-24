@@ -851,6 +851,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+trekking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Boots",
       "createdAt": "2026-06-22"
+    },
+    {
+      "category": "Leisure",
+      "title": "Boxing Day Woodland Stroll: A Family Tradition",
+      "slug": "boxing-day-woodland-stroll-a-family-tradition",
+      "description": "Embrace the Boxing Day chill with a countryside walk, complete with crisp air, twinkling lights, and shared warmth.",
+      "imageUrl": "/images/articles/boxing-day-woodland-stroll-a-family-tradition.png",
+      "imageAlt": "A family walking through a snowy forest path on Boxing Day morning",
+      "ctaText": "Discover the Route",
+      "affiliateUrl": "https://www.amazon.com/s?k=waterproof+hiking+boots+for+winter&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Footwear",
+      "createdAt": "2026-06-24"
     }
   ],
   "quote": {
