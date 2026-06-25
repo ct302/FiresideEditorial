@@ -863,6 +863,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=waterproof+hiking+boots+for+winter&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Footwear",
       "createdAt": "2026-06-24"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Corner: Crafting a Winter Reading Nook",
+      "slug": "the-quiet-corner-crafting-a-winter-reading-nook",
+      "description": "Discover how to create a cozy winter reading nook that invites warmth, light, and the scent of old pages.",
+      "imageUrl": "/images/articles/the-quiet-corner-crafting-a-winter-reading-nook.png",
+      "imageAlt": "A snug armchair beside a window, draped with a knitted blanket and a steaming mug",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=reading+lamp+warm+light&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Lighting",
+      "createdAt": "2026-06-25"
     }
   ],
   "quote": {
