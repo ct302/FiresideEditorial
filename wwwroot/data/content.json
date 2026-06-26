@@ -875,6 +875,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=reading+lamp+warm+light&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Lighting",
       "createdAt": "2026-06-25"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Sudden Snap of Celebration",
+      "slug": "the-sudden-snap-of-celebration",
+      "description": "From Victorian parlor games to the crackle of the dinner table, rediscover the whimsical history of the Christmas cracker.",
+      "imageUrl": "/images/articles/the-sudden-snap-of-celebration.png",
+      "imageAlt": "A close-up of colorful, patterned Christmas crackers resting on a linen tablecloth next to a silver candle holder.",
+      "ctaText": "Read the History",
+      "affiliateUrl": "https://www.amazon.com/s?k=luxury+christmas+crackers&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Crackers",
+      "createdAt": "2026-06-26"
     }
   ],
   "quote": {
