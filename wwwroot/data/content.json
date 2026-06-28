@@ -887,6 +887,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=luxury+christmas+crackers&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Crackers",
       "createdAt": "2026-06-26"
+    },
+    {
+      "category": "The Forest",
+      "title": "Pine-Scented Whispers: Winter Foraging’s Hidden Treasures",
+      "slug": "pine-scented-whispers-winter-foragings-hidden-treasures",
+      "description": "Discover winter’s hidden flavours and fragrances through pine, rosemary, and juniper—each whispering secrets of the cold season.",
+      "imageUrl": "/images/articles/pine-scented-whispers-winter-foragings-hidden-treasures.png",
+      "imageAlt": "A weathered basket holds pine needles, rosemary sprigs, and silver juniper berries beneath a frosted tree",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+herbal+foraging&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Foraging Essentials",
+      "createdAt": "2026-06-28"
     }
   ],
   "quote": {
