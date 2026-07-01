@@ -899,6 +899,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+herbal+foraging&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Foraging Essentials",
       "createdAt": "2026-06-28"
+    },
+    {
+      "category": "Heritage",
+      "title": "Yule Logs and Hearth Fires: A Warm Heritage",
+      "slug": "yule-logs-and-hearth-fires-a-warm-heritage",
+      "description": "Discover the comforting tradition of Yule logs, scent, sound, and hearth‑side memories that kindle winter hearts.",
+      "imageUrl": "/images/articles/yule-logs-and-hearth-fires-a-warm-heritage.png",
+      "imageAlt": "A traditional Yule log against a stone hearth",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+craft+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Yule Log Kit",
+      "createdAt": "2026-07-01"
     }
   ],
   "quote": {
