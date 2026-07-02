@@ -911,6 +911,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+craft+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Yule Log Kit",
       "createdAt": "2026-07-01"
+    },
+    {
+      "category": "Leisure",
+      "title": "The Cozy Marathon: Curating Your Perfect Christmas Movie Night",
+      "slug": "the-cozy-marathon-curating-your-perfect-christmas-movie-nigh",
+      "description": "A selection of timeless films to enjoy while sipping hot cocoa by the fire.",
+      "imageUrl": "/images/articles/the-cozy-marathon-curating-your-perfect-christmas-movie-nigh.png",
+      "imageAlt": "A cozy living room with a blanket, mug of cocoa, and a crackling fire in the background, casting warm light on a streaming device playing a classic holiday film.",
+      "ctaText": "Browse the Selections",
+      "affiliateUrl": "https://www.amazon.com/s?k=Classic+holiday+films&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Movies",
+      "createdAt": "2026-07-02"
     }
   ],
   "quote": {
