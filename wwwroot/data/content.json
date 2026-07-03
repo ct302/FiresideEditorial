@@ -923,6 +923,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Classic+holiday+films&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Movies",
       "createdAt": "2026-07-02"
+    },
+    {
+      "category": "Nature",
+      "title": "Winter Foraging: Pine, Rosemary, and Juniper",
+      "slug": "winter-foraging-pine-rosemary-and-juniper",
+      "description": "Discover the quiet gifts of winter woods: pine, rosemary, and juniper—each with a story to tell.",
+      "imageUrl": "/images/articles/winter-foraging-pine-rosemary-and-juniper.png",
+      "imageAlt": "A mossy pine trunk with dried rosemary sprigsMain and bright juniper berries",
+      "ctaText": "Explore the Harvest",
+      "affiliateUrl": "https://www.amazon.com/s?k=handcrafted+forage+basket&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Foraging Gear",
+      "createdAt": "2026-07-03"
     }
   ],
   "quote": {
