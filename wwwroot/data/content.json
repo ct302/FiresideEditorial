@@ -935,6 +935,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handcrafted+forage+basket&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Foraging Gear",
       "createdAt": "2026-07-03"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Kindling the Longest Night: A Guide to a Solstice Gathering",
+      "slug": "kindling-the-longest-night-a-guide-to-a-solstice-gathering",
+      "description": "Learn to craft a warm, intimate solstice celebration that honors the return of light.",
+      "imageUrl": "/images/articles/kindling-the-longest-night-a-guide-to-a-solstice-gathering.png",
+      "imageAlt": "A rustic wooden table lit by candles, evergreen boughs, and handmade ornaments for a solstice gathering",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=solstice+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-07-05"
     }
   ],
   "quote": {
