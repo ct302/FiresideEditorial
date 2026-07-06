@@ -947,6 +947,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=solstice+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-07-05"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Candlelight on the Holiday Table",
+      "slug": "candlelight-on-the-holiday-table",
+      "description": "Handcrafted candles transform your holiday table into a sanctuary of warmth and memory.",
+      "imageUrl": "/images/articles/candlelight-on-the-holiday-table.png",
+      "imageAlt": "A rustic wooden table adorned with hand-poured candles casting a warm glow during the holidays.",
+      "ctaText": "Dive Into the Glow",
+      "affiliateUrl": "https://www.amazon.com/s?k=natural+handmade+candles&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-07-06"
     }
   ],
   "quote": {
