@@ -959,6 +959,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=natural+handmade+candles&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-07-06"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Warm Hearths: Crafting a Solstice Gathering",
+      "slug": "warm-hearths-crafting-a-solstice-gathering",
+      "description": "Invite flickering candles, steaming cider, and whispered tales into one evening that honors the longest day. Here’s how to curate a solstice gathering that stays in your heart.",
+      "imageUrl": "/images/articles/warm-hearths-crafting-a-solstice-gathering.png",
+      "imageAlt": "A warmly lit sitting area with a crackling bonfire, guests seated on shaggy rugs, scarves draped over shoulders, and bowls of spiced cider glinting in candlelight",
+      "ctaText": "Explore the Gathering",
+      "affiliateUrl": "https://www.amazon.com/s?k=solstice+gathering+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Solstice Essentials",
+      "createdAt": "2026-07-07"
     }
   ],
   "quote": {
