@@ -971,6 +971,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=solstice+gathering+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Solstice Essentials",
       "createdAt": "2026-07-07"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Heirloom in the Making: Crafting an Advent Calendar for Generations",
+      "slug": "heirloom-in-the-making-crafting-an-advent-calendar-for-gener",
+      "description": "Learn how to craft a timeless advent calendar that becomes a cherished family heirloom, filled with handmade treats and memories.",
+      "imageUrl": "/images/articles/heirloom-in-the-making-crafting-an-advent-calendar-for-gener.png",
+      "imageAlt": "Handcrafted wooden advent calendar with numbered drawers beside a fireplace",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Advent Kits",
+      "createdAt": "2026-07-08"
     }
   ],
   "quote": {
