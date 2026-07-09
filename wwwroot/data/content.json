@@ -983,6 +983,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Advent Kits",
       "createdAt": "2026-07-08"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "A Cozy Farewell to Winter: The Magic of a Christmas Movie Marathon",
+      "slug": "a-cozy-farewell-to-winter-the-magic-of-a-christmas-movie-mar",
+      "description": "Sip cocoa while revisiting timeless classics that warm the heart and keep the holiday spirit alive.",
+      "imageUrl": "/images/articles/a-cozy-farewell-to-winter-the-magic-of-a-christmas-movie-mar.png",
+      "imageAlt": "A family gathered around a crackling fireplace, streaming a Christmas movie on a retro TV",
+      "ctaText": "Find Your Playlist",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+movies+streaming+service&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Streaming Platforms",
+      "createdAt": "2026-07-09"
     }
   ],
   "quote": {
