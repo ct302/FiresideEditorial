@@ -1007,6 +1007,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Traditional+Christmas+crackers&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Treats",
       "createdAt": "2026-07-11"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Perfect Christmas Movie Marathon Playlist",
+      "slug": "the-perfect-christmas-movie-marathon-playlist",
+      "description": "Revisit the yuletide magic with a hand‑picked lineup that warms hearts, tickles memories, and cradles På holiday joy.",
+      "imageUrl": "/images/articles/the-perfect-christmas-movie-marathon-playlist.png",
+      "imageAlt": "Candlelit living room with a snowflake wreath, a golden bowl of popcorn, and a window framed by twinkling lights.",
+      "ctaText": "Read the Playlist",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+movie+collection&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop DVD Collection",
+      "createdAt": "2026-07-12"
     }
   ],
   "quote": {
