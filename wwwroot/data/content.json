@@ -1019,6 +1019,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+movie+collection&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop DVD Collection",
       "createdAt": "2026-07-12"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "A Stem-and-Leaf of Warmth: Crafting Your Own Christmas Potpourri",
+      "slug": "a-stem-and-leaf-of-warmth-crafting-your-own-christmas-potpou",
+      "description": "Handcrafted warmth for Christmas evenings—blending old-world scents with modern coziness in every pouch of potpourri.",
+      "imageUrl": "/images/articles/a-stem-and-leaf-of-warmth-crafting-your-own-christmas-potpou.png",
+      "imageAlt": "A rustic wooden bowl filled with autumn-scented potpourri near a crackling fireplace",
+      "ctaText": "Gather Your Scents",
+      "affiliateUrl": "https://www.amazon.com/s?k=Beeswax+essential+oil&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Beeswax Essentials",
+      "createdAt": "2026-07-13"
     }
   ],
   "quote": {
