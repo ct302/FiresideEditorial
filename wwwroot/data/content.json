@@ -1031,6 +1031,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Beeswax+essential+oil&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Beeswax Essentials",
       "createdAt": "2026-07-13"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Ink-Stained Winter",
+      "slug": "the-ink-stained-winter",
+      "description": "In an era of digital noise, find the quiet, slow magic found within the weight of paper and a fountain pen.",
+      "imageUrl": "/images/articles/the-ink-stained-winter.png",
+      "imageAlt": "A close-up of a hand writing with a brass fountain pen on cream-colored cardstock, surrounded by dried orange slices and pine needles.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=luxury+fountain+pen+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stationery",
+      "createdAt": "2026-07-14"
     }
   ],
   "quote": {
