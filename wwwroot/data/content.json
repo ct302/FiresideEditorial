@@ -1043,6 +1043,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=luxury+fountain+pen+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery",
       "createdAt": "2026-07-14"
+    },
+    {
+      "category": "Heritage",
+      "title": "An Advent to Remember: Crafting an Heirloom Calendar",
+      "slug": "an-advent-to-remember-crafting-an-heirloom-calendar",
+      "description": "Invite scent of cedar and paper to shape a calendar that carries your family’s stories far beyond December.",
+      "imageUrl": "/images/articles/an-advent-to-remember-crafting-an-heirloom-calendar.png",
+      "imageAlt": "Wrapped wooden advent calendar with painted scenes and a twinkling string of lights",
+      "ctaText": "Build the Calendar",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+wooden+advent+calendar&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wooden Calendar",
+      "createdAt": "2026-07-15"
     }
   ],
   "quote": {
