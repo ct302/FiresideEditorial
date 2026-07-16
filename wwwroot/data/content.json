@@ -1055,6 +1055,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+wooden+advent+calendar&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wooden Calendar",
       "createdAt": "2026-07-15"
+    },
+    {
+      "category": "Leisure",
+      "title": "The Architecture of Solitude",
+      "slug": "the-architecture-of-solitude",
+      "description": "Creating a sanctuary for your stories, amidst the soft shadows and the scent of old paper and cedar.",
+      "imageUrl": "/images/articles/the-architecture-of-solitude.png",
+      "imageAlt": "A cozy corner with a velvet armchair, a chunky knit throw, and a small wooden side table by a window.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=weighted+knit+blanket&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Comforts",
+      "createdAt": "2026-07-16"
     }
   ],
   "quote": {
