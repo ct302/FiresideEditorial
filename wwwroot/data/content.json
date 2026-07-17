@@ -1067,6 +1067,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=weighted+knit+blanket&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Comforts",
       "createdAt": "2026-07-16"
+    },
+    {
+      "category": "Gatherings",
+      "title": "Sprinkles & Stories: Hosting a Cookie Decorating Party",
+      "slug": "sprinkles-stories-hosting-a-cookie-decorating-party",
+      "description": "Learn how to turn sugar cookies into festive canvases, sharing laughter, icing, and cherished memories with friends.",
+      "imageUrl": "/images/articles/sprinkles-stories-hosting-a-cookie-decorating-party.png",
+      "imageAlt": "A rustic wooden table covered with cookies, icing bowls, sprinkles, and hands decorating holiday treats",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Kits",
+      "createdAt": "2026-07-17"
     }
   ],
   "quote": {
