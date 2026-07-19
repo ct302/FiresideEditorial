@@ -1079,6 +1079,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Decorating Kits",
       "createdAt": "2026-07-17"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of Handmade Gift Wrapping",
+      "slug": "the-quiet-art-of-handmade-gift-wrapping",
+      "description": "Wrap gifts with intention—handmade techniques that turn ordinary boxes into cherished keepsakes.",
+      "imageUrl": "/images/articles/the-quiet-art-of-handmade-gift-wrapping.png",
+      "imageAlt": "A hand folded paper gift with twine and dried flowers",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrapping+paper&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Handmade Wrapping Supplies",
+      "createdAt": "2026-07-19"
     }
   ],
   "quote": {
