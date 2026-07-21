@@ -1091,6 +1091,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrapping+paper&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Handmade Wrapping Supplies",
       "createdAt": "2026-07-19"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Whispers of Winter: A Journey Through Europe’s Mulled Wine Traditions",
+      "slug": "whispers-of-winter-a-journey-through-europes-mulled-wine-tra",
+      "description": "Explore mulled wine recipes from Germany’s spiced ‘Glühwein’ to Italy’s zesty ‘Vino eranpino’—warmth in a glass, steeped in history.",
+      "imageUrl": "/images/articles/whispers-of-winter-a-journey-through-europes-mulled-wine-tra.png",
+      "imageAlt": "A steaming mug of mulled wine beside a crackling fire, dusted with cinnamon and orange slices",
+      "ctaText": "Sip the Story",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Kits",
+      "createdAt": "2026-07-21"
     }
   ],
   "quote": {
