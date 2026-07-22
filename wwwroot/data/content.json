@@ -1103,6 +1103,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Kits",
       "createdAt": "2026-07-21"
+    },
+    {
+      "category": "The Forest",
+      "title": "Footsteps in the Frost-Kissed Woods",
+      "slug": "footsteps-in-the-frost-kissed-woods",
+      "description": "A gentle Boxing Day stroll through golden woods, swapping lists for breath.",
+      "imageUrl": "/images/articles/footsteps-in-the-frost-kissed-woods.png",
+      "imageAlt": "A person walking in a snowy forest trail",
+      "ctaText": "Discover the Path",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+hiking+shoes&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Shoes",
+      "createdAt": "2026-07-22"
     }
   ],
   "quote": {
