@@ -1115,6 +1115,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+hiking+shoes&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Shoes",
       "createdAt": "2026-07-22"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Heartbeat of Winter",
+      "slug": "the-heartbeat-of-winter",
+      "description": "Tracing the ancient lineage of the Yule log and the quiet magic found within a dancing hearth fire.",
+      "imageUrl": "/images/articles/the-heartbeat-of-winter.png",
+      "imageAlt": "A thick, birch-bark log resting on a stone hearth beside a soft linen cloth and a copper kettle.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=decorative+wooden+log+candle&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Decor",
+      "createdAt": "2026-07-23"
     }
   ],
   "quote": {
