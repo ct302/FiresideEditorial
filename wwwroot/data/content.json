@@ -1127,6 +1127,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=decorative+wooden+log+candle&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Decor",
       "createdAt": "2026-07-23"
+    },
+    {
+      "category": "Nature",
+      "title": "Boxing Day Footsteps: Crafting a Countryside Walk",
+      "slug": "boxing-day-footsteps-crafting-a-countryside-walk",
+      "description": "A gentle guide to planning a serene Boxing Day stroll through frosty fields and quiet woods.",
+      "imageUrl": "/images/articles/boxing-day-footsteps-crafting-a-countryside-walk.png",
+      "imageAlt": "Snow-dusted footpath winding through a winter countryside with bare trees and soft light",
+      "ctaText": "Read the Walk",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+walking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Footwear",
+      "createdAt": "2026-07-26"
     }
   ],
   "quote": {
