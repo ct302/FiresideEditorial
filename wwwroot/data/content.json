@@ -1139,6 +1139,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+walking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Footwear",
       "createdAt": "2026-07-26"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "A Jar of Quiet Joy: Crafting Your Own Christmas Potpourri",
+      "slug": "a-jar-of-quiet-joy-crafting-your-own-christmas-potpourri",
+      "description": "Handcrafted scents, ribbons, and memories—your cozy potpourri starts with a simmer and a story.",
+      "imageUrl": "/images/articles/a-jar-of-quiet-joy-crafting-your-own-christmas-potpourri.png",
+      "imageAlt": "A vintage mason jar filled with pinecones, cinnamon sticks, and dried oranges, tied with a red ribbon",
+      "ctaText": "Create Your Blend",
+      "affiliateUrl": "https://www.amazon.com/s?k=organic+holiday+potpourri+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Organic Blends",
+      "createdAt": "2026-07-27"
     }
   ],
   "quote": {
