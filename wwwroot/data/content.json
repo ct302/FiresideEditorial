@@ -1151,6 +1151,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=organic+holiday+potpourri+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Organic Blends",
       "createdAt": "2026-07-27"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Slow Count: Crafting an Heirloom Advent",
+      "slug": "the-slow-count-crafting-an-heirloom-advent",
+      "description": "Transform the frantic rush of December into a rhythmic, tactile celebration with a calendar built to outlast the season.",
+      "imageUrl": "/images/articles/the-slow-count-crafting-an-heirloom-advent.png",
+      "imageAlt": "A hand-stitched linen advent calendar hanging near a window, filled with small wooden drawers and dried orange slices.",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Tradition",
+      "createdAt": "2026-08-11"
     }
   ],
   "quote": {
