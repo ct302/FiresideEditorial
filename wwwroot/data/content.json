@@ -1163,6 +1163,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Tradition",
       "createdAt": "2026-08-11"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Crackle of Heritage",
+      "slug": "the-crackle-of-heritage",
+      "description": "The unexpected Victorian birth of a festive staple that still pops into our homes each December.",
+      "imageUrl": "/images/articles/the-crackle-of-heritage.png",
+      "imageAlt": "A vintage wooden table scattered with red-and-green Christmas crackers, lit by candlelight, ribbons tied neatly",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=victorian+christmas+crackers+history&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Christmas Crackers",
+      "createdAt": "2026-08-12"
     }
   ],
   "quote": {
