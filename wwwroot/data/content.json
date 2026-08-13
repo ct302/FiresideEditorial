@@ -1175,6 +1175,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=victorian+christmas+crackers+history&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Christmas Crackers",
       "createdAt": "2026-08-12"
+    },
+    {
+      "category": "Harmony",
+      "title": "The Hearth's Embrace: Yule Logs and the Timeless Warmth of Winter Fires",
+      "slug": "the-hearths-embrace-yule-logs-and-the-timeless-warmth-of-win",
+      "description": "An exploration of how yule logs and hearth fires create shared warmth across generations.",
+      "imageUrl": "/images/articles/the-hearths-embrace-yule-logs-and-the-timeless-warmth-of-win.png",
+      "imageAlt": "A rustic wooden yule log centerpiece on a stone hearth, surrounded by glowing flames and pine branches, evoking cozy winter evenings.",
+      "ctaText": "Discover the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+decor+home&tag=YOUR-TAG-20",
+      "affiliateLabel": "Yule Log Home Decor",
+      "createdAt": "2026-08-13"
     }
   ],
   "quote": {
