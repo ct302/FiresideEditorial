@@ -1187,6 +1187,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+decor+home&tag=YOUR-TAG-20",
       "affiliateLabel": "Yule Log Home Decor",
       "createdAt": "2026-08-13"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Traditional Mulled Wine Recipes from Across Europe",
+      "slug": "traditional-mulled-wine-recipes-from-across-europe",
+      "description": "Warm spiced wine traditions that soothe the soul across Christmas markets from London to Vienna.",
+      "imageUrl": "/images/articles/traditional-mulled-wine-recipes-from-across-europe.png",
+      "imageAlt": "A steaming glass of mulled wine garnished with cinnamon sticks and orange slices",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=spiced+mulled+wine+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wine Kits",
+      "createdAt": "2026-08-14"
     }
   ],
   "quote": {
