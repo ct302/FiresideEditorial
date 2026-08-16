@@ -1199,6 +1199,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=spiced+mulled+wine+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wine Kits",
       "createdAt": "2026-08-14"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Art of Handwritten Christmas Cards",
+      "slug": "the-art-of-handwritten-christmas-cards",
+      "description": "The quiet art of putting pen to paper, one festive sentiment at a time of year",
+      "imageUrl": "/images/articles/the-art-of-handwritten-christmas-cards.png",
+      "imageAlt": "A rustic wooden table filled with festive stationery, a fountain pen, holly sprigs, and an open handwritten Christmas card",
+      "ctaText": "Write the Card",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+card+writing+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stationery",
+      "createdAt": "2026-08-16"
     }
   ],
   "quote": {
