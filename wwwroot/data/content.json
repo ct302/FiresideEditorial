@@ -1211,6 +1211,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+card+writing+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery",
       "createdAt": "2026-08-16"
+    },
+    {
+      "category": "Nature",
+      "title": "Boxing Day Footsteps: Planning a Countryside Walk",
+      "slug": "boxing-day-footsteps-planning-a-countryside-walk",
+      "description": "A gentle guide to mapping a quiet Boxing Day ramble through frost‑kissed fields and sleepy woods.",
+      "imageUrl": "/images/articles/boxing-day-footsteps-planning-a-countryside-walk.png",
+      "imageAlt": "Snow‑dusted trail winding through a quiet winter countryside at sunrise",
+      "ctaText": "Read the Walk",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+walking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Walking Boots",
+      "createdAt": "2026-08-17"
     }
   ],
   "quote": {
