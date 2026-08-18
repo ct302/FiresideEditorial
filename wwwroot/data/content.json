@@ -1223,6 +1223,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+walking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Walking Boots",
       "createdAt": "2026-08-17"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Yule Log: A Hearthside Chronicle",
+      "slug": "the-yule-log-a-hearthside-chronicle",
+      "description": "A nostalgic journey through the crackling Yule log, its scent, and the hearth's comforting glow.",
+      "imageUrl": "/images/articles/the-yule-log-a-hearthside-chronicle.png",
+      "imageAlt": "A glowing hearth with a Yule log crackling, casting warm light on a wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+candle&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Yule Logs",
+      "createdAt": "2026-08-18"
     }
   ],
   "quote": {
