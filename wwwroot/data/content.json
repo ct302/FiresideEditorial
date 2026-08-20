@@ -1235,6 +1235,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+candle&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Yule Logs",
       "createdAt": "2026-08-18"
+    },
+    {
+      "category": "Gatherings",
+      "title": "A Warm Solstice Gathering",
+      "slug": "a-warm-solstice-gathering",
+      "description": "Discover how to create a cozy solstice gathering with simple rituals, seasonal fare, and flickering light.",
+      "imageUrl": "/images/articles/a-warm-solstice-gathering.png",
+      "imageAlt": "A table set with candles, pinecones, and a steaming mug under soft lamplight.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=solstice+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-08-20"
     }
   ],
   "quote": {
