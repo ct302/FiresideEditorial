@@ -1247,6 +1247,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=solstice+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-08-20"
+    },
+    {
+      "category": "Heritage",
+      "title": "The History of Christmas Crackers",
+      "slug": "the-history-of-christmas-crackers",
+      "description": "Unwrap the surprising origins of Christmas crackers, from Victorian parlors to modern festive tables around the world.",
+      "imageUrl": "/images/articles/the-history-of-christmas-crackers.png",
+      "imageAlt": "A row of colorful Christmas crackers arranged on a wooden table with pine branches",
+      "ctaText": "Explore the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+party+favors&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Christmas Crackers",
+      "createdAt": "2026-08-21"
     }
   ],
   "quote": {
