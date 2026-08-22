@@ -1259,6 +1259,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+crackers+party+favors&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Christmas Crackers",
       "createdAt": "2026-08-21"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Ember Keepers: On the Ancient Art of Tending the Yule Log",
+      "slug": "the-ember-keepers-on-the-ancient-art-of-tending-the-yule-log",
+      "description": "The Yule log tradition burns through centuries, carrying stories of protection, prosperity, and the quiet magic of hearth fires.",
+      "imageUrl": "/images/articles/the-ember-keepers-on-the-ancient-art-of-tending-the-yule-log.png",
+      "imageAlt": "A weathered wooden Yule log rests beside a stone hearth, flames licking its edges as golden light spills across worn floorboards",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Decor",
+      "createdAt": "2026-08-22"
     }
   ],
   "quote": {
