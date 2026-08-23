@@ -1271,6 +1271,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Decor",
       "createdAt": "2026-08-22"
+    },
+    {
+      "category": "...",
+      "title": "...",
+      "slug": "",
+      "description": "...",
+      "imageUrl": "/images/articles/.png",
+      "imageAlt": "...",
+      "ctaText": "...",
+      "affiliateUrl": "https://www.amazon.com/s?k=...&tag=YOUR-TAG-20",
+      "affiliateLabel": "...",
+      "createdAt": "2026-08-23"
     }
   ],
   "quote": {
