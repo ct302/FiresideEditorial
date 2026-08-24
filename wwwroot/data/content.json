@@ -1283,6 +1283,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=...&tag=YOUR-TAG-20",
       "affiliateLabel": "...",
       "createdAt": "2026-08-23"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Gentle Art of Handmade Gift Wrapping",
+      "slug": "the-gentle-art-of-handmade-gift-wrapping",
+      "description": "Discover how handmade gift wrapping transforms ordinary presents into cherished heirlooms through simple, loving techniques passed down through generations.",
+      "imageUrl": "/images/articles/the-gentle-art-of-handmade-gift-wrapping.png",
+      "imageAlt": "Close-up of colorful hand-tied ribbon bows and folded fabric scraps next to beautifully wrapped gifts in vintage paper",
+      "ctaText": "Learn the Techniques",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrapping+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wrapping Supplies",
+      "createdAt": "2026-08-24"
     }
   ],
   "quote": {
