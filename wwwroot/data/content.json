@@ -1295,6 +1295,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrapping+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wrapping Supplies",
       "createdAt": "2026-08-24"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Stitching Time: Building an Heirloom Advent Calendar",
+      "slug": "stitching-time-building-an-heirloom-advent-calendar",
+      "description": "Learn how to sew a fabric advent calendar that becomes a cherished family heirloom, year after year.",
+      "imageUrl": "/images/articles/stitching-time-building-an-heirloom-advent-calendar.png",
+      "imageAlt": "Hand-stitched fabric advent calendar with numbered pockets hanging beside a glowing fireplace",
+      "ctaText": "Read the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=fabric+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Fabric Kits",
+      "createdAt": "2026-08-25"
     }
   ],
   "quote": {
