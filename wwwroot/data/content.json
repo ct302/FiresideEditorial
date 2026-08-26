@@ -1307,6 +1307,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=fabric+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Fabric Kits",
       "createdAt": "2026-08-25"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Candle‑Making for the Holiday Table",
+      "slug": "candlemaking-for-the-holiday-table",
+      "description": "Warm wax, fragrant notes, and festive light transform your holiday dining experience.",
+      "imageUrl": "/images/articles/candlemaking-for-the-holiday-table.png",
+      "imageAlt": "A handcrafted holiday candle glowing on a wooden dining table with festive decorations",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=holiday+scented+candles+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-08-26"
     }
   ],
   "quote": {
