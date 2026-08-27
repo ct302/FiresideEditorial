@@ -1319,6 +1319,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+scented+candles+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-08-26"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Crafting a Christmas Potpourri: A Warm, Aromatic Tradition",
+      "slug": "crafting-a-christmas-potpourri-a-warm-aromatic-tradition",
+      "description": "Create a fragrant Christmas potpourri with dried citrus, spices, and pine for a cozy holiday atmosphere.",
+      "imageUrl": "/images/articles/crafting-a-christmas-potpourri-a-warm-aromatic-tradition.png",
+      "imageAlt": "A wooden bowl filled with dried orange slices, cinnamon sticks, and pine needles",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+cinnamon+potpourri&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Potpourri Kits",
+      "createdAt": "2026-08-27"
     }
   ],
   "quote": {
