@@ -1331,6 +1331,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+cinnamon+potpourri&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Kits",
       "createdAt": "2026-08-27"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Simple Art of a Cookie Party",
+      "slug": "the-simple-art-of-a-cookie-party",
+      "description": "Warm guides for hosting a cozy cookie-decorating gathering, complete with icing, stories, and winter light and laughter",
+      "imageUrl": "/images/articles/the-simple-art-of-a-cookie-party.png",
+      "imageAlt": "Guests decorating cookies at a wooden table, winter light through a window, sprinkles and icing bowls nearby",
+      "ctaText": "Read the Story",
+      "affiliateUrl": "https://www.amazon.com/s?k=holiday+cookie+decorating+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cookie Kits",
+      "createdAt": "2026-08-29"
     }
   ],
   "quote": {
