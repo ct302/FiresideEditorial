@@ -1343,6 +1343,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=holiday+cookie+decorating+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cookie Kits",
       "createdAt": "2026-08-29"
+    },
+    {
+      "category": "Gatherings",
+      "title": "How to Throw a Solstice Gathering",
+      "slug": "how-to-throw-a-solstice-gathering",
+      "description": "... 15-25 words ...",
+      "imageUrl": "/images/articles/how-to-throw-a-solstice-gathering.png",
+      "imageAlt": "...",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=candle+lantern+winter&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-08-30"
     }
   ],
   "quote": {
