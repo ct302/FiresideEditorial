@@ -1355,6 +1355,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=candle+lantern+winter&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-08-30"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Art of the Sugared Surface",
+      "slug": "the-art-of-the-sugared-surface",
+      "description": "Transform a quiet afternoon into a flurry of icing, laughter, and the sweet, lingering scent of vanilla and holiday joy.",
+      "imageUrl": "/images/articles/the-art-of-the-sugared-surface.png",
+      "imageAlt": "A wooden table covered in colorful sprinkles, various icing piping bags, and half-decorated gingerbread men.",
+      "ctaText": "Begin the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Supplies",
+      "createdAt": "2026-08-31"
     }
   ],
   "quote": {
