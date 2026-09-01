@@ -1367,6 +1367,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Decorating Supplies",
       "createdAt": "2026-08-31"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of Wrapping by Hand",
+      "slug": "the-quiet-art-of-wrapping-by-hand",
+      "description": "Slow down with handmade gift wrapping techniques that turn simple brown paper into something truly memorable this holiday season.",
+      "imageUrl": "/images/articles/the-quiet-art-of-wrapping-by-hand.png",
+      "imageAlt": "Hands folding twine around a kraft paper wrapped gift on a wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=brown+kraft+wrapping+paper&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wrapping Paper",
+      "createdAt": "2026-09-01"
     }
   ],
   "quote": {
