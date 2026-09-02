@@ -1379,6 +1379,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=brown+kraft+wrapping+paper&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wrapping Paper",
       "createdAt": "2026-09-01"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Slow Simmer: A Holiday Potpourri for the Soul",
+      "slug": "the-slow-simmer-a-holiday-potpourri-for-the-soul",
+      "description": "Simmer spices, citrus, and evergreen on the stove — a homemade potpourri that transforms your home into a winter cottage.",
+      "imageUrl": "/images/articles/the-slow-simmer-a-holiday-potpourri-for-the-soul.png",
+      "imageAlt": "A copper saucepan on a wooden stove, filled with sliced oranges, cinnamon sticks, and fresh pine sprigs, steam rising softly",
+      "ctaText": "Begin the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cinnamon+sticks+whole+cloves&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Whole Spices",
+      "createdAt": "2026-09-02"
     }
   ],
   "quote": {
