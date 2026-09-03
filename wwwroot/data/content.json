@@ -1391,6 +1391,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cinnamon+sticks+whole+cloves&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Whole Spices",
       "createdAt": "2026-09-02"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Crafting Your Winter Reading Nook",
+      "slug": "crafting-your-winter-reading-nook",
+      "description": "Discover how to transform a quiet corner into a snug sanctuary for winter evenings, filled with warmth, light, and the comfort of a good book.",
+      "imageUrl": "/images/articles/crafting-your-winter-reading-nook.png",
+      "imageAlt": "Cozy armchair with a knitted blanket, steaming mug, and stack of books beside a frosted window",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+reading+nook+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Reading Essentials",
+      "createdAt": "2026-09-03"
     }
   ],
   "quote": {
