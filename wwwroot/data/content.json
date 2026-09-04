@@ -1403,6 +1403,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+reading+nook+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Reading Essentials",
       "createdAt": "2026-09-03"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Heirloom Advent: A Calendar Worth Keeping",
+      "slug": "the-heirloom-advent-a-calendar-worth-keeping",
+      "description": "Build a wooden advent calendar that will outlast a thousand December mornings—and grow more precious with each passing year.",
+      "imageUrl": "/images/articles/the-heirloom-advent-a-calendar-worth-keeping.png",
+      "imageAlt": "A weathered wooden advent calendar with small painted doors, nestled among evergreens and flickering pillar candles",
+      "ctaText": "Start the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+blanks&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wooden Blanks",
+      "createdAt": "2026-09-04"
     }
   ],
   "quote": {
