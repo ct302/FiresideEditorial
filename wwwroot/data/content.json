@@ -1427,6 +1427,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=candle+making+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Supplies",
       "createdAt": "2026-09-05"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Quiet Hearth: Crafting Your Perfect Winter Reading Sanctuary",
+      "slug": "the-quiet-hearth-crafting-your-perfect-winter-reading-sanctu",
+      "description": "Transform your winter evenings with a cozy reading nook that invites story and silence alike.",
+      "imageUrl": "/images/articles/the-quiet-hearth-crafting-your-perfect-winter-reading-sanctu.png",
+      "imageAlt": "A plaid blanket draped over a worn leather chair beside a windowsill with snow falling outside, a steaming mug and open book resting on a small wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cozy+reading+blanket+throws&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cozy Throws",
+      "createdAt": "2026-09-07"
     }
   ],
   "quote": {
