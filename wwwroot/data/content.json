@@ -1439,6 +1439,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cozy+reading+blanket+throws&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cozy Throws",
       "createdAt": "2026-09-07"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Art of the Handwritten Christmas Card",
+      "slug": "the-art-of-the-handwritten-christmas-card",
+      "description": "Discover the quiet joy of penning personal Christmas cards, where ink meets memory and winter warmth fills each handwritten line.",
+      "imageUrl": "/images/articles/the-art-of-the-handwritten-christmas-card.png",
+      "imageAlt": "A handwritten Christmas card with red ink, resting on a wooden table beside pine branches and a flickering candle",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=personalized+christmas+cards&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Personalized Cards",
+      "createdAt": "2026-09-09"
     }
   ],
   "quote": {
