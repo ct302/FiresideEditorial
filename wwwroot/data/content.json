@@ -1451,6 +1451,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=personalized+christmas+cards&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Personalized Cards",
       "createdAt": "2026-09-09"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Traditional Mulled Wine Recipes from Across Europe",
+      "slug": "traditional-mulled-wine-recipes-from-across-europe-2026-09-10",
+      "description": "A cozy tour of Europe’s mulled wine traditions, each warming the soul with its own spice and story.",
+      "imageUrl": "/images/articles/traditional-mulled-wine-recipes-from-across-europe-2026-09-10.png",
+      "imageAlt": "Steam rising from a copper pot of mulled wine surrounded by cinnamon sticks and orange slices.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spices",
+      "createdAt": "2026-09-10"
     }
   ],
   "quote": {
