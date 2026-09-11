@@ -1463,6 +1463,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spices",
       "createdAt": "2026-09-10"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Art of Handmade Gift Wrapping",
+      "slug": "the-art-of-handmade-gift-wrapping",
+      "description": "A cozy guide to wrapping gifts with love, texture, timeless charm, and simple secrets.",
+      "imageUrl": "/images/articles/the-art-of-handmade-gift-wrapping.png",
+      "imageAlt": "Warm scene of hand-wrapped gifts on a wooden table with ribbons and pine",
+      "ctaText": "Wrap with Heart",
+      "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrap+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Gift Wrap",
+      "createdAt": "2026-09-11"
     }
   ],
   "quote": {
