@@ -1475,6 +1475,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handmade+gift+wrap+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Gift Wrap",
       "createdAt": "2026-09-11"
+    },
+    {
+      "category": "Heritage",
+      "title": "How to Create an Advent Calendar Made to Outlast the Season",
+      "slug": "how-to-create-an-advent-calendar-made-to-outlast-the-season",
+      "description": "Create a keepsake advent calendar from cloth, paper, and small household treasures that grows more meaningful with every winter.",
+      "imageUrl": "/images/articles/how-to-create-an-advent-calendar-made-to-outlast-the-season.png",
+      "imageAlt": "An heirloom advent calendar of linen pockets and numbered envelopes hanging beside a candlelit winter window",
+      "ctaText": "Make It Last",
+      "affiliateUrl": "https://www.amazon.com/s?k=linen+drawstring+gift+bags&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Linen Gift Bags",
+      "createdAt": "2026-09-12"
     }
   ],
   "quote": {
