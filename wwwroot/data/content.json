@@ -1487,6 +1487,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=linen+drawstring+gift+bags&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Linen Gift Bags",
       "createdAt": "2026-09-12"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Candle-Making for the Holiday Table",
+      "slug": "candle-making-for-the-holiday-table",
+      "description": "Turn humble wax, wicks, and winter greenery into a softly glowing centerpiece for your holiday table.",
+      "imageUrl": "/images/articles/candle-making-for-the-holiday-table.png",
+      "imageAlt": "A hand pours amber wax into a small glass candle beside pine sprigs and holly on a wooden table.",
+      "ctaText": "Melt the Wax",
+      "affiliateUrl": "https://www.amazon.com/s?k=candle+making+supplies+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candle-Making Supplies",
+      "createdAt": "2026-09-13"
     }
   ],
   "quote": {
