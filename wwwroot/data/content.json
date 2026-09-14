@@ -1499,6 +1499,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=candle+making+supplies+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candle-Making Supplies",
       "createdAt": "2026-09-13"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "A Toast to Tradition: Mulled Wine Across Europe",
+      "slug": "a-toast-to-tradition-mulled-wine-across-europe",
+      "description": "Discover how communities across Europe warm winter nights with spiced mulled wine traditions passed down through generations.",
+      "imageUrl": "/images/articles/a-toast-to-tradition-mulled-wine-across-europe.png",
+      "imageAlt": "A steaming clay mug of ruby-red mulled wine surrounded by cinnamon sticks, orange slices, and star anise on a wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Blends",
+      "createdAt": "2026-09-14"
     }
   ],
   "quote": {
