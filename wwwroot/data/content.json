@@ -1511,6 +1511,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Blends",
       "createdAt": "2026-09-14"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Gentle Art of a Cookie Decorating Party",
+      "slug": "the-gentle-art-of-a-cookie-decorating-party",
+      "description": "Turn a winter evening into a warm, memorable gathering with buttery cookies, lively decorating, and room for laughter.",
+      "imageUrl": "/images/articles/the-gentle-art-of-a-cookie-decorating-party.png",
+      "imageAlt": "A cozy table covered with sugar cookies, piping bags, colorful sprinkles, and cups of warm cocoa.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cookie Decorating Supplies",
+      "createdAt": "2026-09-15"
     }
   ],
   "quote": {
