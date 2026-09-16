@@ -1523,6 +1523,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cookie Decorating Supplies",
       "createdAt": "2026-09-15"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Stitching Time: The Heirloom Advent Calendar",
+      "slug": "stitching-time-the-heirloom-advent-calendar",
+      "description": "Handcraft a fabric calendar that gathers memories like ornaments, year after year.",
+      "imageUrl": "/images/articles/stitching-time-the-heirloom-advent-calendar.png",
+      "imageAlt": "A linen advent calendar with 24 numbered pockets, hung on a wooden rod beside a fireplace, each pocket holding a tiny handwritten note",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=linen+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Calendar Kits",
+      "createdAt": "2026-09-16"
     }
   ],
   "quote": {
