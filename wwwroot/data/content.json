@@ -1535,6 +1535,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=linen+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Calendar Kits",
       "createdAt": "2026-09-16"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Embers of Yule: The Timeless Warmth of Hearth Fires",
+      "slug": "embers-of-yule-the-timeless-warmth-of-hearth-fires",
+      "description": "Discover how the ancient Yule log and crackling hearth bind families, scent the air, and kindle winter’s quiet magic.",
+      "imageUrl": "/images/articles/embers-of-yule-the-timeless-warmth-of-hearth-fires.png",
+      "imageAlt": "A glowing Yule log beside a stone hearth, sparks dancing in a cozy living room",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+firewood&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Firewood",
+      "createdAt": "2026-09-17"
     }
   ],
   "quote": {
