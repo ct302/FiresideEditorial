@@ -1559,6 +1559,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=luxury+Christmas+stationery+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery Sets",
       "createdAt": "2026-09-18"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Handmade Gift Wrapping Techniques",
+      "slug": "handmade-gift-wrapping-techniques",
+      "description": "Wrap your loved ones in love with timeless, hands‑on gift‑wrapping artistry.",
+      "imageUrl": "/images/articles/handmade-gift-wrapping-techniques.png",
+      "imageAlt": "Close‑up of textured paper, silk ribbon, and pine sprigs in a cozy winter scene",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=Handmade+gift+wrap+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Gift Wrap",
+      "createdAt": "2026-09-19"
     }
   ],
   "quote": {
