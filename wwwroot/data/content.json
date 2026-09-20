@@ -1571,6 +1571,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Handmade+gift+wrap+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Gift Wrap",
       "createdAt": "2026-09-19"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Alchemy of Christmas Potpourri",
+      "slug": "the-quiet-alchemy-of-christmas-potpourri",
+      "description": "Slow-simmered citrus, spice, and evergreen — a homemade potpourri that fills the house with memory.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-christmas-potpourri.png",
+      "imageAlt": "A wooden bowl brimming with dried orange slices, cinnamon sticks, star anise, and pine cones on a linen cloth beside a window",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+slices+cinnamon+sticks&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Dried Botanicals",
+      "createdAt": "2026-09-20"
     }
   ],
   "quote": {
