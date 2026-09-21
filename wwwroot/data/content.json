@@ -1583,6 +1583,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=dried+orange+slices+cinnamon+sticks&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Dried Botanicals",
       "createdAt": "2026-09-20"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Europe’s Winter Cup: Mulled Wine by Fireside Regions",
+      "slug": "europes-winter-cup-mulled-wine-by-fireside-regions",
+      "description": "Follow winter markets from Munich to Stockholm as Europe’s spiced wine traditions warm glass, hand, and memory.",
+      "imageUrl": "/images/articles/europes-winter-cup-mulled-wine-by-fireside-regions.png",
+      "imageAlt": "A copper pot of mulled wine with orange slices, cinnamon sticks, cloves, and almonds beside a snowy window",
+      "ctaText": "Sip the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-09-21"
     }
   ],
   "quote": {
