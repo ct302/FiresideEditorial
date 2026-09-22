@@ -1595,6 +1595,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-09-21"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Building a Winter Reading Nook",
+      "slug": "building-a-winter-reading-nook",
+      "description": "Create a snug corner for winter tales, blending soft textiles, warm light, and cherished books into a personal retreat.",
+      "imageUrl": "/images/articles/building-a-winter-reading-nook.png",
+      "imageAlt": "A cozy winter reading nook with a plaid blanket, soft lamp, and stack of books",
+      "ctaText": "Read the Nook",
+      "affiliateUrl": "https://www.amazon.com/s?k=cozy+reading+nook+decor&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Reading Nook",
+      "createdAt": "2026-09-22"
     }
   ],
   "quote": {
