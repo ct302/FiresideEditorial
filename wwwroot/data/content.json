@@ -1607,6 +1607,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cozy+reading+nook+decor&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Reading Nook",
       "createdAt": "2026-09-22"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Quiet Art of the Cookie Decorating Party",
+      "slug": "the-quiet-art-of-the-cookie-decorating-party",
+      "description": "A winter afternoon spent among friends, flour, and royal icing — the most forgiving of holiday rituals.",
+      "imageUrl": "/images/articles/the-quiet-art-of-the-cookie-decorating-party.png",
+      "imageAlt": "A wooden table scattered with sugar cookies, piping bags, and small bowls of colorful icing",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Decorating Kits",
+      "createdAt": "2026-09-23"
     }
   ],
   "quote": {
