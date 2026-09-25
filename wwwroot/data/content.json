@@ -1631,6 +1631,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Christmas+potpourri+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Potpourri Ingredients",
       "createdAt": "2026-09-24"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Floured Hand: A Gathering of Sugar and Spice",
+      "slug": "the-floured-hand-a-gathering-of-sugar-and-spice",
+      "description": "Turn your kitchen into a playground of icing and imagination with friends, flour-dusted smiles, and cookies that tell stories worth savoring.",
+      "imageUrl": "/images/articles/the-floured-hand-a-gathering-of-sugar-and-spice.png",
+      "imageAlt": "A rustic wooden table scattered with rolled cookie dough, bowls of colored icing, and scattered sprinkles, with friends laughing in the background",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cookie Decorating Kits",
+      "createdAt": "2026-09-25"
     }
   ],
   "quote": {
