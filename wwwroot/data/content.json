@@ -1643,6 +1643,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+supplies&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cookie Decorating Kits",
       "createdAt": "2026-09-25"
+    },
+    {
+      "category": "Heritage",
+      "title": "Sips of Winter: Traditional Mulled Wine Recipes from Europe",
+      "slug": "sips-of-winter-traditional-mulled-wine-recipes-from-europe",
+      "description": "Explore traditional mulled wine recipes from across Europe, each blending spice, history, and winter comfort.",
+      "imageUrl": "/images/articles/sips-of-winter-traditional-mulled-wine-recipes-from-europe.png",
+      "imageAlt": "A steaming mug of mulled wine with cinnamon sticks and orange slices",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=traditional+mulled+wine+spice+mix&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Kits",
+      "createdAt": "2026-09-27"
     }
   ],
   "quote": {
