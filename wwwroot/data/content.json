@@ -1655,6 +1655,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=traditional+mulled+wine+spice+mix&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Kits",
       "createdAt": "2026-09-27"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Heirloom Advent: Crafting a Calendar to Be Passed Down",
+      "slug": "the-heirloom-advent-crafting-a-calendar-to-be-passed-down",
+      "description": "Learn how to craft a timeless advent calendar that becomes a cherished family heirloom, blending tradition, personal touches, and seasonal wonder.",
+      "imageUrl": "/images/articles/the-heirloom-advent-crafting-a-calendar-to-be-passed-down.png",
+      "imageAlt": "Handmade wooden advent calendar with numbered drawers and festive greenery",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Advent Calendars",
+      "createdAt": "2026-09-29"
     }
   ],
   "quote": {
