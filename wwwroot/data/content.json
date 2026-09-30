@@ -1667,6 +1667,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=wooden+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Advent Calendars",
       "createdAt": "2026-09-29"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Mulled Wine Across Europe: A Warm Journey",
+      "slug": "mulled-wine-across-europe-a-warm-journey",
+      "description": "A fragrant tour of mulled wine traditions from Spain to Sweden, where spice, heat, and heritage swirl together.",
+      "imageUrl": "/images/articles/mulled-wine-across-europe-a-warm-journey.png",
+      "imageAlt": "Steam rising from a copper cauldron of ruby mulled wine, cinnamon sticks, and orange slices",
+      "ctaText": "Sip the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=warm+spices+mulled+wine+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Warm Beverages",
+      "createdAt": "2026-09-30"
     }
   ],
   "quote": {
