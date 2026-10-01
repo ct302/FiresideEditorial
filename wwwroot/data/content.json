@@ -1679,6 +1679,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=warm+spices+mulled+wine+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Warm Beverages",
       "createdAt": "2026-09-30"
+    },
+    {
+      "category": "Nostalgia",
+      "title": "The Art of the Handwritten Christmas Card",
+      "slug": "the-art-of-the-handwritten-christmas-card-2026-10-01",
+      "description": "Rediscover the lost joy of pen-and-paper holiday greetings among evergreen boughs and candlelit windowsills, where every stroke feels like home.",
+      "imageUrl": "/images/articles/the-art-of-the-handwritten-christmas-card-2026-10-01.png",
+      "imageAlt": "A hand writing a Christmas card by lamplight, ink pooling on crisp stationery, pine branches faintly visible in the background",
+      "ctaText": "Write Within",
+      "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+cards+stationery&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Writing Stationery",
+      "createdAt": "2026-10-01"
     }
   ],
   "quote": {
