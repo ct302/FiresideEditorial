@@ -1691,6 +1691,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+cards+stationery&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Writing Stationery",
       "createdAt": "2026-10-01"
+    },
+    {
+      "category": "Nature",
+      "title": "Planning a Boxing Day Countryside Walk",
+      "slug": "planning-a-boxing-day-countryside-walk",
+      "description": "Discover the quiet magic of a Boxing Day stroll through frost‑kissed fields and ancient woodlands.",
+      "imageUrl": "/images/articles/planning-a-boxing-day-countryside-walk.png",
+      "imageAlt": "A lone walker on a frosty path at sunrise",
+      "ctaText": "Embrace the Walk",
+      "affiliateUrl": "https://www.amazon.com/s?k=winter+hiking+boots&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Winter Gear",
+      "createdAt": "2026-10-02"
     }
   ],
   "quote": {
