@@ -1703,6 +1703,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=winter+hiking+boots&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Winter Gear",
       "createdAt": "2026-10-02"
+    },
+    {
+      "category": "Gatherings",
+      "title": "How to Host a Cookie Decorating Party",
+      "slug": "how-to-host-a-cookie-decorating-party",
+      "description": "A warm invitation to create sweet memories with friends, flour, and a sprinkle of nostalgic charm.",
+      "imageUrl": "/images/articles/how-to-host-a-cookie-decorating-party.png",
+      "imageAlt": "A table set with colorful cookie cutters, icing, and decorated cookies under soft light.",
+      "ctaText": "Explore the Craft",
+      "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cookie Decorating",
+      "createdAt": "2026-10-03"
     }
   ],
   "quote": {
