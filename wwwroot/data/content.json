@@ -1715,6 +1715,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cookie+decorating+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cookie Decorating",
       "createdAt": "2026-10-03"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Quiet Art of Handwritten Christmas Cards",
+      "slug": "the-quiet-art-of-handwritten-christmas-cards",
+      "description": "Discover the quiet magic of penning heartfelt Christmas cards, where ink, paper, and memory intertwine to warm the winter season.",
+      "imageUrl": "/images/articles/the-quiet-art-of-handwritten-christmas-cards.png",
+      "imageAlt": "A close-up of a handwritten Christmas card with red ribbon, surrounded by pine branches and candlelight",
+      "ctaText": "Write Warmly",
+      "affiliateUrl": "https://www.amazon.com/s?k=handwritten+christmas+cards&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Cards",
+      "createdAt": "2026-10-04"
     }
   ],
   "quote": {
