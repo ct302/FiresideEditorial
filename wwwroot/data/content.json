@@ -1727,6 +1727,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handwritten+christmas+cards&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Cards",
       "createdAt": "2026-10-04"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Ink and Evergreen: The Quiet Art of Handwritten Christmas Cards",
+      "slug": "ink-and-evergreen-the-quiet-art-of-handwritten-christmas-car",
+      "description": "Discover the quiet joy of crafting personal Christmas cards by hand, where each stroke becomes a cherished holiday memory.",
+      "imageUrl": "/images/articles/ink-and-evergreen-the-quiet-art-of-handwritten-christmas-car.png",
+      "imageAlt": "A close-up of a fountain pen writing on textured holiday card paper with pine sprigs and a candle nearby",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=calligraphy+pen+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Stationery",
+      "createdAt": "2026-10-05"
     }
   ],
   "quote": {
