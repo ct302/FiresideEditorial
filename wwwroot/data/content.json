@@ -1739,6 +1739,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=calligraphy+pen+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Stationery",
       "createdAt": "2026-10-05"
+    },
+    {
+      "category": "Heritage",
+      "title": "Ember Memories: The Yule Log and the Hearth’s Quiet Promise",
+      "slug": "ember-memories-the-yule-log-and-the-hearths-quiet-promise",
+      "description": "Discover the warm history of Yule logs and hearth fires, and how their glow ties generations together.",
+      "imageUrl": "/images/articles/ember-memories-the-yule-log-and-the-hearths-quiet-promise.png",
+      "imageAlt": "A crackling Yule log fire casting golden light on a rustic wooden hearth",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+accessories&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Essentials",
+      "createdAt": "2026-10-06"
     }
   ],
   "quote": {
