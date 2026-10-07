@@ -1751,6 +1751,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+accessories&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Essentials",
       "createdAt": "2026-10-06"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "Threading Time: Crafting an Heirloom Advent Calendar",
+      "slug": "threading-time-crafting-an-heirloom-advent-calendar",
+      "description": "Learn how to sew, fill, and cherish a handmade advent calendar that becomes a family heirloom.",
+      "imageUrl": "/images/articles/threading-time-crafting-an-heirloom-advent-calendar.png",
+      "imageAlt": "A hand-stitched linen advent calendar hanging beside a window, with small muslin pockets visible",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=linen+advent+calendar+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Craft Supplies",
+      "createdAt": "2026-10-07"
     }
   ],
   "quote": {
