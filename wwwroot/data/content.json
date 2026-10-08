@@ -1763,6 +1763,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=linen+advent+calendar+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Craft Supplies",
       "createdAt": "2026-10-07"
+    },
+    {
+      "category": "Gatherings",
+      "title": "The Pot That Wakes the House: Mulled Wines of Europe",
+      "slug": "the-pot-that-wakes-the-house-mulled-wines-of-europe",
+      "description": "From Swedish glögg to French vin chaud, discover the warming wine traditions that turn a cold night into a shared memory.",
+      "imageUrl": "/images/articles/the-pot-that-wakes-the-house-mulled-wines-of-europe.png",
+      "imageAlt": "A copper pot steaming with cinnamon sticks and orange slices on a wooden table.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+mix&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Blends",
+      "createdAt": "2026-10-08"
     }
   ],
   "quote": {
