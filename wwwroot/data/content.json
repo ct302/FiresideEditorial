@@ -1775,6 +1775,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+mix&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Blends",
       "createdAt": "2026-10-08"
+    },
+    {
+      "category": "Heritage",
+      "title": "Creating an Heirloom Advent Calendar",
+      "slug": "creating-an-heirloom-advent-calendar",
+      "description": "Craft a meaningful family tradition with a handmade advent calendar rich in personal history.",
+      "imageUrl": "/images/articles/creating-an-heirloom-advent-calendar.png",
+      "imageAlt": "Hand-stitched linen advent calendar with embroidered pockets and wooden buttons, placed on a pine-draped mantel with candlelight glowing softly in the background",
+      "ctaText": "Begin the Journey",
+      "affiliateUrl": "https://www.amazon.com/s?k=linen+embroidery+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Embroidered Linen",
+      "createdAt": "2026-10-09"
     }
   ],
   "quote": {
