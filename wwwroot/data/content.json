@@ -1787,6 +1787,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=linen+embroidery+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Embroidered Linen",
       "createdAt": "2026-10-09"
+    },
+    {
+      "category": "Heritage",
+      "title": "Spiced Vintages: Mulled Wine Through Europe",
+      "slug": "spiced-vintages-mulled-wine-through-europe",
+      "description": "Warm, spiced wine recipes gathered from European hearths to warm the coldest evenings of the year.",
+      "imageUrl": "/images/articles/spiced-vintages-mulled-wine-through-europe.png",
+      "imageAlt": "A ceramic mug of mulled wine with cinnamon sticks and orange slices resting on a wooden table.",
+      "ctaText": "Read the Recipes",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Blends",
+      "createdAt": "2026-10-10"
     }
   ],
   "quote": {
