@@ -1799,6 +1799,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Blends",
       "createdAt": "2026-10-10"
+    },
+    {
+      "category": "Craft & Care",
+      "title": "The Art of Writing Handwritten Christmas Cards",
+      "slug": "the-art-of-writing-handwritten-christmas-cards",
+      "description": "Discover the timeless charm of ink-on-paper Christmas cards and the ritual of personal expression.",
+      "imageUrl": "/images/articles/the-art-of-writing-handwritten-christmas-cards.png",
+      "imageAlt": "A close-up of handwritten Christmas cards on a wooden table with festive decorations",
+      "ctaText": "Write the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+card+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Card Kits",
+      "createdAt": "2026-10-11"
     }
   ],
   "quote": {
