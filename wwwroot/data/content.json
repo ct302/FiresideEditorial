@@ -1811,6 +1811,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=handwritten+Christmas+card+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Card Kits",
       "createdAt": "2026-10-11"
+    },
+    {
+      "category": "Heritage",
+      "title": "Across the Simmering Hearth: Mulled Wine Across Europe",
+      "slug": "across-the-simmering-hearth-mulled-wine-across-europe",
+      "description": "Warm spices, winter nights, and European traditions from the Alpine glühwein to the Mediterranean vin chaud.",
+      "imageUrl": "/images/articles/across-the-simmering-hearth-mulled-wine-across-europe.png",
+      "imageAlt": "Steaming mug of mulled wine garnished with cinnamon stick and orange slice, set against a snow-dusted window",
+      "ctaText": "Sip the Story",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Kit",
+      "createdAt": "2026-10-12"
     }
   ],
   "quote": {
