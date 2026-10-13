@@ -1823,6 +1823,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Kit",
       "createdAt": "2026-10-12"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log’s Quiet Language",
+      "slug": "the-yule-logs-quiet-language",
+      "description": "A sensory journey into the ancient comfort of Yule logs, hearth fires, and winter's quiet, lingering rituals.",
+      "imageUrl": "/images/articles/the-yule-logs-quiet-language.png",
+      "imageAlt": "A crackling Yule log on a stone hearth, orange slices and cloves tucked into the bark, warm light spilling across a wooden table.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+decoration&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Yule Log",
+      "createdAt": "2026-10-13"
     }
   ],
   "quote": {
