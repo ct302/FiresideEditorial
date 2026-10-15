@@ -1847,6 +1847,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+holders&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Yule log accessories",
       "createdAt": "2026-10-14"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log: A Hearth's Oldest Promise",
+      "slug": "the-yule-log-a-hearths-oldest-promise",
+      "description": "Tracing the slow glow of a tradition that turns wood into witness, ash into oath.",
+      "imageUrl": "/images/articles/the-yule-log-a-hearths-oldest-promise.png",
+      "imageAlt": "A massive oak log blazing in a stone hearth, sparks rising, pine boughs and dried oranges tucked at its base",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cast+iron+fireplace+tools&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Tools",
+      "createdAt": "2026-10-15"
     }
   ],
   "quote": {
