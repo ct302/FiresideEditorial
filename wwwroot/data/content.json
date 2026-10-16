@@ -1859,6 +1859,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cast+iron+fireplace+tools&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Tools",
       "createdAt": "2026-10-15"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Ember‑Glazed Nights: Mulled Wine Traditions Across Europe",
+      "slug": "emberglazed-nights-mulled-wine-traditions-across-europe",
+      "description": "Explore Europe’s mulled wine traditions, from Alpine Glühwein to Nordic glögg, and discover how spiced wine warms winter gatherings.",
+      "imageUrl": "/images/articles/emberglazed-nights-mulled-wine-traditions-across-europe.png",
+      "imageAlt": "A steaming mug of mulled wine with cinnamon sticks and orange slices on a rustic wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spices",
+      "createdAt": "2026-10-16"
     }
   ],
   "quote": {
