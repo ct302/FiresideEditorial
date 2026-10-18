@@ -1883,6 +1883,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Sets",
       "createdAt": "2026-10-17"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Embers of Yule: The Timeless Hearth",
+      "slug": "embers-of-yule-the-timeless-hearth",
+      "description": "A cozy exploration of Yule logs, hearth fires, and the quiet magic that binds winter nights together.",
+      "imageUrl": "/images/articles/embers-of-yule-the-timeless-hearth.png",
+      "imageAlt": "A glowing Yule log burning in a stone hearth, casting warm amber light on a snowy windowsill.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+firewood&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Firewood",
+      "createdAt": "2026-10-18"
     }
   ],
   "quote": {
