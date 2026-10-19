@@ -1895,6 +1895,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+firewood&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Firewood",
       "createdAt": "2026-10-18"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Spiced Hearths: Mulled Wine Tales from Europe",
+      "slug": "spiced-hearths-mulled-wine-tales-from-europe",
+      "description": "Warm spices and golden amber melt into cozy evenings across Europe’s festive streets, inviting quiet conversation.",
+      "imageUrl": "/images/articles/spiced-hearths-mulled-wine-tales-from-europe.png",
+      "imageAlt": "A steaming mug of spiced mulled wine with cinnamon sticks and orange slices in a cozy winter setting",
+      "ctaText": "Sip the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+mix+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Wine Kits",
+      "createdAt": "2026-10-19"
     }
   ],
   "quote": {
