@@ -1907,6 +1907,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+mix+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Wine Kits",
       "createdAt": "2026-10-19"
+    },
+    {
+      "category": "Heritage",
+      "title": "Mulled Wine: A European Tapestry of Spice and Story",
+      "slug": "mulled-wine-a-european-tapestry-of-spice-and-story",
+      "description": "Explore the centuries‑old recipes that warm winter nights, from Swedish glögg to French vin chaud and beyond.",
+      "imageUrl": "/images/articles/mulled-wine-a-european-tapestry-of-spice-and-story.png",
+      "imageAlt": "A steaming mug of mulled wine with cinnamon sticks, orange slices, and cloves",
+      "ctaText": "Sip the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine",
+      "createdAt": "2026-10-20"
     }
   ],
   "quote": {
