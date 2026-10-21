@@ -1919,6 +1919,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine",
       "createdAt": "2026-10-20"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Mulled Wine, Map by Map: Europe’s Winter Warmers",
+      "slug": "mulled-wine-map-by-map-europes-winter-warmers",
+      "description": "From Paris to Copenhagen, discover the spices, spirits, and quiet rituals that turn red wine into winter hospitality.",
+      "imageUrl": "/images/articles/mulled-wine-map-by-map-europes-winter-warmers.png",
+      "imageAlt": "A copper pot of mulled wine on a wooden stove beside orange peel, cinnamon sticks, and a snowy window",
+      "ctaText": "Explore the Recipes",
+      "affiliateUrl": "https://www.amazon.com/s?k=copper+mulled+wine+pot&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulling Pots",
+      "createdAt": "2026-10-21"
     }
   ],
   "quote": {
