@@ -1931,6 +1931,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=copper+mulled+wine+pot&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulling Pots",
       "createdAt": "2026-10-21"
+    },
+    {
+      "category": "Heritage",
+      "title": "Sips of Heritage: Traditional Mulled Wine Recipes from Across Europe",
+      "slug": "sips-of-heritage-traditional-mulled-wine-recipes-from-across",
+      "description": "Discover time‑honored mulled wine recipes from Norway to Italy, each steeped in winter tradition and flavor.",
+      "imageUrl": "/images/articles/sips-of-heritage-traditional-mulled-wine-recipes-from-across.png",
+      "imageAlt": "A steaming glass of mulled wine garnished with cinnamon and orange peel",
+      "ctaText": "Explore the Recipes",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-10-22"
     }
   ],
   "quote": {
