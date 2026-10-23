@@ -1943,6 +1943,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-10-22"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log: An Ancient Flame That Never Dies",
+      "slug": "the-yule-log-an-ancient-flame-that-never-dies",
+      "description": "How the ancient Yule log tradition warms modern hearths with centuries of meaning.",
+      "imageUrl": "/images/articles/the-yule-log-an-ancient-flame-that-never-dies.png",
+      "imageAlt": "A crackling Yule log burning in a stone fireplace with shadows dancing on wooden walls",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Decor",
+      "createdAt": "2026-10-23"
     }
   ],
   "quote": {
