@@ -1955,6 +1955,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Decor",
       "createdAt": "2026-10-23"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Hearth's Gift: Embracing the Yule Log Tradition",
+      "slug": "the-hearths-gift-embracing-the-yule-log-tradition",
+      "description": "Warm traditions gather around the Yule log, its crackle echoing stories of winter's steadfast heart.",
+      "imageUrl": "/images/articles/the-hearths-gift-embracing-the-yule-log-tradition.png",
+      "imageAlt": "Cozy hearth with a seasoned Yule log glowing in amber light",
+      "ctaText": "Light the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candles+winter+decor&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-10-24"
     }
   ],
   "quote": {
