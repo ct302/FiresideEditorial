@@ -1967,6 +1967,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candles+winter+decor&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-10-24"
+    },
+    {
+      "category": "Gatherings",
+      "title": "A Cup of Continental Comfort: Europe's Mulled Wine Traditions",
+      "slug": "a-cup-of-continental-comfort-europes-mulled-wine-traditions",
+      "description": "Discover the spiced, warming mulled wine traditions from Germany, Italy, and Scandinavia that bring communities together during winter's darkest days.",
+      "imageUrl": "/images/articles/a-cup-of-continental-comfort-europes-mulled-wine-traditions.png",
+      "imageAlt": "A steaming ceramic mug of ruby-red mulled wine surrounded by cinnamon sticks, star anise, and orange slices on a wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spices",
+      "createdAt": "2026-10-25"
     }
   ],
   "quote": {
