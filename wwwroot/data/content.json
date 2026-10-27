@@ -1991,6 +1991,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Kits",
       "createdAt": "2026-10-26"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Slow Alchemy of the Yule Log",
+      "slug": "the-slow-alchemy-of-the-yule-log",
+      "description": "A nostalgic meditation on hearth fires, Yule logs, and the quiet companionship of tending flame through the longest night.",
+      "imageUrl": "/images/articles/the-slow-alchemy-of-the-yule-log.png",
+      "imageAlt": "A burning Yule log in a stone hearth, embers glowing and smoke curling into a dim winter room",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=fireplace+tools+yule+log&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Fireplace Tools",
+      "createdAt": "2026-10-27"
     }
   ],
   "quote": {
