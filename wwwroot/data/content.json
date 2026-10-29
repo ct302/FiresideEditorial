@@ -2015,6 +2015,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Set",
       "createdAt": "2026-10-28"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log Tradition and the Warmth of Hearth Fires",
+      "slug": "the-yule-log-tradition-and-the-warmth-of-hearth-fires",
+      "description": "Discover how a single log can turn a winter night into a fragrant, glowing ceremony of family and memory.",
+      "imageUrl": "/images/articles/the-yule-log-tradition-and-the-warmth-of-hearth-fires.png",
+      "imageAlt": "A hand placing a polished oak log onto a rustic stone fireplace, soft amber flames licking its surface, sprigs of evergreen spilling onto the hearth",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Candles",
+      "createdAt": "2026-10-29"
     }
   ],
   "quote": {
