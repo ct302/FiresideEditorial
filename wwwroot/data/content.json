@@ -2027,6 +2027,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Candles",
       "createdAt": "2026-10-29"
+    },
+    {
+      "category": "Heritage",
+      "title": "Yule Logs and Hearth Fires: Warming the Soul Through Winter's Longest Night",
+      "slug": "yule-logs-and-hearth-fires-warming-the-soul-through-winters-",
+      "description": "A fragrant journey into the timeless ritual of Yule logs, where ash and ember weave winter's oldest stories.",
+      "imageUrl": "/images/articles/yule-logs-and-hearth-fires-warming-the-soul-through-winters-.png",
+      "imageAlt": "A crackling oak Yule log glowing against snowy pine forest at dusk",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+oak+wood&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Logs",
+      "createdAt": "2026-10-30"
     }
   ],
   "quote": {
