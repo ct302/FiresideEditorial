@@ -2039,6 +2039,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+oak+wood&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Logs",
       "createdAt": "2026-10-30"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Spiced Wine & Silver Stars: A European Mulled Wine Pilgrimage",
+      "slug": "spiced-wine-silver-stars-a-european-mulled-wine-pilgrimage",
+      "description": "A cozy journey through Europe's mulled wine traditions, from German Glühwein to Hungarian honeyed cups, perfect for quiet winter evenings.",
+      "imageUrl": "/images/articles/spiced-wine-silver-stars-a-european-mulled-wine-pilgrimage.png",
+      "imageAlt": "Steaming mugs of mulled wine with cinnamon sticks and orange slices on a snowy windowsill",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-10-31"
     }
   ],
   "quote": {
