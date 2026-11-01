@@ -2051,6 +2051,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-10-31"
+    },
+    {
+      "category": "...",
+      "title": "...",
+      "slug": "",
+      "description": "...",
+      "imageUrl": "/images/articles/.png",
+      "imageAlt": "...",
+      "ctaText": "...",
+      "affiliateUrl": "https://www.amazon.com/s?k=...&tag=YOUR-TAG-20",
+      "affiliateLabel": "...",
+      "createdAt": "2026-11-01"
     }
   ],
   "quote": {
