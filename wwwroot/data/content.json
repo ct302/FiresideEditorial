@@ -2063,6 +2063,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=...&tag=YOUR-TAG-20",
       "affiliateLabel": "...",
       "createdAt": "2026-11-01"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Winter's Warm Embrace: Mulled Wine Across Europe",
+      "slug": "winters-warm-embrace-mulled-wine-across-europe",
+      "description": "Sip fragrant, spiced wine as Europe’s centuries‑old recipes turn cold evenings into cozy memories for you.",
+      "imageUrl": "/images/articles/winters-warm-embrace-mulled-wine-across-europe.png",
+      "imageAlt": "A steaming mug of mulled wine garnished with orange slices and cinnamon sticks on a wooden table.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Drinkware",
+      "createdAt": "2026-11-02"
     }
   ],
   "quote": {
