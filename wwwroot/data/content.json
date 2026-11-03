@@ -2075,6 +2075,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Drinkware",
       "createdAt": "2026-11-02"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Longest Night's First Spark",
+      "slug": "the-longest-nights-first-spark",
+      "description": "How the Yule log carried winter's weight and warmth through centuries of solstice vigils.",
+      "imageUrl": "/images/articles/the-longest-nights-first-spark.png",
+      "imageAlt": "A massive oak log burning in a stone hearth, flames licking bark charred black, pine cones and holly scattered on the hearthstone, copper kettle steaming nearby",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=cast+iron+fire+tools&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Tools",
+      "createdAt": "2026-11-03"
     }
   ],
   "quote": {
