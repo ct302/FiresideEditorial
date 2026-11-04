@@ -2087,6 +2087,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=cast+iron+fire+tools&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Tools",
       "createdAt": "2026-11-03"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Quiet Alchemy of Yule Logs and Hearth Fires",
+      "slug": "the-quiet-alchemy-of-yule-logs-and-hearth-fires",
+      "description": "The scent of oak and applewood, the crackle of kindling, and the old magic of keeping watch over the longest night.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-yule-logs-and-hearth-fires.png",
+      "imageAlt": "A close-up of burning logs in a stone fireplace, embers glowing amber against winter darkness",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=fireplace+tools+and+accessories&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Essentials",
+      "createdAt": "2026-11-04"
     }
   ],
   "quote": {
