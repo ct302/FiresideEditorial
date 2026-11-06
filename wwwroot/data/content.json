@@ -2099,6 +2099,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=fireplace+tools+and+accessories&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Essentials",
       "createdAt": "2026-11-04"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Hearth Remembers: A Yule Log's Quiet Vigil",
+      "slug": "the-hearth-remembers-a-yule-logs-quiet-vigil",
+      "description": "Explore the ancient glow of Yule logs and hearthside rituals that warm winter nights.",
+      "imageUrl": "/images/articles/the-hearth-remembers-a-yule-logs-quiet-vigil.png",
+      "imageAlt": "A crackling hearth fire with a charred Yule log, pine sprigs, and candlelight",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Tools",
+      "createdAt": "2026-11-06"
     }
   ],
   "quote": {
