@@ -2111,6 +2111,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Tools",
       "createdAt": "2026-11-06"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Long Simmer: Europe's Mulled Wine Heritage",
+      "slug": "the-long-simmer-europes-mulled-wine-heritage",
+      "description": "Steeped spices, citrus peel, and centuries of winter warmth in every cup.",
+      "imageUrl": "/images/articles/the-long-simmer-europes-mulled-wine-heritage.png",
+      "imageAlt": "A steaming copper pot of mulled wine with cinnamon sticks, orange slices, and star anise on a wooden table",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Kits",
+      "createdAt": "2026-11-07"
     }
   ],
   "quote": {
