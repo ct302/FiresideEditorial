@@ -2123,6 +2123,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Kits",
       "createdAt": "2026-11-07"
+    },
+    {
+      "category": "Heritage",
+      "title": "A Simmering Tradition Across Europe: Mulled Wine Recipes",
+      "slug": "a-simmering-tradition-across-europe-mulled-wine-recipes",
+      "description": "Europe’s winter nights simmer with spiced wine, from Alpine markets to Mediterranean terraces, traditional recipes warm the soul.",
+      "imageUrl": "/images/articles/a-simmering-tradition-across-europe-mulled-wine-recipes.png",
+      "imageAlt": "A steaming mug of mulled wine on a snow-dusted table, cinnamon stick and orange slice floating, golden light casting long shadows",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Sets",
+      "createdAt": "2026-11-08"
     }
   ],
   "quote": {
