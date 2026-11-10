@@ -2135,6 +2135,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Sets",
       "createdAt": "2026-11-08"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Quiet Alchemy of Yule Logs and Hearth Fires",
+      "slug": "the-quiet-alchemy-of-yule-logs-and-hearth-fires-2026-11-10",
+      "description": "The scent of burning oak, the crackle of kindling, and the slow magic of a Yule log warming winter's longest nights.",
+      "imageUrl": "/images/articles/the-quiet-alchemy-of-yule-logs-and-hearth-fires-2026-11-10.png",
+      "imageAlt": "A close-up of a Yule log burning in a stone hearth, embers glowing against winter twilight",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Essentials",
+      "createdAt": "2026-11-10"
     }
   ],
   "quote": {
