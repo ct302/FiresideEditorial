@@ -2147,6 +2147,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Essentials",
       "createdAt": "2026-11-10"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log and the Warm Dark",
+      "slug": "the-yule-log-and-the-warm-dark",
+      "description": "A quiet history of Yule logs, hearth fires, and the ancient promise of returning light in winter.",
+      "imageUrl": "/images/articles/the-yule-log-and-the-warm-dark.png",
+      "imageAlt": "Close-up of a burning Yule log in a stone hearth with pine garlands and wool stockings.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+fireplace&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Yule Log Candle",
+      "createdAt": "2026-11-11"
     }
   ],
   "quote": {
