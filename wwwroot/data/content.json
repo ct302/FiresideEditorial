@@ -2159,6 +2159,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+fireplace&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Yule Log Candle",
       "createdAt": "2026-11-11"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Oldest Recipe in Europe Is Mulled Wine",
+      "slug": "the-oldest-recipe-in-europe-is-mulled-wine",
+      "description": "Glühwein, glögg, vin brulé, and grzaniec: the world's oldest winter ritual, told through a pot of wine and a handful of spices.",
+      "imageUrl": "/images/articles/the-oldest-recipe-in-europe-is-mulled-wine.png",
+      "imageAlt": "A steaming mug of deep red mulled wine on a weathered wooden table, floating with cinnamon sticks, cloves, star anise, and a curl of orange peel, as snow falls beyond a frosted window.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-11-12"
     }
   ],
   "quote": {
