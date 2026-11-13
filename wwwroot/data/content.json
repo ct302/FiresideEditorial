@@ -2171,6 +2171,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-11-12"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Long Light of the Yule Log",
+      "slug": "the-long-light-of-the-yule-log",
+      "description": "How the hearth fire, Yule log, and quiet rituals keep winter warm with memory, craft, and ancestral comfort.",
+      "imageUrl": "/images/articles/the-long-light-of-the-yule-log.png",
+      "imageAlt": "A crackling Yule log burns in an old stone hearth surrounded by evergreen branches, citrus, and wool stockings.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+accessories&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Accessories",
+      "createdAt": "2026-11-13"
     }
   ],
   "quote": {
