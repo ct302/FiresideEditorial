@@ -2183,6 +2183,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+accessories&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Accessories",
       "createdAt": "2026-11-13"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Wreath of Steam: A European Mulling Guide",
+      "slug": "the-wreath-of-steam-a-european-mulling-guide",
+      "description": "Step into Europe's steaming bowls of spiced wine—recipes from Rome to Reykjavik, warmed by candlelight and old winters.",
+      "imageUrl": "/images/articles/the-wreath-of-steam-a-european-mulling-guide.png",
+      "imageAlt": "A copper mug of mulled red wine with orange slice and cinnamon beside a frosted window.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spice Kit",
+      "createdAt": "2026-11-14"
     }
   ],
   "quote": {
