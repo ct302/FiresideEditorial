@@ -2195,6 +2195,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spice Kit",
       "createdAt": "2026-11-14"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Smolder and the Spark: On Yule Logs and the Long Night",
+      "slug": "the-smolder-and-the-spark-on-yule-logs-and-the-long-night",
+      "description": "The scent of cedar, the sound of embers, and the quiet ritual of keeping a Yule log burning through the longest night.",
+      "imageUrl": "/images/articles/the-smolder-and-the-spark-on-yule-logs-and-the-long-night.png",
+      "imageAlt": "A close-up of a burning Yule log in a stone hearth, embers glowing in the winter dusk",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+firewood&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Firewood",
+      "createdAt": "2026-11-15"
     }
   ],
   "quote": {
