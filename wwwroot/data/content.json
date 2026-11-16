@@ -2207,6 +2207,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+firewood&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Firewood",
       "createdAt": "2026-11-15"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Hearth’s Whisper: A Yule Log Tradition",
+      "slug": "the-hearths-whisper-a-yule-log-tradition",
+      "description": "A cozy meditation on Yule logs, hearth warmth, and the timeless rituals that bind winter’s quiet magic.",
+      "imageUrl": "/images/articles/the-hearths-whisper-a-yule-log-tradition.png",
+      "imageAlt": "A glowing Yule log burning in a stone hearth, casting amber light on a snow‑covered mantel",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+firewood+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Essentials",
+      "createdAt": "2026-11-16"
     }
   ],
   "quote": {
