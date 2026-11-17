@@ -2219,6 +2219,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+firewood+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Essentials",
       "createdAt": "2026-11-16"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Embers of Yule: The Hearth's Song",
+      "slug": "embers-of-yule-the-hearths-song",
+      "description": "A nostalgic glimpse of Yule logs and hearth fires, evoking winter warmth and tradition in our homes.",
+      "imageUrl": "/images/articles/embers-of-yule-the-hearths-song.png",
+      "imageAlt": "A glowing Yule log burning in a stone hearth, casting amber light on a snowy night",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth",
+      "createdAt": "2026-11-17"
     }
   ],
   "quote": {
