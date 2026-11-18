@@ -2231,6 +2231,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+kit&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth",
       "createdAt": "2026-11-17"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Wandering Wreath: European Mulled Wine Traditions",
+      "slug": "the-wandering-wreath-european-mulled-wine-traditions",
+      "description": "Old-world mulled wine recipes from Spain to Scandinavia—spices, slow heat, and the stories in every steaming cup.",
+      "imageUrl": "/images/articles/the-wandering-wreath-european-mulled-wine-traditions.png",
+      "imageAlt": "A cast-iron mulled wine pot beside cinnamon sticks, oranges, and dark wine on a snowy window sill",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=traditional+mulled+wine+spices&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Spice Blends",
+      "createdAt": "2026-11-18"
     }
   ],
   "quote": {
