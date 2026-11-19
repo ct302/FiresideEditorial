@@ -2243,6 +2243,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=traditional+mulled+wine+spices&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Spice Blends",
       "createdAt": "2026-11-18"
+    },
+    {
+      "category": "Heritage",
+      "title": "Yule Logs and Hearth Fires: A Heritage of Warm Light",
+      "slug": "yule-logs-and-hearth-fires-a-heritage-of-warm-light",
+      "description": "The timeless ritual of Yule logs, crackling fires, and family stories around the hearth.",
+      "imageUrl": "/images/articles/yule-logs-and-hearth-fires-a-heritage-of-warm-light.png",
+      "imageAlt": "Cozy living room with a towering Yule log burning in a stone fireplace.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Traditional+Yule+Log+Wood&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Tools",
+      "createdAt": "2026-11-19"
     }
   ],
   "quote": {
