@@ -2255,6 +2255,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Traditional+Yule+Log+Wood&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Tools",
       "createdAt": "2026-11-19"
+    },
+    {
+      "category": "Heritage",
+      "title": "Mulled Wine, a Continental Comfort",
+      "slug": "mulled-wine-a-continental-comfort",
+      "description": "Across Europe, spiced wine simmers in old ways—warm rituals of winter, memory, and the quiet generosity of shared tables.",
+      "imageUrl": "/images/articles/mulled-wine-a-continental-comfort.png",
+      "imageAlt": "A copper pot of steaming mulled wine with orange slices, cloves, and cinnamon sticks on a snowy evening table.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Kits",
+      "createdAt": "2026-11-20"
     }
   ],
   "quote": {
