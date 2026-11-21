@@ -2267,6 +2267,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Kits",
       "createdAt": "2026-11-20"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Mulled Wine, Map of Old Europe",
+      "slug": "mulled-wine-map-of-old-europe",
+      "description": "From Glühwein to Glögg, a warming tour of Europe's spiced wine traditions and the quiet rituals that hold them.",
+      "imageUrl": "/images/articles/mulled-wine-map-of-old-europe.png",
+      "imageAlt": "A copper pot of steaming mulled wine with orange peel, cloves, and cinnamon sticks on a snowy wooden table.",
+      "ctaText": "Sip the Tradition",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spices",
+      "createdAt": "2026-11-21"
     }
   ],
   "quote": {
