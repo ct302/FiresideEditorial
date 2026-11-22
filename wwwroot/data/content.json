@@ -2279,6 +2279,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spices+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spices",
       "createdAt": "2026-11-21"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Yule Log's Quiet Glow",
+      "slug": "the-yule-logs-quiet-glow",
+      "description": "A hearth-side meditation on the ancient Yule log and the warmth it carries through winter nights.",
+      "imageUrl": "/images/articles/the-yule-logs-quiet-glow.png",
+      "imageAlt": "A crackling Yule log in a stone fireplace, sparks rising into a dim winter room",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Yule Log Candles",
+      "createdAt": "2026-11-22"
     }
   ],
   "quote": {
