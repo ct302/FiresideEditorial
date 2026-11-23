@@ -2291,6 +2291,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+candle+set&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Yule Log Candles",
       "createdAt": "2026-11-22"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Hearth's Embrace: Yule Logs and Evening Fires",
+      "slug": "the-hearths-embrace-yule-logs-and-evening-fires",
+      "description": "Discover the ancient Yule log tradition, where glowing hearth fires",
+      "imageUrl": "/images/articles/the-hearths-embrace-yule-logs-and-evening-fires.png",
+      "imageAlt": "Editorial photo for The Hearth's Embrace: Yule Logs and Evening Fires",
+      "ctaText": "Read More",
+      "affiliateUrl": "https://www.amazon.com/s?k=the+hearth%27s+embrace%3A+yule+logs+and+evening+fires&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Related",
+      "createdAt": "2026-11-23"
     }
   ],
   "quote": {
