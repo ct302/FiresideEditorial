@@ -2303,6 +2303,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=the+hearth%27s+embrace%3A+yule+logs+and+evening+fires&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Related",
       "createdAt": "2026-11-23"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "The Long Burn: Yule Logs and the Quiet Magic of Hearth Fire",
+      "slug": "the-long-burn-yule-logs-and-the-quiet-magic-of-hearth-fire",
+      "description": "A sensory journey into Yule log traditions and the hearth's timeless warmth of pine smoke and returning light",
+      "imageUrl": "/images/articles/the-long-burn-yule-logs-and-the-quiet-magic-of-hearth-fire.png",
+      "imageAlt": "Flickering Yule log on a stone hearth during a winter solstice evening",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=yule+log+tradition&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Essentials",
+      "createdAt": "2026-11-24"
     }
   ],
   "quote": {
