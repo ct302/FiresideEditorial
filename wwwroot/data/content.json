@@ -2315,6 +2315,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=yule+log+tradition&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Essentials",
       "createdAt": "2026-11-24"
+    },
+    {
+      "category": "Heritage",
+      "title": "The Longest Night's Warmest Witness",
+      "slug": "the-longest-nights-warmest-witness",
+      "description": "How a single log carried winter's weight — and hope — across centuries of hearths.",
+      "imageUrl": "/images/articles/the-longest-nights-warmest-witness.png",
+      "imageAlt": "A massive oak Yule log blazing in a stone hearth, sparks rising toward a soot-blackened chimney, dried orange slices and cinnamon sticks tucked into bark crevices",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Tools",
+      "createdAt": "2026-11-25"
     }
   ],
   "quote": {
