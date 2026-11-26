@@ -2327,6 +2327,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+fireplace+tools&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Hearth Tools",
       "createdAt": "2026-11-25"
+    },
+    {
+      "category": "Heritage",
+      "title": "Mulled Wine, Mulled Memory",
+      "slug": "mulled-wine-mulled-memory",
+      "description": "From Nordic cardamom to Alpine star anise, Europe's winter cups carry spice, citrus, and centuries of gathering warmth.",
+      "imageUrl": "/images/articles/mulled-wine-mulled-memory.png",
+      "imageAlt": "Steam curling from a copper pot of ruby mulled wine, studded with citrus and star anise, beside a snowy window.",
+      "ctaText": "Pour a Cup",
+      "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Mulled Wine Spice Blends",
+      "createdAt": "2026-11-26"
     }
   ],
   "quote": {
