@@ -2339,6 +2339,18 @@
       "affiliateUrl": "https://www.amazon.com/s?k=mulled+wine+spice+blend&tag=YOUR-TAG-20",
       "affiliateLabel": "Shop Mulled Wine Spice Blends",
       "createdAt": "2026-11-26"
+    },
+    {
+      "category": "Evening Ritual",
+      "title": "Embers of Winter: The Yule Log Tradition",
+      "slug": "embers-of-winter-the-yule-log-tradition",
+      "description": "A cozy meditation on Yule logs, hearth fires, and the quiet magic they bring to winter evenings.",
+      "imageUrl": "/images/articles/embers-of-winter-the-yule-log-tradition.png",
+      "imageAlt": "A glowing Yule log burning in a stone hearth, casting amber light on a winter night.",
+      "ctaText": "Read the Ritual",
+      "affiliateUrl": "https://www.amazon.com/s?k=Yule+log+kit&tag=YOUR-TAG-20",
+      "affiliateLabel": "Shop Hearth Logs",
+      "createdAt": "2026-11-27"
     }
   ],
   "quote": {
